@@ -3,7 +3,7 @@ import React from 'react'
 function home() {
   return (
     <div>
-      <p>Hi</p>
+      <h1>Hi,Welcome to home page of the Ontocript iT</h1>
     </div>
   )
 }
