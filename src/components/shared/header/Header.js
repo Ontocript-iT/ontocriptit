@@ -1,6 +1,8 @@
 import React from 'react'
 import {AppBar,Toolbar,Button} from '@mui/material';
 import './Header.css';
+import logo from './ontocript.png'; // Assuming NavigationBar.js is in the components directory
+
 
 
 
@@ -16,6 +18,9 @@ function Header() {
 
     <AppBar position='stastic' style={styles.appBar}>
     <nav>
+    <div className="logo">
+        <img src={logo} alt="Logo" />
+      </div>
     <ul>
       <li><a href="#">About us</a></li>
       <li><a href="#">Services</a></li>
