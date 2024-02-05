@@ -1,11 +1,5 @@
-import React from 'react'
+import Process from "../process/Process";
 
-function home() {
-  return (
-    <div>
-      <h1>Hi,Welcome to home page of the Ontocript iT</h1>
-    </div>
-  )
+export default function Home() {
+  return <Process />;
 }
-
-export default home
