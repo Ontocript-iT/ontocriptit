@@ -3,6 +3,7 @@ import Grid from "@mui/material/Grid";
 import "./Process.css";
 import { processData, productData, images } from "./data";
 import { CssBaseline, Container, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export default function Process() {
   return (
@@ -116,7 +117,7 @@ function ProcessHeaderSection() {
         textAlign={"left"}
         fontFamily={"montserrat"}
       >
-        ONTOCRIPT i T PROCESS
+        ONTOCRIPT iT PROCESS
       </Typography>
     </Container>
   );
@@ -138,6 +139,10 @@ function ProductHeaderSection() {
         you have questions about creating digital products or anything else,
         feel free to reach out – we'd love to hear from you!
       </Typography>
+      <div>
+        <Link className="contactClass">hello@ontocriptit.com</Link>
+        <Link className="contactClass">+(94) 70 575 3003</Link>
+      </div>
     </Container>
   );
 }

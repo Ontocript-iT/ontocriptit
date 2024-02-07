@@ -1,83 +1,73 @@
-
-.contactUs{
-    border: 1px solid #F14902;
-    padding: 10px;
-    border-radius: 50px;
-    background-color: #F14902;
-    color: aliceblue;
+.contactUs {
+  border: 1px solid #f14902;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #f14902;
+  color: aliceblue;
 }
-.contactUs:hover{
-    color: #152039;
+.contactUs:hover {
+  color: #152039;
 }
 
 nav ul li a {
-    display: inline-flex;
-    padding: 5px;
-    text-decoration: none;
-    color: #152039;
-    font-family: 'Montserrat', sans-serif;
-    transition: transform 0.3s ease-in-out;
-    font-size: 16px;
-    font-weight: 600;
-    margin-right: 20px;
-  }
-  
-  /* Define the hover state of the navigation links */
-  nav ul li a:hover {
-    transform: scale(1.05);
-    color: #F14902;
-  }
+  display: inline-flex;
+  padding: 5px;
+  text-decoration: none;
+  color: #152039;
+  font-family: "Montserrat", sans-serif;
+  transition: transform 0.3s ease-in-out;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 20px;
+}
 
-  nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-nav{
-    text-align: right;
-    margin-right: 20px;
-    display: flex;
+/* Define the hover state of the navigation links */
+nav ul li a:hover {
+  transform: scale(1.05);
+  color: #f14902;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+nav {
+  text-align: right;
+  margin-right: 20px;
+  display: flex;
 }
 
 @media (max-width: 768px) {
-    /* Adjust styles for tablet devices */
-    nav ul {
-      text-align: center;
-    }
-    nav ul li {
-      display: block;
-      margin-bottom: 10px;
-    }
-    .logo img {
-       display: none;
-        
-    
-      }
+  /* Adjust styles for tablet devices */
+  nav ul {
+    text-align: center;
   }
-  
-  @media (max-width: 576px) {
-    /* Adjust styles for mobile devices */
-    nav ul li {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-    .logo img {
-        display: none;
-         
-     
-       }
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
   }
-  .logo {
-    margin-left: auto; /* Pushes the logo to the left */
-  }
-  
   .logo img {
-    max-width: 200px; /* Adjust the max-width as needed */
-    height: auto;
-    margin-right:500px ;
-    margin-top: 10px;
-    
-
+    display: none;
   }
+}
 
-  
- 
+@media (max-width: 576px) {
+  /* Adjust styles for mobile devices */
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .logo img {
+    display: none;
+  }
+}
+.logo {
+  margin-left: auto; /* Pushes the logo to the left */
+}
+
+.logo img {
+  max-width: 200px; /* Adjust the max-width as needed */
+  height: auto;
+  margin-right: 500px;
+  margin-top: 10px;
+}

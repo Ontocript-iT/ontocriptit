@@ -40,7 +40,16 @@
 .processHeaderContainerClass {
   color: #fff;
   font-weight: 800;
-  height: 30vh;
+  height: 33vh;
   background-color: #152039;
   padding: 60px 0px;
+}
+
+.contactClass {
+  color: #ffffff;
+  font-weight: 100;
+  margin: 0px 20px;
+  border: 2px solid #f14902;
+  border-radius: 10px;
+  padding: 2px 6px;
 }

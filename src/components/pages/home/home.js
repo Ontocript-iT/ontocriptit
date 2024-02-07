@@ -1,3 +1,4 @@
+import Header from "../../shared/header/Header";
 import Process from "../process/Process";
 
 function Home() {
