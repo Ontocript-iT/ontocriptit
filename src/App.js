@@ -2,9 +2,10 @@ import Home from './components/pages/home/Home';
 import Header from './components/shared/header/Header';
 import Footer from "./components/shared/footer/Footer";
 
-import { createBrowserRouter, Route,createRoutesFromElements } from 'react-router-dom';
 
+import Header from "./components/shared/header/Header";
 import Process from "./components/pages/process/Process";
+import { createBrowserRouter, Route,createRoutesFromElements } from 'react-router-dom';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -15,6 +16,16 @@ const router = createBrowserRouter(
   )
 );
 function App() {
+
+  return (
+    <div className="App">
+    <Header/>
+      <Home/>
+      <Footer/>
+
+    
+    </div>
+  );
 
 }
 

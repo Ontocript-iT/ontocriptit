@@ -17,6 +17,7 @@ function Header() {
         <div className="logo">
           <img src={logo} alt="Logo" />
         </div>
+        <div className="headerLinks">
         <ul>
           <li>
             <a href="/">Home</a>
@@ -42,6 +43,7 @@ function Header() {
             </a>
           </li>
         </ul>
+        </div>
       </nav>
       <div>
         <Outlet />
