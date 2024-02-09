@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import './Footer.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import logo1 from "../footer/1.png";
 
 
@@ -77,7 +75,7 @@ class Footer extends Component {
                     </div>
                     <div>
                         <p className='footerHeads'>Connect</p>
-                        <FontAwesomeIcon icon="fa-brands fa-square-youtube" style={{color: "#63E6BE",}} />
+                     
                         
                         <div>
                             <ul className="footer-menu">
