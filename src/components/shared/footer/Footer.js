@@ -74,7 +74,7 @@ class Footer extends Component {
 
                     </div>
                     <div>
-                        <p className='footerHeads'>Connect</p>
+                        <p className='footerHeads'>Connec</p>
                      
                         
                         <div>
