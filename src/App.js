@@ -1,9 +1,6 @@
 import Home from './components/pages/home/Home';
 import Header from './components/shared/header/Header';
 import Footer from "./components/shared/footer/Footer";
-
-
-import Header from "./components/shared/header/Header";
 import Process from "./components/pages/process/Process";
 import { createBrowserRouter, Route,createRoutesFromElements } from 'react-router-dom';
 
