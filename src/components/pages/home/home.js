@@ -7,11 +7,11 @@ import TechStacks from './techStacks/TechStacks'
 import Contact from './contact/Contact'
 import OurWorks from './ourWorks/OurWorks'
 import OurTeam from './ourTeam/OurTeam'
+import Process from "../process/Process";
 
 function Home() {
   return (
     <div>
-      <Header />
       <Hero />
       <Service />
       <WhyUs />
@@ -20,7 +20,7 @@ function Home() {
       <OurWorks />
       <OurTeam />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
