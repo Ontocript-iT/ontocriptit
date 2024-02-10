@@ -1,11 +1,24 @@
 import React from 'react';
+import Slider from 'react-slick';
 import './Service.css';
 import design from '../../../../Assets/Design.png';
 import seo from '../../../../Assets/SEO.png';
 import cms from '../../../../Assets/CMS.png';
 import ecommerce from '../../../../Assets/Ecommerce.png';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function Service() {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000
+  };
+
   const cardsData = [
     {
       img: design,
@@ -39,15 +52,17 @@ function Service() {
           <span>We offer top-notch software services for your needs</span>
         </div>
         <div className='service-cards'>
-          {cardsData.map((d) => (
-            <div className='service-card' key={d.title}>
-              <div className='service-image'>
-                <img src={d.img} alt={d.title} />
+          <Slider {...settings}>
+            {cardsData.map((d) => (
+              <div className='service-card' key={d.title}>
+                <div className='service-image'>
+                  <img src={d.img} alt={d.title} />
+                </div>
+                <div className='service-title'>{d.title}</div>
+                <div className='service-description'>{d.description}</div>
               </div>
-              <div className='service-title'>{d.title}</div>
-              <div className='service-description'>{d.description}</div>
-            </div>
-          ))}
+            ))}
+          </Slider>
         </div>
         <div className='all-services'>
           <a href='#' className='see-all-services'>
