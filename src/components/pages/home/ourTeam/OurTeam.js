@@ -23,7 +23,7 @@ function OurTeam() {
         {
             photo: "https://images.pexels.com/photos/8053518/pexels-photo-8053518.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             name: "Alice Williams",
-            position: "QA Enineer"
+            position: "QA Engineer"
         }
     ];
 

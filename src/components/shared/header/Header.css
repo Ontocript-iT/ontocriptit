@@ -41,7 +41,6 @@ nav {
   display: flex;
 }
 
-
 @media (max-width: 768px) {
   /* Adjust styles for tablet devices */
   nav ul {
@@ -73,6 +72,6 @@ nav {
 .logo img {
   max-width: 200px; /* Adjust the max-width as needed */
   height: auto;
-  margin-right: 500px;
+  margin-right: 360px;
   margin-top: 10px;
 }
