@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import './Service.css';
 import design from '../../../../Assets/Design.png';
@@ -9,11 +9,34 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Service() {
+  const [slidesToShow, setSlidesToShow] = useState(4);
+  const [dots, setDots] = useState(false);
+
+  useEffect(() => {
+    const updateSettings = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth < 1024) {
+        setSlidesToShow(screenWidth < 580 ? 1 : screenWidth < 768 ? 2 : screenWidth < 1100 ?3 : 4);
+      } else {
+        setSlidesToShow(4);
+        setDots(false);
+      }
+    };
+
+    updateSettings();
+
+    window.addEventListener('resize', updateSettings);
+
+    return () => {
+      window.removeEventListener('resize', updateSettings);
+    };
+  }, []);
+
   const settings = {
-    dots: false,
+    dots: dots,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000
