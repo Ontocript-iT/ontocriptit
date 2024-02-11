@@ -4,6 +4,7 @@ import "./Process.css";
 import { processData, productData, images } from "./data";
 import { CssBaseline, Container, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import Footer from "../../shared/footer/Footer";
 
 export default function Process() {
   return (
@@ -23,6 +24,7 @@ export default function Process() {
       <MainProcessGrid />
       <ProductHeaderSection />
       <MainProductGrid />
+      <Footer/>
     </>
   );
 }
@@ -206,6 +208,7 @@ function ProductImage({ image }) {
       <Container className="containerClass" maxWidth="sm">
         <img src={image.image} alt={image.image} />
       </Container>
+      
     </>
   );
 }
