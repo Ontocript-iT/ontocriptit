@@ -1,0 +1,70 @@
+.techstack-section {
+  magin: 0;
+  height: 320px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.techstack-section .techstack-content {
+  margin-top: 50px;
+  padding-left: 80px;
+}
+
+.techstack-content-title h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #152039;
+  line-height: 0.1;
+  text-align: left;
+}
+.techstack-content-sub-title span {
+  font-size: 20px;
+  color: #152039;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  word-spacing: 3px;
+}
+
+.techstack-icons-section {
+  margin-top: 20px;
+}
+
+.line-container {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  width: 600px;
+  height: 1px;
+  background-color: #152039;
+}
+
+.end-line {
+  width: 1306px;
+  height: 1px;
+  background-color: #152039;
+}
+
+.techstack {
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #152039;
+}
+
+.techstack-icons {
+  text-align: center;
+  width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.techstack-icons img {
+  padding: 25px;
+  height: 50px;
+}

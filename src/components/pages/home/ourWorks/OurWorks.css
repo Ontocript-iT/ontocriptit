@@ -1,0 +1,63 @@
+.ourWorks-section {
+  magin: 0;
+  height: 450px;
+  padding-top: 20px;
+  padding-left: 80px;
+  text-align: center;
+  margin-bottom:20px;
+}
+
+.ourWorks-section .techstack-content {
+  margin-top: 50px;
+}
+
+.ourWorks-content-title h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #152039;
+  line-height: 0.1;
+  text-align: left;
+}
+
+.ourWorks-content-sub-title span {
+  font-size: 24px;
+  color: #f14902;
+  display: flex;
+  text-weight: 600px;
+  justify-content: flex-start;
+  text-align: left;
+  width: 860px;
+}
+
+.works-list {
+  text-align: center;
+  margin-top: 20px;
+  gap: 10px;
+  width: 1400px;
+  padding-bottom: 20px;
+}
+
+.works-list .work-details {
+  padding: 5px 0px;
+}
+
+.works-list .work-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.works-list .work-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: #152039;
+}
+
+.works-list .work-url {
+  color: #f14902;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: 500;
+}
