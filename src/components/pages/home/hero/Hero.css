@@ -69,7 +69,7 @@
   transition: 0.15s ease-in;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .hero-section {
     height: auto;
     padding-bottom: 25px;
@@ -77,6 +77,11 @@
   }
   .hero-lower {
     magin: 0 10px;
+  }
+
+  .hero-content {
+    padding-left: 0;
+    text-align: center;
   }
 }
 
@@ -88,6 +93,11 @@
   }
   .hero-lower {
     magin: 0 10px;
+  }
+
+  .hero-section .hero-content {
+    padding-left: 0;
+    text-align: center;
   }
 }
 
@@ -105,7 +115,12 @@
     margin: 10px auto;
   }
 
-  .description{
-    width:100%;
+  .description {
+    width: 100%;
+  }
+
+  .hero-section .hero-content {
+    padding-left: 0;
+    text-align: center;
   }
 }
