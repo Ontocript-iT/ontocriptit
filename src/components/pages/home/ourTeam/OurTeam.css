@@ -68,6 +68,7 @@
 
 .our-team-section .team-cards .members-details {
   display: flex;
+  color: #152039;
   flex-direction: column;
   justify-content: center;
   align-items: center;

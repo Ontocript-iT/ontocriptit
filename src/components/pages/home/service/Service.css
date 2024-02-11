@@ -50,12 +50,14 @@
   font-size: 19px;
   font-weight: bold;
   margin: 10px auto;
+  color: #152039;
 }
 
 .service-cards .service-description {
   font-size: 21px;
   margin: 20px auto;
   width: 180px;
+  color: #152039;
 }
 
 .service-section .all-services .see-all-services {
@@ -70,4 +72,22 @@
   cursor: pointer;
   text-decoration: none;
   padding: 5px 20px;
+}
+
+@media (max-width: 576px) {
+  .service-content-title h3 {
+    line-height: 0.95;
+  }
+  .service-section {
+    min-height: 600px;
+  }
+  .service-section .service-cards {
+    padding-left: 125px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-section .service-cards {
+    padding-left: 60px;
+  }
 }
