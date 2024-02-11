@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 .contactUs {
   border: 1px solid #f14902;
   padding: 10px;
@@ -9,8 +13,16 @@
   color: #152039;
 }
 
-.logo img {
-  margin-left: 60px;
+nav {
+  text-align: right;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav .logo {
+  margin-left: 50px;
 }
 
 nav ul li a {
@@ -25,7 +37,6 @@ nav ul li a {
   margin-right: 20px;
 }
 
-/* Define the hover state of the navigation links */
 nav ul li a:hover {
   transform: scale(1.05);
   color: #f14902;
@@ -35,16 +46,39 @@ nav ul li {
   display: inline-block;
   margin-right: 20px;
 }
-nav {
-  text-align: right;
-  margin-right: 20px;
-  display: flex;
+
+@media (max-width: 1118px) {
+  nav {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav img{
+    margin-left: -20px;
+  }
+  nav ul {
+    text-align: center;
+    margin: 0 auto;
+  }
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .headerLinks {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 768px) {
-  /* Adjust styles for tablet devices */
+  nav {
+    text-align: center;
+  }
   nav ul {
     text-align: center;
+    width: 80%;
+    margin: 0 auto;
   }
   nav ul li {
     display: block;
@@ -53,10 +87,20 @@ nav {
   .logo img {
     display: none;
   }
+  .headerLinks {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 576px) {
-  /* Adjust styles for mobile devices */
+  nav {
+    text-align: center;
+  }
+  nav ul {
+    width: 90%;
+    margin: 0 auto;
+  }
   nav ul li {
     margin-right: 0;
     margin-bottom: 10px;
@@ -64,14 +108,18 @@ nav {
   .logo img {
     display: none;
   }
+  .headerLinks {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
+
 .logo {
-  margin-left: auto; /* Pushes the logo to the left */
+  margin-left: auto;
 }
 
 .logo img {
-  max-width: 200px; /* Adjust the max-width as needed */
+  max-width: 200px;
   height: auto;
-  margin-right: 360px;
   margin-top: 10px;
 }
