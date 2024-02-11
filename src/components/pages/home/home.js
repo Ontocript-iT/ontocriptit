@@ -14,11 +14,11 @@ function Home() {
     <div>
       <Hero />
       <Service />
-      <WhyUs />
+      {/* <WhyUs />
       <TechStacks />
       <Contact />
       <OurWorks />
-      <OurTeam />
+      <OurTeam /> */}
     </div>
 
   );

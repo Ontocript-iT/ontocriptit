@@ -82,7 +82,7 @@
     min-height: 600px;
   }
   .service-section .service-cards {
-    padding-left: 120px;
+    padding-left: 125px !important;
   }
 }
 
