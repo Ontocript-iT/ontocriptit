@@ -3,6 +3,8 @@ import Header from './components/shared/header/Header';
 import Footer from "./components/shared/footer/Footer";
 import Process from "./components/pages/process/Process";
 
+import { RouterProvider, Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -14,7 +16,7 @@ const router = createBrowserRouter(
 );
 function App() {
 
-
+  return <RouterProvider router={router} />
 
 }
 

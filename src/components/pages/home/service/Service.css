@@ -50,12 +50,14 @@
   font-size: 19px;
   font-weight: bold;
   margin: 10px auto;
+  color: #152039;
 }
 
 .service-cards .service-description {
   font-size: 21px;
   margin: 20px auto;
   width: 180px;
+  color: #152039;
 }
 
 .service-section .all-services .see-all-services {
