@@ -7,9 +7,16 @@ import Contact from './contact/Contact'
 import OurWorks from './ourWorks/OurWorks'
 import OurTeam from './ourTeam/OurTeam'
 
-import Footer from "../../shared/footer/Footer";
+
 import Header from "../../shared/header/Header";
 import Process from "../process/Process";
+import Contact from "./contact/Contact";
+import Hero from "./hero/Hero";
+import OurTeam from "./ourTeam/OurTeam";
+import OurWorks from "./ourWorks/OurWorks";
+import Service from "./service/Service";
+import TechStacks from "./techStacks/TechStacks";
+import WhyUs from "./whyUs/WhyUs";
 
 function Home() {
   return (
@@ -23,11 +30,8 @@ function Home() {
       <OurWorks />
       <OurTeam />
 
-      <h1>Hi,Welcome to home page of the Ontocript iT</h1>
-      <Footer/>
-
     </div>
-   
+
   );
 }
 
