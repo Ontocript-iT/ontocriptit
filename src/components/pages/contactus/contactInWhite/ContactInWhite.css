@@ -3,7 +3,7 @@
   height: 275px;
   padding-top: 20px;
   padding-left: 80px;
-  background-color: #0c0e13;
+  background-color: #FFFFFF;
 }
 
 .contact-section .techstack-content {
@@ -13,14 +13,14 @@
 .contact-content-title h3 {
   font-size: 40px;
   font-weight: bold;
-  color: #fff;
+  color: #152039;
   line-height: 0.1;
   text-align: left;
 }
 
 .contact-content-sub-title span {
   font-size: 20px;
-  color: #fff;
+  color: #152039;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -41,7 +41,7 @@
   height: 47px;
   border: 3px solid #f14902;
   border-radius: 50px;
-  color: #fff;
+  color:#152039;
   font-weight: bold;
   font-size: 20px;
   display: flex;

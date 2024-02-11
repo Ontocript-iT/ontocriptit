@@ -38,7 +38,7 @@ function Header() {
             <a href="/process">Process</a>
           </li>
           <li>
-            <a className="contactUs" href="#">
+            <a className="contactUs" href="/contact">
               Contact Us
             </a>
           </li>
