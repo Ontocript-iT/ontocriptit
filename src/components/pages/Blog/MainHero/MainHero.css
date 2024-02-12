@@ -1,0 +1,36 @@
+.container-blog{
+    height: 80vh;
+    background-color: #152039;
+    margin-bottom: 40px;
+  
+    
+}
+.textContainer{
+    padding-left: 80px;
+    padding-top: 60px;
+
+    
+}
+.mainText{
+    margin-top: -25px;
+    font-size: 48px;
+}
+.featured-blogs{
+    display: flex;
+}
+.featured-blogs-left{
+    margin-right: 120px;
+}
+.blog-read-more{
+    color: #F14902;
+    text-decoration: none;
+}
+.blog-read-more:hover{
+    color: #fafafa;
+    
+}
+.blog-content-text{
+    font-size: 16px;
+    text-align: justify;
+    width: 500px;
+}
