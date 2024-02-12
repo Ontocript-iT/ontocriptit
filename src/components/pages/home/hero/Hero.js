@@ -16,8 +16,8 @@ function Hero() {
                 </div>
                 <div className="hero-lower">
                     <div className="hero-buttons">
-                        <button href="#" className="hero-contact-button">Let’s talk</button>
-                        <button href="#" className="hero-works-button">See our works</button>
+                        <a href="/contact" className="hero-contact-a">Let’s talk</a>
+                        <button href="#" className="hero-works-a">See our works</button>
                     </div>
                     <div className="hero-social-icons"></div>
                 </div>

@@ -8,7 +8,7 @@ import ecommerce from '../../../../Assets/Ecommerce.png';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function Service() {
+function Service({ showLink }) {
   const [slidesToShow, setSlidesToShow] = useState(4);
   const [dots, setDots] = useState(false);
 
@@ -88,9 +88,11 @@ function Service() {
           </Slider>
         </div>
         <div className='all-services'>
-          <a href='#' className='see-all-services'>
-            See All Services
-          </a>
+        {showLink && (
+        <a href='/services' className='see-all-services'>
+          See All Services
+        </a>
+      )}
         </div>
       </div>
     </div>
