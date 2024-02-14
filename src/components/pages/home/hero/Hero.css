@@ -33,7 +33,7 @@
 
 .hero-contact-a {
   border-radius: 50px;
- padding: 15px 25px;
+  padding: 15px 25px;
   width: 167px;
   height: 62px;
   background: transparent;
@@ -47,9 +47,8 @@
 
 .hero-contact-a:hover {
   background: #f14902;
-  border: none;
+  border: 3px solid #f14902;
   transition: 0.15s ease-in;
-  
 }
 
 .hero-works-a {
@@ -70,7 +69,6 @@
   background: transparent;
   border: 3px solid #f14902;
   transition: 0.15s ease-in;
-  
 }
 
 @media (max-width: 1280px) {
