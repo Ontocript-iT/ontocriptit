@@ -25,7 +25,7 @@ function Home() {
       <Contact />
       <OurWorks />
       <OurTeam />
-      <Footer/>
+      <Footer />
 
     </div>
 
