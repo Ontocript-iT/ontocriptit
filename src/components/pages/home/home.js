@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from './hero/Hero'
-import Service from './service/Service'
+import ServiceSub from './service/ServiceSub'
 import WhyUs from './whyUs/WhyUs'
 import TechStacks from './techStacks/TechStacks'
 import Contact from './contact/Contact'
@@ -15,11 +15,12 @@ import Footer from '../../shared/footer/Footer'
 
 
 function Home() {
+  const shouldShowLink = true; 
   return (
     <div>
 
       <Hero />
-      <Service />
+      <ServiceSub  showLink={shouldShowLink} />
       <WhyUs />
       <TechStacks />
       <Contact />

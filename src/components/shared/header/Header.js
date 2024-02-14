@@ -26,10 +26,10 @@ function Header() {
             <a href="#">About us</a>
           </li>
           <li>
-            <a href="#">Services</a>
+            <a href="/services">Services</a>
           </li>
           <li>
-            <a href="#">Blogs</a>
+            <a href="/blog">Blogs</a>
           </li>
           <li>
             <a href="#">Technology</a>
@@ -38,7 +38,7 @@ function Header() {
             <a href="/process">Process</a>
           </li>
           <li>
-            <a className="contactUs" href="#">
+            <a className="contactUs" href="/contact">
               Contact Us
             </a>
           </li>
