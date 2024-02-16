@@ -62,7 +62,8 @@ export default function ContactField() {
                 from_name: formData.firstName + ' ' + formData.lastName,
                 to_name: 'Recipient Name',
                 message: formData.message,
-                company: formData.companyName
+                company: formData.companyName,
+                email:formData.email
             };
 
             emailjs
