@@ -63,15 +63,15 @@ export default function ContactField() {
                 to_name: 'Recipient Name',
                 message: formData.message,
                 company: formData.companyName,
-                email:formData.email
+                email: formData.email
             };
 
             emailjs
                 .send(
-                    'service_9dp6voe',
-                    'template_q1l6nsj',
+                    'service_0fkg3eg',
+                    'template_gnw78b7',
                     templateParams,
-                    'mb9IGN-9fpdF608NA'
+                    'r5pZdnkWmzzUXQ05h'
                 )
                 .then(
                     (result) => {
