@@ -1,4 +1,4 @@
-import Home from './components/pages/home/Home';
+import Home from './components/pages/home/home';
 import Header from './components/shared/header/Header';
 import Footer from "./components/shared/footer/Footer";
 import Process from "./components/pages/process/Process";
