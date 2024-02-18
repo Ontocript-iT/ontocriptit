@@ -22,7 +22,7 @@ export default function WhyChoose() {
    <div className='card'>
 
     <div className='card-one'>
-    <Card sx={{ maxWidth: 345,border: '2px solid #F14902',boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)', transition: 'transform 0.3s',
+    <Card sx={{ maxWidth: 345,border: '3px solid #152039',boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)', transition: 'transform 0.3s',
     '&:hover': {
       transform: 'scale(1.05)', // Increase scale on hover
     }}}>
@@ -34,7 +34,7 @@ export default function WhyChoose() {
           alt="green iguana"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" fontFamily={"montserrat"} fontWeight={700} color={"#152039"}>
+          <Typography gutterBottom variant="h5" component="div" fontFamily={"montserrat"} fontWeight={700} color={"#F14902"}>
             Trusted Solutions
           </Typography>
           <Typography variant="body2" color="text.secondary" fontFamily={"montserrat"}  color={"#152039"}>
@@ -46,7 +46,7 @@ export default function WhyChoose() {
 
     </div>
     <div className='card-two'>
-    <Card sx={{ maxWidth: 345,border: '2px solid #F14902',boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)', transition: 'transform 0.3s',
+    <Card sx={{ maxWidth: 345,border: '3px solid #152039',boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)', transition: 'transform 0.3s',
     '&:hover': {
       transform: 'scale(1.05)', // Increase scale on hover
     } }}>
@@ -58,7 +58,7 @@ export default function WhyChoose() {
           alt="green iguana"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" fontFamily={"montserrat"} fontWeight={700} color={"#152039"}>
+          <Typography gutterBottom variant="h5" component="div" fontFamily={"montserrat"} fontWeight={700} color={"#F14902"}>
             Trusted Results
           </Typography>
           <Typography variant="body2" color="text.secondary" fontFamily={"montserrat"}  color={"#152039"}>
@@ -70,7 +70,7 @@ export default function WhyChoose() {
         
     </div>
     <div className='card-three'>
-    <Card sx={{ maxWidth: 345,border: '2px solid #F14902',boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)', transition: 'transform 0.3s',
+    <Card sx={{ maxWidth: 345,border: '3px solid #152039',boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)', transition: 'transform 0.3s',
     '&:hover': {
       transform: 'scale(1.05)', // Increase scale on hover
     } }}>
@@ -82,7 +82,7 @@ export default function WhyChoose() {
           alt="green iguana"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" fontFamily={"montserrat"} fontWeight={700} color={"#152039"}>
+          <Typography gutterBottom variant="h5" component="div" fontFamily={"montserrat"} fontWeight={700} color={"#F14902"}>
             Trusted Team
           </Typography>
           <Typography variant="body2" color="text.secondary" fontFamily={"montserrat"}  color={"#152039"}>
