@@ -1,0 +1,17 @@
+.aboutUs-container{
+    height: 33vh;
+    background-color: #152039;
+    margin-bottom: 40px;
+  
+    
+}
+.textContainer{
+    padding-left: 80px;
+    padding-top: 60px;
+
+    
+}
+.mainText{
+    margin-top: -25px;
+    font-size: 48px;
+}

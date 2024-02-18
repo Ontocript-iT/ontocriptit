@@ -6,6 +6,7 @@ import { RouterProvider,Route,createBrowserRouter,createRoutesFromElements } fro
 import ContactUs from './components/pages/contactus/ContactUs';
 import Service from './components/pages/services/Service';
 import Blog from './components/pages/Blog/Blog';
+import AboutUs from './components/pages/aboutUs/AboutUs';
 
 
 const router = createBrowserRouter(
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
       <Route path="/contact" element={<ContactUs/>} />
       <Route path="/services" element={<Service/>} />
       <Route path="/blog" element={<Blog/>} />
+      <Route path="/aboutus" element={<AboutUs/>} />
     </Route>
   )
 );
