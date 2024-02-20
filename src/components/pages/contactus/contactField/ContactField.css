@@ -5,7 +5,7 @@
 .textFieldSubContainer {
   display: flex;
 }
-#standard-basic {
+#firstName,#email,#lastName,#companyName {
   width: 500px;
 }
 .leftTextField {
@@ -14,8 +14,9 @@
 .leftTextField div {
   margin-bottom: 10px;
 }
-#standard-basic-text-area {
+#message {
   width: 1070px;
+  margin-bottom: -70px;
 }
 .custom-label {
   color: #152039;

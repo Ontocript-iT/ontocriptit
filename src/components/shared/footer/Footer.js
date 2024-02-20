@@ -61,11 +61,11 @@ class Footer extends Component {
                             <div>
 
                                 <ul className="footer-menu">
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Services</a></li>
+                                    <li><a href="/aboutus">About us</a></li>
+                                    <li><a href="/services">Services</a></li>
                                     <li><a href="#">Technology</a></li>
-                                    <li><a href="#">Process</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="/process">Process</a></li>
+                                    <li><a href="/contact">Contact Us</a></li>
                                 </ul>
                             </div>
 
@@ -76,7 +76,7 @@ class Footer extends Component {
                             <p className='footerHeads'>Updates</p>
                             <div>
                                 <ul className="footer-menu">
-                                    <li><a href="#">Blogs</a></li>
+                                    <li><a href="/blog">Blogs</a></li>
 
                                 </ul>
                             </div>
