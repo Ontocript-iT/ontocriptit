@@ -4,6 +4,9 @@ import Footer from '../../shared/footer/Footer'
 import HeroInAboutUs from './heroSectionInAboutUs/HeroInAboutUs'
 import SubOne from './subSectionOne/SubOne'
 import WhyChoose from './whyChoose/WhyChoose'
+import SubSectionTwo from './subSectionTwo/SubSectionTwo'
+import LeadershipTeam from './leardershipTeam/LeadershipTeam'
+import TeamPhotos from './teamPhotos/TeamPhotos'
 
 
 export default function AboutUs() {
@@ -12,6 +15,10 @@ export default function AboutUs() {
         <HeroInAboutUs/>
         <SubOne/>
         <WhyChoose/>
+        <SubSectionTwo/>
+        <LeadershipTeam/>
+        <TeamPhotos/>
+        
         
         <Footer/>
    
