@@ -7,6 +7,8 @@ import ContactUs from './components/pages/contactus/ContactUs';
 import Service from './components/pages/services/Service';
 import Blog from './components/pages/Blog/Blog';
 import AboutUs from './components/pages/aboutUs/AboutUs';
+import Technology from './components/pages/Technology/Technology';
+import PrivacyPolicy from './components/pages/Privacy-Policy/PrivacyPolicy';
 
 
 const router = createBrowserRouter(
@@ -18,6 +20,8 @@ const router = createBrowserRouter(
       <Route path="/services" element={<Service/>} />
       <Route path="/blog" element={<Blog/>} />
       <Route path="/aboutus" element={<AboutUs/>} />
+      <Route path="/technology" element={<Technology/>} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
     </Route>
   )
 );

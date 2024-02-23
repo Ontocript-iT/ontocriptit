@@ -35,7 +35,7 @@ function Header() {
             <a href="/blog">Blogs</a>
           </li>
           <li>
-            <a href="#">Technology</a>
+            <a href="/technology">Technology</a>
           </li>
           <li>
             <a href="/process">Process</a>

@@ -111,7 +111,7 @@ class Footer extends Component {
 
                             <div>
                                 <ul className="footer-menu footer-menu-privacy">
-                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="/privacy-policy">Privacy Policy</a></li>
 
                                 </ul>
                             </div>
