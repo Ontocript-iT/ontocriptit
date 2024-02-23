@@ -15,6 +15,7 @@
 .processDescriptionContainerClass {
   margin: 30px auto;
   text-align: left;
+  margin-left: -80px;
 }
 
 .processDescriptionButton {
