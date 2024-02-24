@@ -69,7 +69,7 @@ function Service({ showLink }) {
     <div className='service-section'>
       <div className='service-content'>
         <div className='service-content-title'>
-          <h3>We provide the best services</h3>
+          <h3>We Provide the Best Services</h3>
         </div>
         <div className='service-content-sub-title'>
           <span>We offer top-notch software services for your needs</span>

@@ -32,7 +32,7 @@ function OurWorks() {
             <div className='ourWorks-content'>
                 <div className='ourWorks-content-title'>
                     <h3>
-                        See our works
+                        See Our Works
                     </h3>
                 </div>
                 <div className='ourWorks-content-sub-title'>
