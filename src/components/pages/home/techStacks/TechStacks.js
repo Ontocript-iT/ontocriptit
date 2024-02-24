@@ -13,7 +13,7 @@ function TechStacks() {
       <div className='techstack-content'>
         <div className='techstack-content-title'>
           <h3>
-            Techstack we work with
+            Techstack We Work With
           </h3>
         </div>
         <div className='techstack-content-sub-title'>
