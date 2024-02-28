@@ -1,0 +1,28 @@
+.stack-container{
+    height: 110vh;
+    background-color: #152039;
+    margin-bottom: 50px;
+}
+.stack-body-upper{
+    display: flex;
+}
+.stack-body-upper{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.right-stack-body-upper{
+    margin-top: 70px;
+}
+.middle-stack-body-upper{
+    margin-top: 70px;
+    margin-right: 70px;
+}
+.left-stack-body-upper{
+    margin-top: 130px;
+    margin-right: 70px;
+}
+.second-left-stack-body-upper{
+    margin-top: 40px;
+    margin-right: -180px;
+    width: 600px;
+}
