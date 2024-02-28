@@ -5,18 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47d1d289-e402-4261-9193-f8850754a5ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ontocriptit.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/footer/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/footer/Footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/footer/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/footer/ontocript.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/arrow1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/arrow2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/arrow3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/arrow4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/arrow5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/Technology/AwsSection/AwsSection.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/Technology/AwsSection/AwsSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/Technology/HeadTop/HeadTopText.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/Technology/HeadTop/HeadTopText.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/Technology/TechStack/TechStack.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/Technology/TechStack/TechStack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/Technology/TechStackSecTwo/TechSecTwo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/Technology/TechStackSecTwo/TechSecTwo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Technology/Technology.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Technology/Technology.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/aboutUs/subSectionTwo/SubSectionTwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/aboutUs/subSectionTwo/SubSectionTwo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +40,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2blic2nDdngxjhpBykcNP2z77Av" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -47,27 +51,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Node.js.App.js.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "thilina-dev",
-    "last_opened_file_path": "J:/ontocript/projectFile/ontocriptit/src/components/shared/footer",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Node.js.App.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;thilina-dev&quot;,
+    &quot;last_opened_file_path&quot;: &quot;J:/ontocript/projectFile/ontocriptit/src/components/shared/footer&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="J:\ontocript\projectFile\ontocriptit\src\components\shared\footer" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="J:\ontocript\projectFile\ontocriptit\src\Assets" />
       <recent name="J:\ontocript\projectFile\ontocriptit\src\components\shared\footer" />
     </key>
   </component>
@@ -80,6 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1706796142183</updated>
       <workItem from="1706796143954" duration="11259000" />
+      <workItem from="1709130234493" duration="8364000" />
     </task>
     <servers />
   </component>
