@@ -6,11 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import solution from "../../../../Assets/solution.png";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import arrow1 from "../../../../Assets/arrow1.png";
-import arrow2 from "../../../../Assets/arrow2.png";
-import arrow3 from "../../../../Assets/arrow3.png";
-import arrow4 from "../../../../Assets/arrow4.png";
-import arrow5 from "../../../../Assets/arrow5.png";
+
 
 function TechStack(props) {
     return (
