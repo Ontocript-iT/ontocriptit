@@ -7,6 +7,7 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './ContactField.css';
+import Swal from 'sweetalert2'
 
 export default function ContactField() {
     const [formData, setFormData] = useState({
@@ -75,12 +76,20 @@ export default function ContactField() {
                 )
                 .then(
                     (result) => {
-                        console.log(result.text);
-                        toast.success('Message sent successfully');
+                        Swal.fire({
+                            title: "success",
+                            text: "Message sent successfully",
+                            icon: "success"
+                          });
                     },
                     (error) => {
                         console.error('Error sending message. Please try again.', error);
-                        toast.error('Error sending message. Please try again.');
+                           Swal.fire({
+                            title: "error",
+                            text: "Error sending message. Please try again",
+                            icon: "error"
+                          });
+                        // toast.error('Error sending message. Please try again.');
                     }
                 );
 
