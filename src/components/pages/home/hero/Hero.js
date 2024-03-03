@@ -12,7 +12,7 @@ function Hero() {
                     customers, and making iterative changes and improvements. Empowering
                     tomorrow through technology today, cultivating innovation, connecting
                     possibilities, and crafting your digital future with excellence and
-                    integrity."
+                    integrity"
                 </div>
                 <div className="hero-lower">
                     <div className="hero-buttons">
