@@ -22,7 +22,7 @@ export default function WhyChoose() {
    <div className='card'>
 
     <div className='card-one'>
-    <Card sx={{ maxWidth: 345,border: '3px solid #152039',boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)', transition: 'transform 0.3s',
+    <Card sx={{ maxWidth: 345,boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)', transition: 'transform 0.3s',
     '&:hover': {
       transform: 'scale(1.05)', // Increase scale on hover
     }}}>
@@ -46,7 +46,7 @@ export default function WhyChoose() {
 
     </div>
     <div className='card-two'>
-    <Card sx={{ maxWidth: 345,border: '3px solid #152039',boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)', transition: 'transform 0.3s',
+    <Card sx={{ maxWidth: 345,boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)', transition: 'transform 0.3s',
     '&:hover': {
       transform: 'scale(1.05)', // Increase scale on hover
     } }}>
@@ -70,7 +70,7 @@ export default function WhyChoose() {
         
     </div>
     <div className='card-three'>
-    <Card sx={{ maxWidth: 345,border: '3px solid #152039',boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)', transition: 'transform 0.3s',
+    <Card sx={{ maxWidth: 345,boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)', transition: 'transform 0.3s',
     '&:hover': {
       transform: 'scale(1.05)', // Increase scale on hover
     } }}>

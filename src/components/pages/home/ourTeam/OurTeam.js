@@ -39,7 +39,7 @@ function OurTeam() {
                     {team.map((t) => (
                         <div className='team-card' key={t.name}>
                             <div className='photo'>
-                                <img src={t.photo} />
+                                <img src={t.photo}  style={{filter:"grayscale(100%)"}} />
                             </div>
                             <div className='members-details'>
                                 <div className='name'>{t.name}</div>

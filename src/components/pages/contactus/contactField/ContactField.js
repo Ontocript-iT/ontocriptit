@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import banner from './banner_01.png';
+import banner from './banner_1.png';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -214,7 +214,7 @@ export default function ContactField() {
                     Submit
                 </button>
             </form>
-            <div>
+            <div className='banner-image'>
                 <img src={banner} alt="banner" />
             </div>
         </div>

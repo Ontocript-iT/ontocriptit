@@ -1,6 +1,6 @@
 .textFieldContainer {
-  margin: 20px 80px 20px 80px;
-  margin-left: 80px;
+  margin: 20px 0px 20px 80px;
+  
 }
 .textFieldSubContainer {
   display: flex;
@@ -44,3 +44,20 @@
   background-color: #152039;
   border: 1px solid #152039;
 }
+
+
+.banner-image {
+  position: relative;
+}
+
+.banner-image::before,
+.banner-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Fade from transparent to opaque */
+  z-index: 1;
+}
+
