@@ -123,3 +123,6 @@ nav ul li {
   height: auto;
   margin-top: 10px;
 }
+html {
+  scroll-behavior: smooth;
+}

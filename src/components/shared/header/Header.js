@@ -12,6 +12,7 @@ const styles = {
 };
 
 function Header() {
+  
   return (
     <AppBar position="stastic" style={styles.appBar}>
       <nav>
@@ -23,7 +24,7 @@ function Header() {
         <div className="headerLinks">
         <ul>
           <li>
-            <a href="/">Home</a>
+            <a  href="/">Home</a>
           </li>
           <li>
             <a href="/aboutus">About us</a>
