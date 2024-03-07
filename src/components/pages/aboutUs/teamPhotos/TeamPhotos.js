@@ -2,6 +2,7 @@ import React from 'react'
 import './TeamPhotos.css'
 import people from '../../../../Assets/people.png'
 import logoMockup from '../../../../Assets/logoMockup.png'
+import thilina from '../../../../Assets/thilina.jpg'
 
 
 function TeamPhotos() {

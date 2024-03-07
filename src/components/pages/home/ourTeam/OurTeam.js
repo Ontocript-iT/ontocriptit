@@ -32,9 +32,9 @@ function OurTeam() {
             <img src={people} />
             <div className='our-team-content'>
                 <h3 className='underline-title'>
-                    <span className='orange-underline'>Our</span>
-                    <span className='blue-underline'> Team</span>
+                   Our Team
                 </h3>
+                <p className='team-slogan'>Meet our team</p>
                 <div className='team-cards' >
                     {team.map((t) => (
                         <div className='team-card' key={t.name}>

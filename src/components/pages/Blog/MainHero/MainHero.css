@@ -34,3 +34,17 @@
     text-align: justify;
     width: 350px;
 }
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  h1.mainText {
+    animation: fadeIn 4s ease-in-out;
+  
+  }
