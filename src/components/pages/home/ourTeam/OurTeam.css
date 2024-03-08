@@ -1,88 +1,69 @@
-.our-team-section {
+.team-section {
+  margin-top: 500px;
   text-align: center;
-  margin-bottom: 20px;
+  height: 560px;
 }
 
-.our-team-section img {
-  width: 100%;
-}
-
-.our-team-section h3 {
+.team-section .team-title {
+  margin: 0px auto;
+  margin-top: -480px;
   font-size: 40px;
   font-weight: bold;
   color: #152039;
-  line-height: 0.1;
   text-align: center;
-  height: 450px;
 }
 
-.underline-title {
-  display: inline-block;
-  position: relative;
-  margin-bottom: 10px;
+.team-section .our-team-slogan {
+  width: 100%;
+  margin: 0px auto;
+  margin-top: -400px !important;
+  color: #152039;
 }
 
-.underline-title span {
-  position: relative;
-}
-
-.orange-underline::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 140%;
-  height: 5px;
-  background-color: #f14902;
-}
-
-.blue-underline::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 80%;
-  height: 5px;
-  background-color: #004be0;
-}
-
-.our-team-section .team-cards {
-  display: flex;
+.team-section .team-cards {
+  width: 90%;
+  margin: 0px auto;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: -400px;
+  margin-top: 30px;
   gap: 50px;
 }
 
-.our-team-section .team-cards .team-card {
+.team-section .team-cards .photo {
+  margin-left: 32px;
+  margin-bottom: 4px;
+}
+
+.team-section .slick-slide > div {
+  margin: 0 10px;
+}
+
+.team-section .team-cards .team-card {
   position: relative;
 }
 
-.our-team-section .team-cards .team-card img {
+.team-section .team-cards .team-card img {
   width: 250px;
   border-radius: 10px;
   border: 3px solid #f14902;
   object-fit: cover;
 }
 
-.our-team-section .team-cards .members-details {
+.team-section .team-cards .members-details {
   display: flex;
-  color: #152039;
+  color: #ffffff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 280px;
   height: 79px;
-  background: #d9d9d9;
+  background: #152039;
   text-align: center;
-  border: 1px solid #152039;
+  border: 1px solid #ffffff;
   border-radius: 3px;
   position: absolute;
   bottom: 1%;
   left: 50%;
   transform: translateX(-50%);
-}
-.team-slogan{
-  color:#152039 ;
 }
