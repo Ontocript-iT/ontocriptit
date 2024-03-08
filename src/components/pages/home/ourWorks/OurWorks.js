@@ -1,5 +1,6 @@
 import React from 'react'
 import './OurWorks.css'
+import people from '../../../../Assets/people.png'
 
 function OurWorks() {
 
@@ -29,6 +30,7 @@ function OurWorks() {
 
     return (
         <div className='ourWorks-section'>
+            <img src={people} />
             <div className='ourWorks-content'>
                 <div className='ourWorks-content-title'>
                     <h3>
@@ -48,13 +50,12 @@ function OurWorks() {
                                     <span className='work-title'>{w.projectTitle}</span>
                                     <a className='work-url' href={w.projecturl}>see more...</a>
                                 </div>
-                                <hr style={{ borderWidth: '3px' }} />
+                                <hr className='work-divider' />
                             </div>
                         ))
                     }
                 </div>
             </div>
-            <div />
         </div>
     )
 }
