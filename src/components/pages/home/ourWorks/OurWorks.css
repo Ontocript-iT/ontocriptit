@@ -1,7 +1,7 @@
 .ourWorks-section img {
   width: 100%;
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.6;
   object-fit: cover;
   max-height: 640px;
 }
