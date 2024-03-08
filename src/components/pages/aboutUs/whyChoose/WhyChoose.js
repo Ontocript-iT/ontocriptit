@@ -37,7 +37,7 @@ export default function WhyChoose() {
           <Typography gutterBottom variant="h5" component="div" fontFamily={"montserrat"} fontWeight={700} color={"#F14902"}>
             Trusted Solutions
           </Typography>
-          <Typography variant="body2" color="text.secondary" fontFamily={"montserrat"}  color={"#152039"}>
+          <Typography variant="body2" fontFamily={"montserrat"}  color={"#152039"}>
           We make software that fits your needs perfectly, so you get exactly what you want.
           </Typography>
         </CardContent>
@@ -61,7 +61,7 @@ export default function WhyChoose() {
           <Typography gutterBottom variant="h5" component="div" fontFamily={"montserrat"} fontWeight={700} color={"#F14902"}>
             Trusted Results
           </Typography>
-          <Typography variant="body2" color="text.secondary" fontFamily={"montserrat"}  color={"#152039"}>
+          <Typography variant="body2" fontFamily={"montserrat"}  color={"#152039"}>
           We've done this before and our clients are happy. You can count on us to get the job done well."
           </Typography>
         </CardContent>
@@ -85,7 +85,7 @@ export default function WhyChoose() {
           <Typography gutterBottom variant="h5" component="div" fontFamily={"montserrat"} fontWeight={700} color={"#F14902"}>
             Trusted Team
           </Typography>
-          <Typography variant="body2" color="text.secondary" fontFamily={"montserrat"}  color={"#152039"}>
+          <Typography variant="body2" fontFamily={"montserrat"}  color={"#152039"}>
           Our team knows what they're doing, and they'll make sure your project is done right.
           </Typography>
         </CardContent>
