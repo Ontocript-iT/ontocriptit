@@ -11,8 +11,10 @@ import Technology from './components/pages/Technology/Technology';
 import PrivacyPolicy from './components/pages/Privacy-Policy/PrivacyPolicy';
 
 
+
 const router = createBrowserRouter(
   createRoutesFromElements(
+    
     <Route path="/" element={<Header />}>
       <Route index element={<Home />} />
       <Route path="/process" element={<Process />} />
