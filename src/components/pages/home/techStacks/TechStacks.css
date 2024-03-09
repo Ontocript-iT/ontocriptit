@@ -1,6 +1,6 @@
 .techstack-section {
-  magin: 0;
-  height: 320px;
+  margin: 0;
+  height: 300px;
   padding-top: 20px;
   text-align: center;
 }
@@ -17,6 +17,11 @@
   line-height: 0.1;
   text-align: left;
 }
+
+.techstack-icons-section {
+  margin-top: 10px;
+}
+
 .techstack-content-sub-title span {
   font-size: 20px;
   color: #152039;
@@ -28,16 +33,13 @@
   word-spacing: 3px;
 }
 
-.techstack-icons-section {
-  margin-top: 20px;
-}
-
 .line-container {
   display: flex;
   align-items: center;
 }
 
 .line {
+  margin-top: 20px;
   width: 600px;
   height: 1px;
   background-color: #152039;
@@ -66,14 +68,13 @@
 
 .techstack-icons img {
   padding: 0px 25px;
-  height: 85px;
+  height: 65px;
   width: auto;
-  size: 75px;
 }
 
 .techstack-section .slick-slide > div {
   padding: 10px 20px;
-  height: 100px;
+  height: 70px;
 }
 
 @media (max-width: 960px) {
