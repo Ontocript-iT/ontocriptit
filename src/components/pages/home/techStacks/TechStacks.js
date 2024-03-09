@@ -20,7 +20,7 @@ function TechStacks() {
     const updateSettings = () => {
       const screenWidth = window.innerWidth;
       if (screenWidth < 1024) {
-        setSlidesToShow(screenWidth < 580 ? 1 : screenWidth < 768 ? 2 : screenWidth < 1100 ? 3 : 4);
+        setSlidesToShow(screenWidth < 580 ? 1 : screenWidth < 768 ? 2 : screenWidth < 1100 ? 3 : 3);
       } else {
         setSlidesToShow(4);
         setDots(false);
@@ -36,6 +36,14 @@ function TechStacks() {
     };
   }, []);
 
+  function Arrows() {
+    return (
+      <div
+        style={{ display: "none" }}
+      />
+    );
+  }
+
   const settings = {
     dots: dots,
     infinite: true,
@@ -44,6 +52,8 @@ function TechStacks() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
+    nextArrow: <Arrows />,
+    prevArrow: <Arrows />
   };
 
   return (
