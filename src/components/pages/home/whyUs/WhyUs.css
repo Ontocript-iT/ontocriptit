@@ -58,7 +58,8 @@
 }
 
 .whyus-card.expertise {
-  background-image: url("");
+  background-image: url("../../../../Assets/Expertise.jpg");
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .whyus-card.innovation {
@@ -83,16 +84,17 @@
 }
 
 @media (max-width: 768px) {
-  .first-row, .second-row,.third-row{
-    flex-direction:column;
+  .first-row,
+  .second-row,
+  .third-row {
+    flex-direction: column;
   }
   .whyUs-section {
     height: auto;
     padding-top: 20px;
     text-align: center;
   }
-  .whyus-card{
-    width:100%;
+  .whyus-card {
+    width: 100%;
   }
 }
-
