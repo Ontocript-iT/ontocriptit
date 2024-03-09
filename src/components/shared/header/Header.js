@@ -38,9 +38,9 @@ function Header() {
           <li>
             <a href="/technology">Technology</a>
           </li>
-          <li>
+          {/* <li>
             <a href="/process">Process</a>
-          </li>
+          </li> */}
           <li>
             <a className="contactUs" href="/contact">
               Contact Us
