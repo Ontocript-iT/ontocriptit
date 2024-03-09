@@ -17,21 +17,21 @@ import AnimatedPage from '../../AnimatedPage'
 
 
 function Home() {
-  const shouldShowLink = true; 
+  const shouldShowLink = true;
   return (
     <div>
 
       <AnimatedPage>
 
-      <Hero />
-      <ServiceSub  showLink={shouldShowLink} />
-      <WhyUs />
-      <TechStacks />
-      <Contact />
+        <Hero />
+        <ServiceSub showLink={shouldShowLink} />
+        <WhyUs />
+        <TechStacks />
+        {/* <Contact />
       <OurWorks />
       <OurTeam />
       <Contact/>
-      <Footer />
+      <Footer /> */}
       </AnimatedPage>
 
     </div>

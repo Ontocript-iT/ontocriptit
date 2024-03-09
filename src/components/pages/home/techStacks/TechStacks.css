@@ -88,19 +88,30 @@
   .line {
     width: 50%;
   }
+  .techstack-icons-section {
+    margin-bottom: 100px;
+  }
 
   .end-line {
     width: 100%;
   }
   .techstack-icons-section {
     width: 95%;
+    height: auto;
     magin: 0;
     text-align: center;
   }
   .techstack-icons img {
-    width: 100px;
-    height: auto;
+    width: auto;
+    height: 65px;
     padding: 5px 10px;
+  }
+  .techstack-section .slick-slide > div {
+    padding: 10px 20px;
+    height: 100px;
+  }
+  .techstack-section {
+    height: 400px;
   }
 }
 
@@ -111,9 +122,6 @@
   .techstack-content-sub-title span {
     text-align: center;
   }
-  .line {
-    width: 60%;
-  }
   .techstack-icons-section {
     padding-left: 20px;
     width: 90%;
@@ -121,9 +129,9 @@
     text-align: center;
   }
   .techstack-icons img {
-    width: 65px;
-    height: auto;
-    padding: 5px;
+    width: auto;
+    height: 65px;
+    padding: 25px;
   }
   .techstack-content-title h3 {
     line-height: 0.95;
@@ -131,7 +139,11 @@
   .techstack-section .techstack-content {
     padding-left: 0px;
   }
-  .techstack-icons {
-    width: 100%;
+  .techstack-section {
+    height: 450px;
+  }
+  .techstack-section .slick-slide > div {
+    padding: 10px 20px;
+    height: 120px;
   }
 }
