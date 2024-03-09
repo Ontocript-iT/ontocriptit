@@ -30,6 +30,7 @@ function Home() {
       <Contact />
       <OurWorks />
       <OurTeam />
+      <Contact/>
       <Footer />
       </AnimatedPage>
 

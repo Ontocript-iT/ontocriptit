@@ -12,6 +12,8 @@ import {
     faMedium,
 } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
+import Contact from '../../pages/home/contact/Contact';
+
 
 
 class Footer extends Component {
@@ -131,7 +133,9 @@ class Footer extends Component {
                 {/*<div className="logo1">*/}
                 {/*    <img src={logo1} alt="Logo"/>*/}
                 {/*</div>*/}
+                
             </div>
+          
         );
     }
 }

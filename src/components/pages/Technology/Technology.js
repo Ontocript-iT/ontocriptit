@@ -7,6 +7,8 @@ import TechSecTwo from "./TechStackSecTwo/TechSecTwo";
 import AwsSection from "./AwsSection/AwsSection";
 import BottomSec from './BottomSec/BottomSec';
 import AnimatedPage from '../../AnimatedPage';
+import Contact from '../home/contact/Contact';
+
 
 export default function Technology() {
   return (
@@ -19,6 +21,7 @@ export default function Technology() {
         <AwsSection/>
         <BottomSec/>
         <Footer/>
+        <Contact/>
         </AnimatedPage>
       
     </div>

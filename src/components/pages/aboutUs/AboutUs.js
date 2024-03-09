@@ -8,6 +8,8 @@ import SubSectionTwo from './subSectionTwo/SubSectionTwo'
 import LeadershipTeam from './leardershipTeam/LeadershipTeam'
 import TeamPhotos from './teamPhotos/TeamPhotos'
 import AnimatedPage from '../../AnimatedPage'
+import Contact from '../home/contact/Contact'
+
 
 
 
@@ -22,7 +24,7 @@ export default function AboutUs() {
         <LeadershipTeam/>
         <TeamPhotos/>
         
-        
+        <Contact/>
         <Footer/>
 
         </AnimatedPage>

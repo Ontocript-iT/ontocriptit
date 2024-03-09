@@ -11,7 +11,7 @@ function Contact() {
                     </h3>
                 </div>
                 <div className='contact-content-sub-title'>
-                    <span>
+                    <span style={{textAlign:"justify"}}>
                         We're passionate about connecting with new clients and our community. If you have questions about creating digital products or anything else, feel free to reach out – we'd love to hear from you!
                     </span>
                 </div>

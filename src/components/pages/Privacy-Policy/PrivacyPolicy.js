@@ -3,6 +3,8 @@ import TopHero from './TopHero/TopHero'
 import Footer from '../../shared/footer/Footer'
 import PrivacyAndPolicies from './PrivacyAndPolicy/PrivacyAndPolicies'
 import AnimatedPage from '../../AnimatedPage'
+import Contact from '../home/contact/Contact'
+
 
 export default function PrivacyPolicy() {
   return (
@@ -10,7 +12,7 @@ export default function PrivacyPolicy() {
       <AnimatedPage>
         <TopHero/>
         <PrivacyAndPolicies/>
-        
+        <Contact/>
         <Footer/>
 
         </AnimatedPage>
