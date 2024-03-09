@@ -7,8 +7,8 @@ export default function LeadershipTeam() {
 
         <div className='text-container'>
 
-            <h1 className='topic'>Our Leadership</h1>
-            <p className='sub-text'>Under our leadership, we make new things, do them really well, and help businesses move forward confidently and successfully</p>
+            <h1 className='leadership-topic'>Our Leadership</h1>
+            <p className='leadership-sub-text'>Under our leadership, we make new things, do them really well, and help businesses move forward confidently and successfully</p>
 
         </div>
         
