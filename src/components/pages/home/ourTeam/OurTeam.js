@@ -74,7 +74,7 @@ function OurTeam() {
                     <h3 className='team-title'>
                         Our Team
                     </h3>
-                    <span className='our-team-slogan'>Meet our team</span>
+                    <span  className='our-team-slogan'>Meet our team</span>
                 </div>
                 <div className='team-cards' >
                     <Slider {...settings}>
