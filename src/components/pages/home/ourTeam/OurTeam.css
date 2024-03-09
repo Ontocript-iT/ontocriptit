@@ -67,3 +67,7 @@
   left: 50%;
   transform: translateX(-50%);
 }
+.our-team-slogan{
+  font-size: 20px;
+  font-weight: 600;
+}
