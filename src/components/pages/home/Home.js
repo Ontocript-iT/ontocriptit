@@ -22,16 +22,15 @@ function Home() {
     <div>
 
       <AnimatedPage>
-
         <Hero />
         <ServiceSub showLink={shouldShowLink} />
         <WhyUs />
         <TechStacks />
-        {/* <Contact />
-      <OurWorks />
-      <OurTeam />
-      <Contact/>
-      <Footer /> */}
+        <Contact />
+        <OurWorks />
+        <OurTeam />
+        <Contact />
+        <Footer />
       </AnimatedPage>
 
     </div>

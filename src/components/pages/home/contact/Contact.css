@@ -49,3 +49,46 @@
   align-items: center;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  .content-section-homepage {
+    padding-left: 40px;
+  }
+
+  .content-section-homepage .contact-content-sub-title span {
+    width: 500px;
+  }
+  .contact-section .contact-button {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .content-section-homepage {
+    padding-left: 20px;
+    height: 250px !important;
+    background: red;
+  }
+
+  .contact-section .content-section-homepage .contact-content-title h3 {
+    font-size: 30px;
+  }
+
+  .contact-section .content-section-homepage .contact-content-sub-title span {
+    font-size: 16px;
+    width: 150px;
+  }
+
+  .contact-section .contact-button {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .content-section-homepage .contact-button .contact-email,
+  .content-section-homepage .contact-button .contact-phone {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+  }
+}
