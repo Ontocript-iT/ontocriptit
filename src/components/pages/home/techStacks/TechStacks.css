@@ -58,15 +58,22 @@
 
 .techstack-icons {
   text-align: center;
-  display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 88%;
+  margin-left: 15px;
 }
 
 .techstack-icons img {
-  padding: 25px;
-  height: 50px;
+  padding: 0px 25px;
+  height: 85px;
+  width: auto;
+  size: 75px;
+}
+
+.techstack-section .slick-slide > div {
+  padding: 10px 20px;
+  height: 100px;
 }
 
 @media (max-width: 960px) {

@@ -16,7 +16,7 @@ function Service({ showLink }) {
     const updateSettings = () => {
       const screenWidth = window.innerWidth;
       if (screenWidth < 1024) {
-        setSlidesToShow(screenWidth < 580 ? 1 : screenWidth < 768 ? 2 : screenWidth < 1100 ?3 : 4);
+        setSlidesToShow(screenWidth < 580 ? 1 : screenWidth < 768 ? 2 : screenWidth < 1100 ? 3 : 4);
       } else {
         setSlidesToShow(4);
         setDots(false);
@@ -88,11 +88,11 @@ function Service({ showLink }) {
           </Slider>
         </div>
         <div className='all-services'>
-        {showLink && (
-        <a href='/services' className='see-all-services'>
-          See All Services
-        </a>
-      )}
+          {showLink && (
+            <a href='/services' className='see-all-services'>
+              See All Services
+            </a>
+          )}
         </div>
       </div>
     </div>
