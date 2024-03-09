@@ -46,6 +46,14 @@
   cursor: pointer;
 }
 
+.service-card {
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
 .service-cards .service-title {
   font-size: 19px;
   font-weight: bold;
