@@ -3,6 +3,7 @@
   height: 300px;
   padding-top: 20px;
   text-align: center;
+  margin-bottom: -15px;
 }
 
 .techstack-section .techstack-content {
@@ -74,7 +75,7 @@
 
 .techstack-section .slick-slide > div {
   padding: 10px 20px;
-  height: 70px;
+  height: 65px;
 }
 
 @media (max-width: 960px) {
