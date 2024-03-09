@@ -6,6 +6,15 @@ import CardMedia from "@mui/material/CardMedia";
 import solution from "../../../../Assets/solution.png";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
+import Angular from "../../../../Assets/Angular_tech.png";
+import ReactJs from "../../../../Assets/Reactjs_tech.png";
+import Mongodb from "../../../../Assets/mongodb_tech.png";
+import Springboot from "../../../../Assets/springboot_tech.png";
+import Mysql from "../../../../Assets/mysql_tech.png";
+
+
+
+
 
 
 function TechStack(props) {
@@ -32,7 +41,7 @@ function TechStack(props) {
                             <CardMedia
                                 component="img"
                                 height="140"
-                                image={solution}
+                                image={Angular}
                                 alt="green iguana"
                             />
                             <CardContent>
@@ -65,7 +74,7 @@ function TechStack(props) {
                             <CardMedia
                                 component="img"
                                 height="140"
-                                image={solution}
+                                image={ReactJs}
                                 alt="green iguana"
                             />
                             <CardContent>
@@ -104,7 +113,7 @@ function TechStack(props) {
                             <CardMedia
                                 component="img"
                                 height="140"
-                                image={solution}
+                                image={Springboot}
                                 alt="green iguana"
                             />
                             <CardContent>

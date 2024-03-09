@@ -6,6 +6,8 @@ import CardMedia from "@mui/material/CardMedia";
 import solution from "../../../../Assets/solution.png";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
+import Mongodb from "../../../../Assets/mongodb_tech.png";
+import Mysql from "../../../../Assets/mysql_tech.png";
 
 function TechSecTwo(props) {
     return (
@@ -26,18 +28,17 @@ function TechSecTwo(props) {
                             <CardMedia
                                 component="img"
                                 height="140"
-                                image={solution}
+                                image={Mongodb}
                                 alt="green iguana"
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div" fontFamily={"montserrat"}
                                             fontWeight={700} color={"#F14902"}>
-                                    Angular
+                                    MongoDB
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary" fontFamily={"montserrat"}
                                             color={"#152039"}>
-                                    Angular is a platform and framework for building single-page client applications
-                                    using HTML and TypeScript.
+                                  MongoDB is an open-source NoSQL database known for its document-oriented model and scalability.
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -61,18 +62,17 @@ function TechSecTwo(props) {
                             <CardMedia
                                 component="img"
                                 height="140"
-                                image={solution}
+                                image={Mysql}
                                 alt="green iguana"
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div" fontFamily={"montserrat"}
                                             fontWeight={700} color={"#F14902"}>
-                                    Angular
+                                    MySql
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary" fontFamily={"montserrat"}
                                             color={"#152039"}>
-                                    Angular is a platform and framework for building single-page client applications
-                                    using HTML and TypeScript.
+                                    MySQL is an open-source relational database management system based on SQL.
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
