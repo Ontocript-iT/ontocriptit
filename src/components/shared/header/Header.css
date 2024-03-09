@@ -2,14 +2,14 @@ body {
   margin: 0;
   padding: 0;
 }
-.contactUs {
+#contactUs {
   border: 1px solid #f14902;
   padding: 10px;
   border-radius: 50px;
   background-color: #f14902;
   color: aliceblue;
 }
-.contactUs:hover {
+#contactUs:hover {
   color: #152039;
 }
 
@@ -125,4 +125,7 @@ nav ul li {
 }
 html {
   scroll-behavior: smooth;
+}
+.activeLink {
+  color: #f14902; /* Change this to whatever color you want */
 }

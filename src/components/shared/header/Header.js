@@ -3,7 +3,7 @@ import { AppBar, Toolbar, Button } from "@mui/material";
 import "./Header.css";
 import logo from "./ontocript.png"; // Assuming NavigationBar.js is in the components directory
 import { Outlet } from "react-router-dom";
-import { Link } from 'react-router-dom'; 
+import { Link,useLocation  } from 'react-router-dom'; 
 
 const styles = {
   appBar: {
@@ -12,8 +12,13 @@ const styles = {
 };
 
 function Header() {
+  const location = useLocation();
+  const isActive = location.pathname === '/blog'
+
   
   return (
+
+
     <AppBar position="stastic" style={styles.appBar}>
       <nav>
         <div className="logo">
@@ -24,25 +29,25 @@ function Header() {
         <div className="headerLinks">
         <ul>
           <li>
-            <a  href="/">Home</a>
+            <a  href="/"  className={location.pathname === '/' ? 'activeLink' : ''}>Home</a>
           </li>
           <li>
-            <a href="/aboutus">About us</a>
+            <a href="/aboutus" className={location.pathname === '/aboutus' ? 'activeLink' : ''}>About us</a>
           </li>
           <li>
-            <a href="/services">Services</a>
+            <a href="/services" className={location.pathname === '/services' ? 'activeLink' : ''}>Services</a>
           </li>
           <li>
-            <a href="/blog">Blogs</a>
+            <a href="/blog" className={isActive ? 'activeLink' : ''}>Blogs</a>
           </li>
           <li>
-            <a href="/technology">Technology</a>
+            <a href="/technology" className={location.pathname === '/technology' ? 'activeLink' : ''}>Technology</a>
           </li>
           {/* <li>
             <a href="/process">Process</a>
           </li> */}
           <li>
-            <a className="contactUs" href="/contact">
+            <a  id="contactUs" href="/contact" className={location.pathname === '/contact' ? 'activeLink' : ''}>
               Contact Us
             </a>
           </li>
