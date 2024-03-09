@@ -20,8 +20,9 @@ export default function Technology() {
         <TechSecTwo/>
         <AwsSection/>
         <BottomSec/>
-        <Footer/>
         <Contact/>
+        <Footer/>
+       
         </AnimatedPage>
       
     </div>
