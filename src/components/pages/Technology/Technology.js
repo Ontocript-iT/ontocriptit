@@ -6,10 +6,12 @@ import TechStack from "./TechStack/TechStack";
 import TechSecTwo from "./TechStackSecTwo/TechSecTwo";
 import AwsSection from "./AwsSection/AwsSection";
 import BottomSec from './BottomSec/BottomSec';
+import AnimatedPage from '../../AnimatedPage';
 
 export default function Technology() {
   return (
     <div>
+      <AnimatedPage>
         <TopHero/>
         <HeadTopText/>
         <TechStack/>
@@ -17,6 +19,7 @@ export default function Technology() {
         <AwsSection/>
         <BottomSec/>
         <Footer/>
+        </AnimatedPage>
       
     </div>
   )

@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import Footer from "../../shared/footer/Footer";
 import Contact from "../home/contact/Contact";
 import TopHero from "./TopHero/TopHero";
+import AnimatedPage from "../../AnimatedPage";
 
 
 
@@ -15,7 +16,7 @@ import TopHero from "./TopHero/TopHero";
 export default function Process() {
   return (
     <>
- 
+       <AnimatedPage>
       <TopHero/>
       <ProcessDescription />
       <Typography
@@ -31,6 +32,7 @@ export default function Process() {
       <Contact />
       <MainProductGrid />
       <Footer/>
+      </AnimatedPage>
     </>
   );
 }
