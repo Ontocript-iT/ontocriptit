@@ -17,8 +17,8 @@ function TechSecTwo(props) {
                 <div className="left-stack-body-bottom">
                     <Card sx={{
                         maxWidth: 345,
-                        border: '3px solid #F14902',
-                        boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)',
+                       
+                        boxShadow: '10px 25px 105px rgba(0, 0, 0, 0.9)',
                         transition: 'transform 0.3s',
                         '&:hover': {
                             transform: 'scale(1.05)', // Increase scale on hover
@@ -51,8 +51,7 @@ function TechSecTwo(props) {
 
                     <Card sx={{
                         maxWidth: 345,
-                        border: '3px solid #F14902',
-                        boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)',
+                        boxShadow: '10px 25px 105px rgba(0, 0, 0, 0.9)',
                         transition: 'transform 0.3s',
                         '&:hover': {
                             transform: 'scale(1.05)', // Increase scale on hover

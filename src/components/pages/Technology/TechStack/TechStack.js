@@ -30,8 +30,7 @@ function TechStack(props) {
 
                     <Card sx={{
                         maxWidth: 345,
-                        border: '3px solid #F14902',
-                        boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)',
+                        boxShadow: '10px 5px 15px rgba(241, 73, 2, 0.5)',
                         transition: 'transform 0.3s',
                         '&:hover': {
                             transform: 'scale(1.05)', // Increase scale on hover
@@ -63,8 +62,7 @@ function TechStack(props) {
                 <div className="right-stack-body-upper">
                     <Card sx={{
                         maxWidth: 345,
-                        border: '3px solid #F14902',
-                        boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)',
+                        boxShadow: '10px 5px 15px rgba(241, 73, 2, 0.5)',
                         transition: 'transform 0.3s',
                         '&:hover': {
                             transform: 'scale(1.05)', // Increase scale on hover
@@ -102,8 +100,7 @@ function TechStack(props) {
 
                     <Card sx={{
                         maxWidth: 345,
-                        border: '3px solid #F14902',
-                        boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)',
+                        boxShadow: '10px 5px 15px rgba(204, 229, 255, 0.5)',
                         transition: 'transform 0.3s',
                         '&:hover': {
                             transform: 'scale(1.05)', // Increase scale on hover
@@ -143,14 +140,32 @@ function TechStack(props) {
                 </div>
                 <div className="right-stack-body-upper">
 
-                    <h1 style={{
+
+                <div className='text-anim-com-name' style={{
                         fontSize: "80px",
                         marginTop: "-10px",
                         color: "#F14902",
+                        fontWeight:"700",
                         marginLeft: "-70px"
-                    }}>Ontocript iT TechStacks</h1>
+                    }}>OntoCript iT  </div> 
 
+               <div className='text-anim-com-name'> 
+               <span className='text-anim-text' style={{
+                        fontSize: "80px",
+                        marginTop: "-10px",
+                        color: "#ffffff",
+                        marginLeft: "100px",
+                        fontWeight:"600",
+
+                    }}>  TechStack</span>
+            </div>
+
+                 
+                
                    
+
+
+
                 </div>
             </div>
 
