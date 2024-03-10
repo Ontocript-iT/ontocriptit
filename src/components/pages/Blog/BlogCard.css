@@ -1,0 +1,21 @@
+.blog-read-more-middle:hover {
+  color: #152039;
+  font-weight: 500;
+}
+.blog-content-text-middle {
+  font-size: 16px;
+  text-align: justify;
+  width: 500px;
+}
+.blog-read-more-middle {
+  color: #f14902;
+  font-weight: 500;
+  text-decoration: none;
+}
+.blog-read-more:hover {
+  color: #fafafa;
+}
+
+img {
+  border-radius: 3%;
+}

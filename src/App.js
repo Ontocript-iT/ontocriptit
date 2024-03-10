@@ -1,5 +1,5 @@
-import Home from './components/pages/home/Home';
-import Header from './components/shared/header/Header';
+import Home from "./components/pages/home/Home";
+import Header from "./components/shared/header/Header";
 import Footer from "./components/shared/footer/Footer";
 import Process from "./components/pages/process/Process";
 import { RouterProvider,Route,createBrowserRouter,createRoutesFromElements } from 'react-router-dom';
@@ -28,9 +28,7 @@ const router = createBrowserRouter(
   )
 );
 function App() {
-
-  return <RouterProvider router={router}/>
-
+  return <RouterProvider router={router} />;
 }
 
 export default App;
