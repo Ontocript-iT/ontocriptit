@@ -1,7 +1,7 @@
 .ourWorks-section img {
   width: 100%;
-  background-color: black;
-  opacity: 0.6;
+  background-color: #152039;
+  opacity: 0.3;
   object-fit: cover;
   max-height: 640px;
 }
@@ -43,7 +43,7 @@
   font-size: 24px;
   color: #f14902;
   display: flex;
-  text-weight: 600px;
+ font-weight: 600;
   justify-content: flex-start;
   text-align: left;
   width: 860px;
