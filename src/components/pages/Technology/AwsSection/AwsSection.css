@@ -2,3 +2,6 @@
     font-size: 40px;
     color: #152039;
 }
+.cloud-sec-container{
+    display: flex;
+}

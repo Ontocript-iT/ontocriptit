@@ -29,7 +29,7 @@ function TechStack(props) {
                 <div className="middle-stack-body-upper">
 
                     <Card sx={{
-                        maxWidth: 345,
+                        maxWidth: 445,
                         boxShadow: '10px 5px 15px rgba(241, 73, 2, 0.5)',
                         transition: 'transform 0.3s',
                         '&:hover': {
@@ -61,7 +61,7 @@ function TechStack(props) {
                 </div>
                 <div className="right-stack-body-upper">
                     <Card sx={{
-                        maxWidth: 345,
+                        maxWidth: 445,
                         boxShadow: '10px 5px 15px rgba(241, 73, 2, 0.5)',
                         transition: 'transform 0.3s',
                         '&:hover': {
