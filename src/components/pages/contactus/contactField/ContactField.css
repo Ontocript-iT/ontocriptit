@@ -1,56 +1,63 @@
-.textFieldContainer{
-    margin: 20px 80px 20px 80px;
-    margin-left: 80px;
-   
- 
-}
-.textFieldSubContainer{
-    display: flex;
-
-    
-}
-#standard-basic{
-    width: 500px;
+.textFieldContainer {
+  margin: 20px 0px 20px 80px;
   
-   
 }
-.leftTextField{
-    margin-right: 70px;
-
+.textFieldSubContainer {
+  display: flex;
 }
-.leftTextField div{
-    margin-bottom: 10px;
+#firstName,#email,#lastName,#companyName {
+  width: 500px;
 }
-#standard-basic-text-area{
-    width: 1070px;
-   
-    
-    
+.leftTextField {
+  margin-right: 70px;
+}
+.leftTextField div {
+  margin-bottom: 10px;
+}
+#message {
+  width: 1070px;
+  margin-bottom: -70px;
 }
 .custom-label {
-    color: #152039;
-    font-family: "Montserrat", sans-serif;
-    font-size: small;
-}  
-.checkBox{
-    margin-top: 40px;
-    margin-bottom: 20px;
+  color: #152039;
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
 }
-.subText{
-    color: #152039;
+.checkBox {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.subText {
+  color: #152039;
 }
 
 .submitBtn {
-    border: 1px solid #f14902;
-    padding: 10px 20px;
-    border-radius: 15px;
-    background-color: #f14902;
-    color: aliceblue;
-    margin-bottom: 50px;
-  }
-  .submitBtn:hover{
-    background-color: #152039;
-    border: 1px solid #152039;
-    
+  border: 1px solid #f14902;
+  padding: 10px 35px;
+  border-radius: 50px;
+  font-size: 20px;
+  background-color: #f14902;
+  color: aliceblue;
+  margin-bottom: 50px;
+}
+.submitBtn:hover {
+  background-color: #152039;
+  border: 1px solid #152039;
+}
 
-  }
+
+.banner-image {
+  position: relative;
+}
+
+.banner-image::before,
+.banner-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Fade from transparent to opaque */
+  z-index: 1;
+}
+

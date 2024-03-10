@@ -16,7 +16,7 @@ function Service({ showLink }) {
     const updateSettings = () => {
       const screenWidth = window.innerWidth;
       if (screenWidth < 1024) {
-        setSlidesToShow(screenWidth < 580 ? 1 : screenWidth < 768 ? 2 : screenWidth < 1100 ?3 : 4);
+        setSlidesToShow(screenWidth < 580 ? 1 : screenWidth < 768 ? 2 : screenWidth < 1100 ? 3 : 4);
       } else {
         setSlidesToShow(4);
         setDots(false);
@@ -69,7 +69,7 @@ function Service({ showLink }) {
     <div className='service-section'>
       <div className='service-content'>
         <div className='service-content-title'>
-          <h3>We provide the best services</h3>
+          <h3>We Provide the Best Services</h3>
         </div>
         <div className='service-content-sub-title'>
           <span>We offer top-notch software services for your needs</span>
@@ -88,11 +88,11 @@ function Service({ showLink }) {
           </Slider>
         </div>
         <div className='all-services'>
-        {showLink && (
-        <a href='/services' className='see-all-services'>
-          See All Services
-        </a>
-      )}
+          {showLink && (
+            <a href='/services' className='see-all-services'>
+              See All Services
+            </a>
+          )}
         </div>
       </div>
     </div>

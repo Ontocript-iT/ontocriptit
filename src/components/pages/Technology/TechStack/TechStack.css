@@ -1,0 +1,82 @@
+.stack-container{
+    height: 110vh;
+    background-color: #152039;
+    margin-bottom: 50px;
+}
+.stack-body-upper{
+    display: flex;
+}
+.stack-body-upper{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.right-stack-body-upper{
+    margin-top: 70px;
+}
+.middle-stack-body-upper{
+    margin-top: 70px;
+    margin-right: 70px;
+}
+.left-stack-body-upper{
+    margin-top: 130px;
+    margin-right: 70px;
+    overflow:hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+}
+.second-left-stack-body-upper{
+    margin-top: 40px;
+    margin-right: -180px;
+    width: 600px;
+}
+
+
+
+
+.text-anim-com-name {
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+    
+  }
+  
+  .text-anim-com-name:first-of-type {    /* For increasing performance 
+                         ID/Class should've been used. 
+                         For a small demo 
+                         it's okaish for now */
+    animation: showup 7s infinite;
+  }
+  
+  .text-anim-com-name:last-of-type {
+    width:0px;
+    animation: reveal 7s infinite;
+  }
+  
+  .text-anim-com-name:last-of-type span {
+    margin-left:-355px;
+    animation: slidein 7s infinite;
+  }
+  
+  @keyframes showup {
+      0% {opacity:0;}
+      20% {opacity:1;}
+      80% {opacity:1;}
+      100% {opacity:0;}
+  }
+  
+  @keyframes slidein {
+      0% { margin-left:-800px; }
+      20% { margin-left:-800px; }
+      35% { margin-left:0px; }
+      100% { margin-left:0px; }
+  }
+  
+  @keyframes reveal {
+      0% {opacity:0;width:0px;}
+      20% {opacity:1;width:0px;}
+      30% {width:355px;}
+      80% {opacity:1;}
+      100% {opacity:0;width:355px;}
+  }
+  

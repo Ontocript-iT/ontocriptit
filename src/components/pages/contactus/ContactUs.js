@@ -4,6 +4,7 @@ import Header from '../../shared/header/Header'
 import ContactInWhite from './contactInWhite/ContactInWhite'
 import ContactField from './contactField/ContactField'
 import Footer from '../../shared/footer/Footer'
+import AnimatedPage from '../../AnimatedPage'
 
 
 
@@ -15,11 +16,12 @@ import Footer from '../../shared/footer/Footer'
 export default function ContactUs() {
   return (
     <div>
-     
+     <AnimatedPage>
       <TopHero/>
       <ContactInWhite/>
       <ContactField/>
       <Footer/>
+      </AnimatedPage>
       
       
 

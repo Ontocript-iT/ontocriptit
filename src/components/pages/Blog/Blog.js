@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
-import MainHero from "./MainHero/MainHero";
-import Footer from "../../shared/footer/Footer";
-import MiddleBlogs from "./MiddleBlogs/MiddleBlogs";
-import { createClient } from "contentful";
+import React from 'react'
+import MainHero from './MainHero/MainHero'
+import Footer from '../../shared/footer/Footer'
+import MiddleBlogs from './MiddleBlogs/MiddleBlogs'
+import AnimatedPage from '../../AnimatedPage'
+import Contact from '../home/contact/Contact'
 
 export default function Blog() {
   const [blogs, setBlogs] = useState([]);
@@ -27,9 +28,14 @@ export default function Blog() {
 
   return (
     <div>
-      <MainHero blogs={blogs} />
-      <MiddleBlogs blogs={blogs} />
-      <Footer />
+      <AnimatedPage>
+       <MainHero/>
+       <MiddleBlogs/>
+       <Contact/>
+       <Footer/>
+       </AnimatedPage>
+
+      
     </div>
   );
 }

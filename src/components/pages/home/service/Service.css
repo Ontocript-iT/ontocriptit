@@ -36,7 +36,7 @@
   margin: 35px auto;
 }
 
-.slick-slide > div {
+.service-section .slick-slide > div {
   margin: 0 10px;
   height: 276px;
   width: 240px;

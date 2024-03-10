@@ -6,14 +6,18 @@ import { CssBaseline, Container, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import Footer from "../../shared/footer/Footer";
 import Contact from "../home/contact/Contact";
+import TopHero from "./TopHero/TopHero";
+import AnimatedPage from "../../AnimatedPage";
+
+
 
 
 
 export default function Process() {
   return (
     <>
-      <CssBaseline />
-      <ProcessHeaderSection />
+       <AnimatedPage>
+      <TopHero/>
       <ProcessDescription />
       <Typography
         variant="h1"
@@ -28,6 +32,7 @@ export default function Process() {
       <Contact />
       <MainProductGrid />
       <Footer/>
+      </AnimatedPage>
     </>
   );
 }
@@ -113,20 +118,6 @@ function ProcessDescription() {
   );
 }
 
-function ProcessHeaderSection() {
-  return (
-    <Container className="processHeaderContainerClass" maxWidth="xl">
-      <Typography
-        variant="h1"
-        fontSize={46}
-        textAlign={"left"}
-        fontFamily={"montserrat"}
-      >
-        ONTOCRIPT iT PROCESS
-      </Typography>
-    </Container>
-  );
-}
 
 function ProductHeaderSection() {
   return (

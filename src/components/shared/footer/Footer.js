@@ -1,7 +1,18 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Footer.css';
 import logo1 from "../footer/1.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faFacebook,
+    faInstagram,
+    faLinkedin,
+    faYoutube,
+    faTiktok,
+    faMedium,
+} from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
+import Contact from '../../pages/home/contact/Contact';
 
 
 
@@ -42,52 +53,47 @@ class Footer extends Component {
     render() {
         return (
             <div className='footer-container'>
-                
-                
+
+
                 <div className='footerBody'>
                     <div className='footerMenu'>
-                    <div >
-                    <p className='footerHeadsCompany'>Company</p> 
-                    
-                        <div>
-                     
-                            <ul className="footer-menu">
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Technology</a></li>
-                                <li><a href="#">Process</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                            </ul>
-                        </div>
-                        
-                        
-                    
-                    </div>
-                    <div className='footerSubBody'>
-                        <p className='footerHeads'>Updates</p>
-                        <div>
-                            <ul className="footer-menu">
-                                <li><a href="#">Blogs</a></li>
+                        <div >
+                            <p className='footerHeadsCompany'>Company</p>
 
-                            </ul>
-                        </div>
+                            <div>
 
-                    </div>
-                    <div>
-                        <p className='footerHeads'>Connec</p>
-                     
-                        
-                        <div>
-                            <ul className="footer-menu">
-                                <li><a href="#">Blogs</a></li>
-                              
+                                <ul className="footer-menu">
+                                    <li><a href="/aboutus">About us</a></li>
+                                    <li><a href="/services">Services</a></li>
+                                    <li><a href="#">Technology</a></li>
+                                    {/* <li><a href="/process">Process</a></li> */}
+                                    <li><a href="/contact">Contact Us</a></li>
+                                </ul>
+                            </div>
 
-                            </ul>
+
+
                         </div>
-                     
+                        <div className='footerSubBody'>
+                            <p className='footerHeads'>Updates</p>
+                            <div>
+                                <ul className="footer-menu">
+                                    <li><a href="/blog">Blogs</a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div className='footer-menu-social-icons'>
+                            <Link to="#" target='_blank'><FontAwesomeIcon icon={faFacebook} className='fa-i' /></Link>
+                            <Link to="#" target='_blank'><FontAwesomeIcon icon={faInstagram} className='fa-i' /></Link>
+                            <Link to="#" target='_blank'><FontAwesomeIcon icon={faLinkedin} className='fa-i' /></Link>
+                            <Link to="#" target='_blank'><FontAwesomeIcon icon={faYoutube} className='fa-i' /></Link>
+                            <Link to="#" target='_blank'><FontAwesomeIcon icon={faTiktok} className='fa-i' /></Link>
+                            <Link to="#" target='_blank'><FontAwesomeIcon icon={faMedium} className='fa-i' /></Link>
+                        </div>
                     </div>
-                    </div>
-                 
+
                     <div className='footerDec'>
                         <p>Empowering Ideas,Engineering Success</p>
 
@@ -106,8 +112,8 @@ class Footer extends Component {
                         <div className='allRights-container'>
 
                             <div>
-                                <ul className="footer-menu">
-                                    <li><a href="#">Privacy Policy</a></li>
+                                <ul className="footer-menu footer-menu-privacy">
+                                    <li><a href="/privacy-policy">Privacy Policy</a></li>
 
                                 </ul>
                             </div>
@@ -127,7 +133,9 @@ class Footer extends Component {
                 {/*<div className="logo1">*/}
                 {/*    <img src={logo1} alt="Logo"/>*/}
                 {/*</div>*/}
+                
             </div>
+          
         );
     }
 }
