@@ -6,7 +6,7 @@
 }
 .tech-bottom-heading{
     color: #152039;
-    font-size: 40px;
+    font-size: 30px;
 }
 .tech-bottom-content-main{
     color: #152039; 
@@ -15,7 +15,7 @@
 }
 .tech-bottom-right{
     background-color: aliceblue;
-    height: 90vh;
+    height: 75vh;
     width: 700px;
     display: block;
     padding-top: 20px;
@@ -24,4 +24,9 @@
 .tech-bottom-content{
     color: #152039; 
     text-align: justify;
+    font-size: 15px;
+}
+.tech-bottom-heading-top{
+    font-size: 40px;
+    color: #152039; 
 }

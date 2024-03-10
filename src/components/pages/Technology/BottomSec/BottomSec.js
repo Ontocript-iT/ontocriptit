@@ -10,7 +10,7 @@ export default function BottomSec() {
   return (
     <div className='tech-bottom-container'>
         <div>
-            <h1 className='tech-bottom-heading'>Why Use these Technologies</h1>
+            <h1 className='tech-bottom-heading-top'>Why Use these Technologies</h1>
             <p className='tech-bottom-content-main'   style={{marginLeft:"20px"}}>
             Our company chooses these technologies for their unmatched benefits, including enhanced scalability, lightning-fast performance, robust security measures, and unmatched flexibility. Each technology is carefully selected to ensure optimal development outcomes, empowering our projects with seamless scalability, fortified security protocols, and the agility to adapt to evolving requirements, driving innovation and success in every endeavo
             </p>
