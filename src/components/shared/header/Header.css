@@ -127,5 +127,7 @@ html {
   scroll-behavior: smooth;
 }
 .activeLink {
-  color: #f14902; /* Change this to whatever color you want */
+  color: #f14902;
+  font-size: 120%;
+  font-weight: 900;
 }

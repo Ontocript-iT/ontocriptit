@@ -1,6 +1,10 @@
 import React from 'react'
 import './BottomSec.css';
 import External_Link from "../../../../Assets/External_Link.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+
+
 
 export default function BottomSec() {
   return (
@@ -16,7 +20,7 @@ export default function BottomSec() {
      <div className='tech-bottom-right'>
 
      <div>
-     <h1 className='tech-bottom-heading'  style={{marginTop:"10px",marginLeft:"20px"}}>Scalability<span><img style={{marginTop:"0px",marginLeft:"20px"}}src={External_Link}></img></span></h1>
+     <h1 className='tech-bottom-heading'  style={{marginTop:"10px",marginLeft:"20px"}}>Scalability <FontAwesomeIcon icon={faCoffee} /></h1>
      <p className='tech-bottom-content'   style={{marginLeft:"20px"}}>These technologies enable seamless scalability, allowing our solutions to grow alongside your business needs.</p>
      </div>
      <div>
