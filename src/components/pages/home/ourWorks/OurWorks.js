@@ -6,11 +6,11 @@ function OurWorks() {
 
     const workList = [
         {
-            projectTitle: "digital products or anything else, feel free to reach out – we'd love to hear from you!",
+            projectTitle: "Digital products or anything else, feel free to reach out – we'd love to hear from you!",
             projecturl: "#"
         },
         {
-            projectTitle: "digital products or anything else, feel free to reach out – we'd love to hear from you!",
+            projectTitle: "Digital products or anything else, feel free to reach out – we'd love to hear from you!",
             projecturl: "#"
         },
         {
@@ -39,7 +39,7 @@ function OurWorks() {
                 </div>
                 <div className='ourWorks-content-sub-title'>
                     <span>
-                        {workList.length} products
+                        We have {workList.length} products
                     </span>
                 </div>
                 <div className='works-list'>
