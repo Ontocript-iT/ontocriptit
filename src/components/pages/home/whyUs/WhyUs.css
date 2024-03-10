@@ -1,0 +1,98 @@
+.whyUs-section {
+  height: 700px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.whyUs-content-title h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #152039;
+  line-height: 0.1;
+}
+.whyUs-content-sub-title span {
+  font-size: 20px;
+  color: #152039;
+  font-weight: 600;
+}
+
+.whyus-cards-set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+.first-row,
+.second-row,
+.third-row {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.whyus-card .card-title {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 28px;
+}
+.whyus-card .card-description {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  width: 350px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.whyus-card {
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+  height: 170px;
+  border-radius: 10px;
+  background: #152039;
+}
+
+.whyus-card.expertise {
+  background-image: url("");
+}
+
+.whyus-card.innovation {
+  background-image: url("../../../../Assets/Innovation.png");
+}
+
+.whyus-card.solutions {
+  background-image: url("../../../../Assets/Solutions.png");
+}
+
+.whyus-card.timely-delivery {
+  background-image: url("../../../../Assets/TimelyDelivery.png");
+  background-color: rgba(256, 256, 256, 0.1);
+}
+
+.whyus-card.quality-assurance {
+  background-image: url("../../../../Assets/QA.png");
+}
+
+.whyus-card.affordability {
+  background-image: url("../../../../Assets/Affordability.png");
+}
+
+@media (max-width: 768px) {
+  .first-row, .second-row,.third-row{
+    flex-direction:column;
+  }
+  .whyUs-section {
+    height: auto;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .whyus-card{
+    width:100%;
+  }
+}
+

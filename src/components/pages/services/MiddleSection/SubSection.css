@@ -1,0 +1,19 @@
+
+.subHeading {
+    font-size: 40px;
+    font-weight: bold;
+    color: #152039;
+    line-height: 0.1;
+    text-align: left;
+    margin-left: 80px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+   
+  }
+  .subContent{
+    color:#152039 ;
+    margin-left: 80px;
+    text-align: justify;
+    margin-bottom: 40px;
+  }
+  

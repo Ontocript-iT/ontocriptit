@@ -1,0 +1,56 @@
+.gridClass {
+  margin: 20px auto;
+}
+
+.containerClass {
+  background-color: #fff;
+  height: 40vh;
+  text-align: left;
+}
+
+.containerClass h2 {
+  font-weight: bold;
+  font-size: 42px;
+}
+.processDescriptionContainerClass {
+  margin: 30px auto;
+  text-align: left;
+  margin-left: -80px;
+}
+
+.processDescriptionButton {
+  position: relative;
+  cursor: pointer;
+  background-color: #f14902;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  padding: 9px 20px 9px 20px;
+  margin: 20px auto;
+}
+
+.processDescriptionButton:hover {
+  background-color: #f14902;
+  color: #152039;
+  box-shadow: 0 12px 16px 0 rgba(21, 32, 57, 0.24),
+    0 17px 50px 0 rgba(21, 32, 57, 0.19);
+}
+
+.processHeaderContainerClass {
+  color: #fff;
+  font-weight: 800;
+  height: 33vh;
+  background-color: #152039;
+  padding: 60px 0px;
+}
+
+.contactClass {
+  color: #ffffff;
+  font-weight: 100;
+  margin: 0px 20px;
+  border: 2px solid #f14902;
+  border-radius: 10px;
+  padding: 2px 6px;
+}

@@ -1,0 +1,29 @@
+.why-choose-topic{
+    color: #152039;
+    text-align: center;
+    font-size: 40px;
+}
+.why-choose-container{
+    margin-top: 50px;
+   
+}
+.card{
+    display: flex;
+    margin-left: 180px;
+    margin-right: 80px;
+    margin-bottom: 50px;
+}
+
+.card-p{
+    width: 500px;
+
+}
+.card-one{
+    margin-right: 60px;
+
+}
+.card-two{
+    margin-right: 60px;
+
+}
+

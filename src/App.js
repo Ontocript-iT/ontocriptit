@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./components/pages/home/Home";
+import Header from "./components/shared/header/Header";
+import Footer from "./components/shared/footer/Footer";
+import Process from "./components/pages/process/Process";
+import {
+  RouterProvider,
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from "react-router-dom";
+import ContactUs from "./components/pages/contactus/ContactUs";
+import Service from "./components/pages/services/Service";
+import Blog from "./components/pages/Blog/Blog";
+import AboutUs from "./components/pages/aboutUs/AboutUs";
+import Technology from "./components/pages/Technology/Technology";
+import PrivacyPolicy from "./components/pages/Privacy-Policy/PrivacyPolicy";
+import BlogData from "./components/pages/Blog/BlogData";
 
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Header />}>
+      <Route index element={<Home />} />
+      {/* <Route path="/process" element={<Process />} /> */}
+      <Route path="/contact" element={<ContactUs />} />
+      <Route path="/services" element={<Service />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/blogData/:id" element={<BlogData />} />
+      <Route path="/aboutus" element={<AboutUs />} />
+      <Route path="/technology" element={<Technology />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+    </Route>
+  )
+);
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
