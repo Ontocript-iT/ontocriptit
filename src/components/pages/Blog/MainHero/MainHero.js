@@ -1,43 +1,40 @@
-import React from 'react'
-import './MainHero.css'
-import blogImage from "./Rectangle 25.png"; 
+import React from "react";
+import { BlogCard } from "../BlogCard";
+import "./MainHero.css";
 
-export default function MainHero() {
+export default function MainHero({ blogs }) {
   return (
-    <div className='container-blog'>
-    <div className='textContainer'>
-        
-    <h3>Read Our Blog Posts</h3>
-    <h1 className='mainText'>FEATURED BLOGS</h1>
-    <div className='featured-blogs'>
-        <div className='featured-blogs-left'>
-            <img src={blogImage}></img>
-            <h2>Why Next.js Popular among Undergradutes?</h2>
-            <p className='blog-content-text'>Discover the Hype: Why Next.js is the Go-To Choice for Undergraduates in Web Development 💡🚀 #NextJS #WebDev #StudentLife</p>
-            <a className='blog-read-more' href='#'>Read more...</a>
-
+    <div className="container-blog">
+      <div className="textContainer">
+        <h3>Read Our Blog Posts</h3>
+        <h1 className="mainText">FEATURED BLOGS</h1>
+        <div className="middle-blogs-container">
+          <div className="grid left-grid">
+            {blogs?.items?.slice(0, 1).map((blog, index) => (
+              <BlogCard
+                title={blog.fields.headline}
+                image={blog.fields.image.fields.file.url}
+                description={blog.fields.content.substring(0, 120)}
+                key={blog.sys.id}
+                id={blog.sys.id}
+                headLineColor={"#fff"}
+              />
+            ))}
+          </div>
+          <div className="grid right-grid">
+            {blogs?.items?.slice(1, 2).map((blog, index) => (
+              <BlogCard
+                title={blog.fields.headline}
+                image={blog.fields.image.fields.file.url}
+                description={blog.fields.content.substring(0, 120)}
+                key={blog.sys.id}
+                id={blog.sys.id}
+                headLineColor={"#fff"}
+              />
+            ))}
+          </div>
         </div>
-        <div>
-        <img src={blogImage}></img>
-      
-            <h2>Why Next.js Popular among Undergradutes?</h2>
-            <p className='blog-content-text'>Discover the Hype: Why Next.js is the Go-To Choice for Undergraduates in Web Development 💡🚀 #NextJS #WebDev #StudentLife</p>
-            <a className='blog-read-more' href='#'>Read more...</a>
-
-        </div>
+      </div>
     </div>
-
-
-
-
-    </div>
-    
-   
-
-   
-
-  
-</div>
-  )
+  );
 }
-
