@@ -58,28 +58,28 @@
 }
 
 .whyus-card.expertise {
-  background-image: url("");
+  background-image: url("../../../../Assets/expertise.png");
 }
 
 .whyus-card.innovation {
-  background-image: url("../../../../Assets/Innovation.png");
+  background-image: url("../../../../Assets/innovations.png");
 }
 
 .whyus-card.solutions {
-  background-image: url("../../../../Assets/Solutions.png");
+  background-image: url("../../../../Assets/solu.png");
 }
 
 .whyus-card.timely-delivery {
-  background-image: url("../../../../Assets/TimelyDelivery.png");
+  background-image: url("../../../../Assets/timely.png");
   background-color: rgba(256, 256, 256, 0.1);
 }
 
 .whyus-card.quality-assurance {
-  background-image: url("../../../../Assets/QA.png");
+  background-image: url("../../../../Assets/qQa.png");
 }
 
 .whyus-card.affordability {
-  background-image: url("../../../../Assets/Affordability.png");
+  background-image: url("../../../../Assets/aprice.png");
 }
 
 @media (max-width: 768px) {
