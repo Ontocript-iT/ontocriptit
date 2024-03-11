@@ -30,7 +30,7 @@ function TechStack(props) {
 
                     <Card sx={{
                         maxWidth: 445,
-                        boxShadow: '10px 5px 15px rgba(241, 73, 2, 0.5)',
+                        boxShadow: '10px 5px 15px rgba(0, 0, 0, 0.5)',
                         transition: 'transform 0.3s',
                         '&:hover': {
                             transform: 'scale(1.05)', // Increase scale on hover
@@ -62,7 +62,7 @@ function TechStack(props) {
                 <div className="right-stack-body-upper">
                     <Card sx={{
                         maxWidth: 445,
-                        boxShadow: '10px 5px 15px rgba(241, 73, 2, 0.5)',
+                        boxShadow: '10px 5px 15px rgba(0, 0, 0, 0.5)',
                         transition: 'transform 0.3s',
                         '&:hover': {
                             transform: 'scale(1.05)', // Increase scale on hover
@@ -100,7 +100,7 @@ function TechStack(props) {
 
                     <Card sx={{
                         maxWidth: 345,
-                        boxShadow: '10px 5px 15px rgba(204, 229, 255, 0.5)',
+                        boxShadow: '10px 5px 15px rgba(0, 0, 0, 0.5)',
                         transition: 'transform 0.3s',
                         '&:hover': {
                             transform: 'scale(1.05)', // Increase scale on hover
@@ -153,7 +153,7 @@ function TechStack(props) {
                <span className='text-anim-text' style={{
                         fontSize: "80px",
                         marginTop: "-10px",
-                        color: "#ffffff",
+                        color: "#152039",
                         marginLeft: "100px",
                         fontWeight:"600",
 
