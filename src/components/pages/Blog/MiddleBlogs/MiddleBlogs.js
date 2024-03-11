@@ -4,7 +4,7 @@ import { BlogCard } from "../BlogCard";
 
 export default function MiddleBlogs({ blogs }) {
   return (
-    <div className="middle-blogs-container">
+    <div className="middle-blogs-container-sub">
       <div className="grid left-grid">
         {blogs?.items
           ?.slice(0, Math.ceil(blogs?.items?.length / 2))

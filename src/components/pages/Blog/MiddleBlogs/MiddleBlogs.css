@@ -19,12 +19,12 @@
 .blog-content-text-middle{
     font-size: 16px;
     text-align: justify;
-    width: 350px;
+    width: 500px;
     color: #152039;
 }
 
-.middle-blogs-container {
+.middle-blogs-container-sub {
   display: flex;
   justify-content: space-between;
-  margin-left: 80px;
+  margin-left: 180px;
 }

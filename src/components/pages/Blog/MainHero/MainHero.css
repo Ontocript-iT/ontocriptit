@@ -1,7 +1,8 @@
 .container-blog {
-  height: 100vh;
+  height: 80vh;
   background-color: #152039;
   margin: 0 0 20px 0;
+  
 }
 .textContainer {
   padding: 5px;
@@ -14,6 +15,7 @@
   display: flex;
   justify-content: space-between;
   margin: 5px;
+  margin-left: 100px;
 }
 
 .grid {
