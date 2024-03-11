@@ -8,6 +8,7 @@ import AwsSection from "./AwsSection/AwsSection";
 import BottomSec from './BottomSec/BottomSec';
 import AnimatedPage from '../../AnimatedPage';
 import Contact from '../home/contact/Contact';
+import AdditinalService from './AdditionalService/AdditinalService';
 
 
 export default function Technology() {
@@ -20,6 +21,7 @@ export default function Technology() {
         <TechSecTwo/>
         <AwsSection/>
         <BottomSec/>
+        <AdditinalService/>
         <Contact/>
         <Footer/>
        
