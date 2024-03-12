@@ -3,6 +3,8 @@ import './OurTeam.css'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import picOfRavindu from "../../../../Assets/Ravindu.jpg"
+import picOfVishwa from "../../../../Assets/Vishwa Waweliyadda.jpg"
 
 function OurTeam() {
 
@@ -41,12 +43,12 @@ function OurTeam() {
 
     const team = [
         {
-            photo: "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            photo: picOfRavindu,
             name: "John Doe",
             position: "Software Engineer"
         },
         {
-            photo: "https://images.pexels.com/photos/4892782/pexels-photo-4892782.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            photo: picOfVishwa,
             name: "Jane Smith",
             position: "UI/ UX Engineer"
         },
@@ -74,7 +76,7 @@ function OurTeam() {
                     <h3 className='team-title'>
                         Our Team
                     </h3>
-                    <span  className='our-team-slogan'>Meet our team</span>
+                    <span className='our-team-slogan'>Meet our team</span>
                 </div>
                 <div className='team-cards' >
                     <Slider {...settings}>
