@@ -8,7 +8,7 @@
 
 .title {
   color: #152039;
-  font-size: 1.5rem;
+  font-size: 42px;
   margin-bottom: 10px;
 }
 
@@ -24,6 +24,11 @@
   margin-bottom: 15px;
 }
 
+.post-data p {
+  color: #152039;
+  line-height: 1.6;
+}
+
 .meta-data {
   display: flex;
   justify-content: space-between;
@@ -31,8 +36,8 @@
 
 .published-date,
 .author-name {
-  font-size: 0.8rem;
-  color: #555;
+  font-size: 1rem;
+  color: #152039;
 }
 
 .author-name {
