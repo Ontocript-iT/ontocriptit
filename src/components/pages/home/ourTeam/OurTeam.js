@@ -3,6 +3,7 @@ import './OurTeam.css'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import picOfThilina from '../../../../Assets/thilina.jpg'
 import picOfRavindu from "../../../../Assets/Ravindu.jpg"
 import picOfVishwa from "../../../../Assets/Vishwa Waweliyadda.jpg"
 
@@ -53,7 +54,7 @@ function OurTeam() {
             position: "UI/ UX Engineer"
         },
         {
-            photo: "https://images.pexels.com/photos/4192307/pexels-photo-4192307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            photo: picOfThilina,
             name: "Bob Johnson",
             position: "Project Manager"
         },
@@ -66,7 +67,12 @@ function OurTeam() {
             photo: "https://st.depositphotos.com/2673929/54174/i/450/depositphotos_541742048-stock-photo-businesswoman-confident-look-dressed-beige.jpg",
             name: "Laura Griffin",
             position: "Business Analysts"
-        }
+        },
+        {
+            photo: "https://images.pexels.com/photos/4192307/pexels-photo-4192307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            name: "Bob Johnson",
+            position: "Project Manager"
+        },
     ];
 
     return (

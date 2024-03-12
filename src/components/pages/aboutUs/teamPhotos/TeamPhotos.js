@@ -2,24 +2,25 @@ import React from 'react'
 import './TeamPhotos.css'
 import people from '../../../../Assets/people.png'
 import logoMockup from '../../../../Assets/logoMockup.png'
-import thilina from '../../../../Assets/thilina.jpg'
-
+import picOfThilina from '../../../../Assets/thilina.jpg'
+import picOfRavindu from "../../../../Assets/Ravindu.jpg"
+import picOfVishwa from "../../../../Assets/Vishwa Waweliyadda.jpg"
 
 function TeamPhotos() {
 
     const team = [
         {
-            photo: "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            photo: picOfRavindu,
             name: "John Doe",
-            position: "Software Developer"
+            position: "Software Engineer"
         },
         {
-            photo: "https://images.pexels.com/photos/4892782/pexels-photo-4892782.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            photo: picOfVishwa,
             name: "Jane Smith",
             position: "UI/ UX Engineer"
         },
         {
-            photo: "https://images.pexels.com/photos/4192307/pexels-photo-4192307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            photo: picOfThilina,
             name: "Bob Johnson",
             position: "Project Manager"
         },
@@ -27,6 +28,11 @@ function TeamPhotos() {
             photo: "https://images.pexels.com/photos/8053518/pexels-photo-8053518.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             name: "Alice Williams",
             position: "QA Engineer"
+        },
+        {
+            photo: "https://st.depositphotos.com/2673929/54174/i/450/depositphotos_541742048-stock-photo-businesswoman-confident-look-dressed-beige.jpg",
+            name: "Laura Griffin",
+            position: "Business Analysts"
         }
     ];
 
@@ -35,13 +41,13 @@ function TeamPhotos() {
 
             <div className='our-team-content'>
                 <h3 className='underline-title'>
-                   
+
                 </h3>
                 <div className='team-cards' >
                     {team.map((t) => (
                         <div className='team-card' key={t.name}>
                             <div className='photo'>
-                                <img src={t.photo} style={{filter:"grayscale(100%)"}} />
+                                <img src={t.photo} style={{ filter: "grayscale(100%)" }} />
                             </div>
                             <div className='members-details'>
                                 <div className='name'>{t.name}</div>
@@ -51,7 +57,7 @@ function TeamPhotos() {
                     ))}
                 </div>
             </div>
-            <img style={{maxWidth:"100%",height:"auto",marginTop:"50px"}} src={logoMockup}></img>
+            <img style={{ maxWidth: "100%", height: "auto", marginTop: "50px" }} src={logoMockup}></img>
 
         </div>
     )
