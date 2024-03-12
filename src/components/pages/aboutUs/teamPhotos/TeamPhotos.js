@@ -6,6 +6,7 @@ import picOfThilina from '../../../../Assets/thi.jpg'
 import picOfRavindu from "../../../../Assets/Ravindu.jpg"
 import picOfVishwa from "../../../../Assets/Vishwa Waweliyadda.jpg"
 import picOfSasindu from "../../../../Assets/sasindu.jpg"
+import picOfPrageeth from "../../../../Assets/prageeth.jpg"
 
 function TeamPhotos() {
 
@@ -31,8 +32,8 @@ function TeamPhotos() {
             position: "QA Engineer"
         },
         {
-            photo: "https://st.depositphotos.com/2673929/54174/i/450/depositphotos_541742048-stock-photo-businesswoman-confident-look-dressed-beige.jpg",
-            name: "Laura Griffin",
+            photo: picOfPrageeth,
+            name: "Prageeth Jayasinghe",
             position: "Business Analysts"
         }
     ];
