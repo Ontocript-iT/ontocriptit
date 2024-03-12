@@ -2,31 +2,32 @@ import React from 'react'
 import './TeamPhotos.css'
 import people from '../../../../Assets/people.png'
 import logoMockup from '../../../../Assets/logoMockup.png'
-import picOfThilina from '../../../../Assets/thilina.jpg'
+import picOfThilina from '../../../../Assets/thi.jpg'
 import picOfRavindu from "../../../../Assets/Ravindu.jpg"
 import picOfVishwa from "../../../../Assets/Vishwa Waweliyadda.jpg"
+import picOfSasindu from "../../../../Assets/sasindu.jpg"
 
 function TeamPhotos() {
 
     const team = [
         {
-            photo: picOfRavindu,
-            name: "John Doe",
+            photo: picOfThilina,
+            name: "Thilina Karunarathne",
             position: "Software Engineer"
         },
         {
             photo: picOfVishwa,
-            name: "Jane Smith",
+            name: "Vishwa Waweliyadda",
             position: "UI/ UX Engineer"
         },
         {
-            photo: picOfThilina,
-            name: "Bob Johnson",
+            photo: picOfRavindu,
+            name: "Ravindu Jayaweera",
             position: "Project Manager"
         },
         {
-            photo: "https://images.pexels.com/photos/8053518/pexels-photo-8053518.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            name: "Alice Williams",
+            photo: picOfSasindu,
+            name: "Sasindu Weerakkodi",
             position: "QA Engineer"
         },
         {

@@ -7,6 +7,8 @@ import picOfThilina from '../../../../Assets/thi.jpg'
 import picOfRavindu from "../../../../Assets/Ravindu.jpg"
 import picOfVishwa from "../../../../Assets/Vishwa Waweliyadda.jpg"
 import picOfHirumalshi from "../../../../Assets/hirumalshi.jpg"
+import picOfSasindu from "../../../../Assets/sasindu.jpg"
+
 
 function OurTeam() {
 
@@ -60,8 +62,8 @@ function OurTeam() {
             position: "Project Manager"
         },
         {
-            photo: "https://images.pexels.com/photos/8053518/pexels-photo-8053518.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            name: "Alice Williams",
+            photo: picOfSasindu,
+            name: "Sasindu Weerakkodi",
             position: "QA Engineer"
         },
         {
