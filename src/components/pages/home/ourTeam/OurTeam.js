@@ -3,6 +3,9 @@ import './OurTeam.css'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import picOfThilina from '../../../../Assets/thilina.jpg'
+import picOfRavindu from "../../../../Assets/Ravindu.jpg"
+import picOfVishwa from "../../../../Assets/Vishwa Waweliyadda.jpg"
 
 function OurTeam() {
 
@@ -41,17 +44,17 @@ function OurTeam() {
 
     const team = [
         {
-            photo: "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            photo: picOfRavindu,
             name: "John Doe",
             position: "Software Engineer"
         },
         {
-            photo: "https://images.pexels.com/photos/4892782/pexels-photo-4892782.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            photo: picOfVishwa,
             name: "Jane Smith",
             position: "UI/ UX Engineer"
         },
         {
-            photo: "https://images.pexels.com/photos/4192307/pexels-photo-4192307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            photo: picOfThilina,
             name: "Bob Johnson",
             position: "Project Manager"
         },
@@ -64,7 +67,12 @@ function OurTeam() {
             photo: "https://st.depositphotos.com/2673929/54174/i/450/depositphotos_541742048-stock-photo-businesswoman-confident-look-dressed-beige.jpg",
             name: "Laura Griffin",
             position: "Business Analysts"
-        }
+        },
+        {
+            photo: "https://images.pexels.com/photos/4192307/pexels-photo-4192307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            name: "Bob Johnson",
+            position: "Project Manager"
+        },
     ];
 
     return (
@@ -74,7 +82,7 @@ function OurTeam() {
                     <h3 className='team-title'>
                         Our Team
                     </h3>
-                    <span  className='our-team-slogan'>Meet our team</span>
+                    <span className='our-team-slogan'>Meet our team</span>
                 </div>
                 <div className='team-cards' >
                     <Slider {...settings}>
