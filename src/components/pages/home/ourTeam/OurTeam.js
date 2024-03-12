@@ -3,9 +3,10 @@ import './OurTeam.css'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import picOfThilina from '../../../../Assets/thilina.jpg'
+import picOfThilina from '../../../../Assets/thi.jpg'
 import picOfRavindu from "../../../../Assets/Ravindu.jpg"
 import picOfVishwa from "../../../../Assets/Vishwa Waweliyadda.jpg"
+import picOfHirumalshi from "../../../../Assets/hirumalshi.jpg"
 
 function OurTeam() {
 
@@ -44,18 +45,18 @@ function OurTeam() {
 
     const team = [
         {
-            photo: picOfRavindu,
-            name: "John Doe",
+            photo: picOfThilina,
+            name: "Thilina Karunarathne",
             position: "Software Engineer"
         },
         {
             photo: picOfVishwa,
-            name: "Jane Smith",
+            name: "Vishwa Waweliyadda",
             position: "UI/ UX Engineer"
         },
         {
-            photo: picOfThilina,
-            name: "Bob Johnson",
+            photo: picOfRavindu,
+            name: "Ravindu Jayaweera",
             position: "Project Manager"
         },
         {
@@ -64,8 +65,8 @@ function OurTeam() {
             position: "QA Engineer"
         },
         {
-            photo: "https://st.depositphotos.com/2673929/54174/i/450/depositphotos_541742048-stock-photo-businesswoman-confident-look-dressed-beige.jpg",
-            name: "Laura Griffin",
+            photo: picOfHirumalshi,
+            name: "Hirumalshi Gunawardhana",
             position: "Business Analysts"
         },
         {
