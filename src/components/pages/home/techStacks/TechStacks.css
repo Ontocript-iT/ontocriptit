@@ -16,6 +16,7 @@
   color: #152039;
   line-height: 0.1;
   text-align: left;
+  margin-left: 70px;
 }
 
 .techstack-icons-section {
@@ -31,6 +32,8 @@
   justify-content: flex-start;
   text-align: left;
   word-spacing: 3px;
+  margin-left: 70px;
+
 }
 
 .line-container {
