@@ -38,8 +38,7 @@ export default function WhyChoose() {
             Trusted Solutions
           </Typography>
           <Typography variant="body2" fontFamily={"montserrat"}  color={"#152039"}>
-          We make software that fits your needs perfectly, so you get exactly what you want.
-          </Typography>
+          Let us guide you through tailor-made innovation. Rely on our expertise to ensure every challenge finds resolution in our hands with care         </Typography>
         </CardContent>
       </CardActionArea>
     </Card>
@@ -62,8 +61,7 @@ export default function WhyChoose() {
             Trusted Results
           </Typography>
           <Typography variant="body2" fontFamily={"montserrat"}  color={"#152039"}>
-          We've done this before and our clients are happy. You can count on us to get the job done well."
-          </Typography>
+          Count on us to deliver what we promise, surpassing your expectations every time. With a proven history of success, we are dedicated to achieving flawless outcomes         </Typography>
         </CardContent>
       </CardActionArea>
     </Card>
@@ -86,8 +84,7 @@ export default function WhyChoose() {
             Trusted Team
           </Typography>
           <Typography variant="body2" fontFamily={"montserrat"}  color={"#152039"}>
-          Our team knows what they're doing, and they'll make sure your project is done right.
-          </Typography>
+          Meet our passionate experts, committed to your success. Working together seamlessly, we earn your trust with every interaction, empowering you to reach greater heights        </Typography>
         </CardContent>
       </CardActionArea>
     </Card>

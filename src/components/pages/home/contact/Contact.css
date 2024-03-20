@@ -49,3 +49,17 @@
   align-items: center;
   cursor: pointer;
 }
+
+.contact-message-btn{
+  padding: 15px 40px;
+  background-color: #f14902;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  font-size: 20px;
+  
+}
+
+.contact-message{
+  margin-left: 190px;
+}
