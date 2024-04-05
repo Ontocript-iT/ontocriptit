@@ -1,5 +1,5 @@
 .content-section-homepage {
-  magin: 0;
+  margin: 0;
   height: 275px;
   padding-top: 20px;
   padding-left: 80px;
@@ -10,12 +10,17 @@
   margin-top: 50px;
 }
 
+.contact-section .contact-content-title{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+} 
 .content-section-homepage .contact-content-title h3 {
   font-size: 40px;
   font-weight: bold;
   color: #fff !important;
-  line-height: 0.1;
-  text-align: left;
+  text-align: left ;
+  line-height: 40px;
 }
 
 .content-section-homepage .contact-content-sub-title span {
@@ -31,7 +36,9 @@
 
 .contact-section .contact-button {
   margin-top: 25px;
+  padding-bottom: 25px;
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -62,4 +69,101 @@
 
 .contact-message{
   margin-left: 190px;
+}
+
+@media screen and (max-width:1120px) {
+  .contact-section .contact-button .contact-message{
+    margin-left: 0px;
+  }
+
+  .content-section-homepage .contact-content-title h3{
+    font-size: 40px;
+  }
+  .content-section-homepage .contact-content-sub-title span{
+    font-size: 18px;
+    width:auto;
+    padding-right: 25px;
+   
+  }
+}
+
+@media screen and (max-width:768px) {
+  .contact-section .contact-button .contact-message{
+    margin-left: 0px;
+  }
+
+  .content-section-homepage .contact-content-title h3{
+    font-size: 38px;
+    
+  }
+  .content-section-homepage .contact-content-sub-title span{
+    font-size: 15px;
+   
+   
+  }
+}
+
+@media screen and (max-width:652px) {
+
+  .content-section-homepage{
+    height: auto;
+  }
+  .contact-section{
+    height: auto !important;
+  }
+  .contact-section .contact-button .contact-message{
+    margin-left: 0px;
+  }
+
+  .content-section-homepage .contact-content-title h3{
+    font-size: 35px;
+    
+  }
+  .content-section-homepage .contact-content-sub-title span{
+    font-size: 15px;
+    width:auto;
+  
+  }
+}
+
+@media screen and (max-width:480px) {
+  .contact-section .contact-button .contact-message{
+    margin-left: 0px;
+  }
+
+  .contact-section{
+    padding-left: auto !important;
+    padding-right: auto !important;
+  }
+
+  .content-section-homepage .contact-content-title h3{
+    font-size: 35px;
+    text-align: center ;
+  }
+  .content-section-homepage .contact-content-sub-title span{
+    font-size: 18px;
+    width:auto;
+    padding-right: 0px;
+  }
+  .contact-content{
+    text-align: center;
+  }
+
+  .contact-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-section{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .contact-button{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

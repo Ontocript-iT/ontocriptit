@@ -1,18 +1,49 @@
 .footer-container {
-  height: 300px;
+  height: auto;
   background-color: #152039;
   padding: 30px 100px;
 }
 .footerBody {
   display: flex;
+  flex-wrap: wrap;
 }
-p {
+.footerMenu {
+  display: flex;
+  width: 60%;
+  /* border: 1px solid black; */
+}
+.footerMenu-col{
+  display: flex;
+  width: 33.33%;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+
+.footerMenu-col-social{
+  display: flex;
+  width: 33.33%;
+  justify-content: center;
+}
+
+.footerDec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  text-align: justify;
+ 
+}
+
+
+/* p {
   color: white;
   margin-right: 150px;
   font-size: 21px;
-}
+} */
 
-ul li a {
+.footerMenu-col li a,
+.allRights-container li a {
   padding: 5px;
   text-decoration: none;
   color: white;
@@ -23,7 +54,8 @@ ul li a {
   font-weight: lighter;
 }
 
-ul li {
+.foooterMenu-col ul li,
+.allRights-container ul li {
   display: inline-flex;
   margin-right: 20px;
 }
@@ -35,6 +67,7 @@ ul li {
   display: flex;
   flex-direction: column;
   margin-left: 0px;
+ 
 }
 .footer-container .footer-menu li {
   margin-bottom: 3px; /* Adjust as needed */
@@ -42,7 +75,7 @@ ul li {
 .footer-menu-social-icons {
   margin-top: 25px;
   max-width: 180px;
-  margin-right: 80px;
+  /* margin-right: 80px; */
 }
 .footer-menu-social-icons .fa-i {
   color: #fff;
@@ -52,18 +85,23 @@ ul li {
   cursor: pointer;
 }
 
+.footer-container li{
+  margin: auto;
+}
+
 .privacyPolicy {
   font-size: 12px;
   opacity: 0.65;
   margin-top: 26px;
 }
 
-.footer-menu-privacy {
+/* .footer-menu-privacy {
   margin-left: -5px;
-}
+} */
 
 /* Define the hover state of the navigation links */
-ul li a:hover {
+.footerMenu-col ul li a:hover ,
+.allRights-container ul li a:hover{
   transform: scale(1.05);
   color: #f14902;
 }
@@ -74,9 +112,6 @@ ul li a:hover {
   /*animation: focusInOut 6s infinite alternate;*/
   opacity: 0.07;
   position: absolute;
-}
-.footerMenu {
-  display: flex;
 }
 
 @keyframes focusInOut {
@@ -91,28 +126,56 @@ ul li a:hover {
   }
 }
 
-.footerDec {
-  width: 600px;
-  text-align: justify;
+.footerDec h6{
+  opacity: 0.85;
+  font-size: 1rem;
+  font-weight: 300;
 }
-h6 {
+
+
+/* h6 {
   color: white;
+} */
+
+@media screen and (max-width : 1278px){
+
+  .footerMenu{
+    width: 100%;
+  }
+
+  .footer-menu-social-icons{
+    max-width: max-content;
+    margin-top: 50px;
+  }
+
+  .footerDec{
+    width: 100%;
+  }
 }
 
 /* Media query for tablets and smaller screens */
 @media screen and (max-width: 768px) {
   .footer-container {
-    padding: 30px; /* Reduce padding */
+    padding: 30px 50px; /* Reduce padding */
   }
 
-  .footerSubBody {
+  /* .footerSubBody {
     margin-right: 20px;
-  }
+  } */
 
   .footerMenu {
     display: flex;
-    margin-right: 50px;
-    margin-left: 30px;
+    flex-wrap: wrap;
+    /* margin-right: 30px;
+    margin-left: 30px; */
+  }
+
+  .footerMenu-col{
+    width: 50%;
+  }
+
+  .footerMenu-col-social{
+    width: 100%;
   }
 
   .footerHeads {
@@ -124,6 +187,8 @@ h6 {
     margin-bottom: 20px;
     font-size: 18px;
   }
+
+  
 
   /* p {
         margin-right: 10px;
@@ -144,9 +209,31 @@ h6 {
     padding: 20px; /* Reduce padding */
   }
 
-  .footerBody {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
+  /* .footerBody {
+    flex-direction: column; 
+  } */
+  .footerMenu {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-right: 30px;
+    margin-left: 30px; */
+  }
+
+  .footer-menu li a{
+    text-align: center;
+    margin: auto;
+  }
+
+  .footerMenu-col{
+    width: 100%;
+  }
+
+  .footerMenu-col h3{
+    text-align: center;
+  }
+
+  .footerMenu-col-social h3{
+    text-align: center;
   }
 
   p,
@@ -156,7 +243,11 @@ h6 {
   }
 
   .footerDec {
-    width: 80%; /* Adjust width */
     margin: 20px auto; /* Center horizontally */
+  }
+
+  .footer-menu-social-icons{
+    max-width: max-content;
+    margin-top: 20px;
   }
 }

@@ -13,7 +13,7 @@ function Contact() {
     const navigate = useNavigate();
 
     const handleButtonClick = () => {
-      navigate('/contact'); 
+        navigate('/contact');
     };
     return (
         <div className='contact-section content-section-homepage'>
@@ -24,7 +24,7 @@ function Contact() {
                     </h3>
                 </div>
                 <div className='contact-content-sub-title'>
-                    <span style={{textAlign:"justify"}}>
+                    <span style={{ textAlign: "justify" }}>
                         We're passionate about connecting with new clients and our community. If you have questions about creating digital products or anything else, feel free to reach out – we'd love to hear from you!
                     </span>
                 </div>
@@ -36,17 +36,17 @@ function Contact() {
                         +(94) 70 575 3003
                     </div>
                     <div className='contact-message'>
-                    <Stack direction="row" spacing={2}>
-                    <Button
-        variant="contained"
-        color="primary"
-        style={{ marginTop: "10px", backgroundColor: "#f14902", color: "#FFFFFF",borderRadius:"50px" }}
-        endIcon={<SendIcon />}
-        onClick={handleButtonClick}
-      >
-        Get in touch via message
-      </Button>
-                    </Stack>
+                        <Stack direction="row" spacing={2}>
+                            <Button
+                                variant="contained"
+                                color="primary"
+                                style={{ marginTop: "10px", backgroundColor: "#f14902", color: "#FFFFFF", borderRadius: "50px" }}
+                                endIcon={<SendIcon />}
+                                onClick={handleButtonClick}
+                            >
+                                Get in touch via message
+                            </Button>
+                        </Stack>
                     </div>
                 </div>
             </div>
