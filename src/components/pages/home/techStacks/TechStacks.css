@@ -100,7 +100,7 @@
   .techstack-icons-section {
     width: 95%;
     height: auto;
-    magin: 0;
+    margin: 0;
     text-align: center;
   }
   .techstack-icons img {
@@ -127,7 +127,7 @@
   .techstack-icons-section {
     padding-left: 20px;
     width: 90%;
-    magin: 0;
+    margin: 0;
     text-align: center;
   }
   .techstack-icons img {
@@ -148,5 +148,26 @@
     padding: 10px 20px;
     height: 120px;
     width: 90%;
+  }
+}
+
+@media (max-width:376px){
+  .techstack-section {
+    margin: 0 10px;
+    height:auto;
+    margin-bottom: 15px;
+  }
+  
+  .techstack-content-title h3 {
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .techstack-content-sub-title span {
+    justify-content: center;
+    text-align: center;
+    word-spacing: 3px;
+    margin-left: 0px;
+    padding: 0px 5px 25px 5px;
   }
 }

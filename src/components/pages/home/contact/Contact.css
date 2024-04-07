@@ -1,9 +1,10 @@
 .content-section-homepage {
   margin: 0;
-  height: 275px;
+  height: auto;
   padding-top: 20px;
   padding-left: 80px;
   background-color: #152039 !important;
+  padding-bottom: 20px;
 }
 
 .contact-section .techstack-content {
