@@ -16,15 +16,41 @@
   flex: 1;
   margin-right: 10px;
 }
-.blog-content-text-middle{
-    font-size: 16px;
-    text-align: justify;
-    width: 500px;
-    color: #152039;
+.blog-content-text-middle {
+  font-size: 16px;
+  text-align: justify;
+  width: 500px;
+  color: #152039;
 }
 
 .middle-blogs-container-sub {
   display: flex;
   justify-content: space-between;
   margin-left: 180px;
+}
+
+@media only screen and (max-width: 400px) {
+  .middle-blogs-container-sub {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+  }
+
+  .grid {
+    /* overflow: scroll; */
+    flex-direction: column;
+  }
+
+  .left-grid {
+    margin-right: 0;
+  }
+
+  .blog-content-text-middle {
+    width: 100%;
+  }
+
+  .middle-blogs-container-sub {
+    flex-direction: column;
+    margin-left: 0;
+  }
 }

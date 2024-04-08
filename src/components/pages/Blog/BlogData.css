@@ -43,3 +43,38 @@
 .author-name {
   margin-left: 10px;
 }
+
+@media (max-width: 400px) {
+  .blog-post {
+    max-width: 370px;
+    margin: 5px auto;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+  }
+
+  .title {
+    color: #152039;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .post-data {
+    color: #152039;
+    line-height: 1.2;
+    font-size: 10px;
+  }
+
+  .post-data p {
+    color: #152039;
+    line-height: 1.2;
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .published-date,
+  .author-name {
+    font-size: 8px;
+    color: #152039;
+  }
+}

@@ -19,3 +19,28 @@
 img {
   border-radius: 3%;
 }
+
+@media only screen and (max-width: 400px) {
+  #blog-card-image-id {
+    margin-left: 30px;
+    width: 320px;
+    height: 170px;
+  }
+  #blog-card-title-id {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  #blog-content-text-middle-id {
+    margin-left: 10px;
+    width: 90%;
+    font-size: 14px;
+  }
+  #blog-read-more-middle-id {
+    font-size: 12px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
