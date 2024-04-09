@@ -4,6 +4,10 @@
   height: 560px;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 .team-section .team-title {
   margin: 0px auto;
   margin-top: -480px;
