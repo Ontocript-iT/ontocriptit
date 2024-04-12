@@ -4,6 +4,10 @@ import "./Header.css";
 import logo from "./ontocript.png"; // Assuming NavigationBar.js is in the components directory
 import { Outlet } from "react-router-dom";
 import { Link,useLocation  } from 'react-router-dom'; 
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+
+import { useState } from "react";
 
 const styles = {
   appBar: {
@@ -14,19 +18,31 @@ const styles = {
 function Header() {
   const location = useLocation();
   const isActive = location.pathname === '/blog'
-
+  const [isClick,setIsClick] = useState(false);
   
+  const toggleClick = () =>{
+    setIsClick(!isClick);
+  }
   return (
 
 
     <AppBar position="stastic" style={styles.appBar}>
       <nav>
-        <div className="logo">
-        <Link to="/">
-          <img src={logo} alt="Logo" />
-          </Link>
+        <div className="logo-and-btn">
+            <div className="logo">
+            <Link to="/">
+              <img src={logo} alt="Logo" />
+              </Link>
+            </div>
+            <div className="btn-menu" onClick={toggleClick}>
+              {!isClick ? 
+                <MenuIcon fontSize="large" />
+                :
+                <CloseIcon fontSize="large"/>
+              }
+            </div>
         </div>
-        <div className="headerLinks">
+        <div className = {isClick ? 'headerLinks': 'headerLinks headerLinks_none' }>
         <ul>
           <li>
             <a  href="/"  className={location.pathname === '/' ? 'activeLink' : ''}>Home</a>
