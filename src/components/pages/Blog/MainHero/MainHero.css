@@ -2,7 +2,6 @@
   height: 80vh;
   background-color: #152039;
   margin: 0 0 20px 0;
-  
 }
 .textContainer {
   padding: 5px;
@@ -57,4 +56,33 @@
 
 h1.mainText {
   animation: fadeIn 4s ease-in-out;
+}
+
+@media only screen and (max-width: 400px) {
+  .container-blog {
+    width: 100%;
+    height: auto;
+    background-color: #152039;
+    margin: 0 0 10px 0px;
+  }
+  .mainText {
+    font-size: 16px;
+  }
+
+  .middle-blogs-container {
+    flex-direction: column;
+    margin-left: -80px;
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+
+  .left-grid {
+    margin-right: 0;
+  }
+
+  .blog-content-text {
+    width: 80%;
+  }
 }
