@@ -94,11 +94,20 @@ body{
   }
 
   .team-section {
-    margin-top: 770px;
+    margin-top: 550px;
     text-align: center;
     height: 560px;
     margin-bottom: -40px;
   }
+
+  .team-cards .photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+
   
   
 

@@ -28,7 +28,7 @@ function Home() {
       <WhyUs />
       <TechStacks />
       <Contact />
-      <OurWorks />
+      {/* <OurWorks /> */}
       <OurTeam />
       <Contact/>
       <Footer />
