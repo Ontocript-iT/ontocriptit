@@ -78,8 +78,35 @@
 
 @media (max-width: 768px) {
   .service-section .service-cards {
-    padding-left: 60px;
+    padding-left: 40px;
   }
+  .service-content-sub-title span{
+    font-size: 15px;
+  }
+  .service-content-title h3{
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  .service-cards .service-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px auto;
+    color: #152039;
+  }
+  
+.service-cards .service-description {
+  font-size: 12px;
+  margin: 20px auto;
+  width: 280px;
+  color: #152039;
+}
+
+.service-section .service-cards {
+  text-align: center;
+  max-width: 800px;
+  margin: 35px auto;
+}
+
 }
 
 @media (max-width: 576px) {

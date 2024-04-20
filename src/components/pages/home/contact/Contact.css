@@ -168,3 +168,19 @@
     align-items: center;
   }
 }
+
+@media (max-width:768px){
+  .content-section-homepage .contact-content-title h3{
+    font-size: 30px;
+    text-align: center ;
+  }
+  .content-section-homepage .contact-content-sub-title span{
+    font-size: 15px;
+    width:auto;
+    padding-right: 0px;
+  }
+  .content-section-homepage .contact-button .contact-email,
+.content-section-homepage .contact-button .contact-phone {
+  font-size: 15px;
+}
+}
