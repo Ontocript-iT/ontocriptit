@@ -123,6 +123,9 @@ nav ul li {
     width: 100%;
     margin: 0 auto;
   }
+  .logo-and-btn .logo{
+    margin-left: 15px;
+  }
 }
 
 @media (max-width: 576px) {
