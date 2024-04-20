@@ -34,7 +34,12 @@ function TechStack(props) {
                         transition: 'transform 0.3s',
                         '&:hover': {
                             transform: 'scale(1.05)', // Increase scale on hover
-                        }
+                        },
+                        '@media (max-width: 768px)': {
+                            width: '150px',
+                            marginLeft: '-100px',
+                            marginBottom: '30px',
+                        marginRight: '10px',}
                     }}>
                         <CardActionArea>
                             <CardMedia
@@ -66,7 +71,10 @@ function TechStack(props) {
                         transition: 'transform 0.3s',
                         '&:hover': {
                             transform: 'scale(1.05)', // Increase scale on hover
-                        }
+                        },    '@media (max-width: 768px)': {
+                            width: '150px',
+                            marginLeft: '-100px',
+                            marginBottom: '30px',}
                     }}>
                         <CardActionArea>
                             <CardMedia

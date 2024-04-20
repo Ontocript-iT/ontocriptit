@@ -27,3 +27,14 @@
 
 }
 
+@media (max-width: 768px) {
+    .why-choose-topic{
+        font-size: 30px;
+    }
+    .card{
+        display: inline-block;
+        
+    }
+
+    
+}

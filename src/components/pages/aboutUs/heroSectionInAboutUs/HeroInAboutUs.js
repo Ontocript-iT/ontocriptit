@@ -12,10 +12,6 @@ export default function HeroInAboutUs() {
 
     </div>
    
-
-   
-
-  
 </div>
   )
 }
