@@ -94,6 +94,29 @@
   .whyus-card{
     width:100%;
   }
+  .whyUs-content-title  h3{
+    font-size: 30px;
+  }
+  .whyUs-content-sub-title span{
+    font-size: 15px;
+  }
+  .whyUs-section{
+    margin-top: -60px;
+  }
+  
+.whyus-card .card-title {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 28px;
+}
+.whyus-card .card-description {
+  color: #ffffff;
+  font-size: 15px;
+  width: 350px;
+  margin: 10px auto;
+  text-align: center;
+}
 }
 
 @media (max-width:375px){

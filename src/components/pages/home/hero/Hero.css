@@ -103,6 +103,20 @@
     padding-left: 0;
     text-align: center;
   }
+
+  .hero-section .hero-content .description {
+    font-size: 15px;
+  }
+
+  .hero-contact-a {
+    font-size: 15px;
+    padding: 10px 20px;
+    margin-top: -40px;
+  }
+  .hero-works-a{
+    font-size: 15px;
+    padding: 10px 15px;
+  }
 }
 
 @media (max-width: 576px) {

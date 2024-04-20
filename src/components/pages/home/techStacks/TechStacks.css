@@ -171,3 +171,36 @@
     padding: 0px 5px 25px 5px;
   }
 }
+
+@media (max-width:768px){
+  .techstack-section {
+    margin: 0 10px;
+    height:auto;
+    margin-bottom: 15px;
+  }
+  
+  .techstack-content-title h3 {
+    text-align: center;
+    margin-left: 0px;
+    font-size: 30px;
+  }
+
+  .techstack-content-sub-title span {
+    justify-content: center;
+    text-align: center;
+    word-spacing: 3px;
+    margin-left: 0px;
+    padding: 0px 5px 25px 5px;
+    font-size: 15px;
+  }
+  .techstack-icons img {
+    width: auto;
+    height: 75px;
+    padding: 5px 10px;
+    margin-left: -15px;
+  }
+  .techstack-section .slick-slide > div {
+    padding: 10px 20px;
+    height: 100px;
+  }
+}

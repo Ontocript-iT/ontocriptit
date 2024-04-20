@@ -192,3 +192,46 @@
     text-align: center;
   }
 }
+
+
+@media (max-width:768px){
+  .work-details {
+    display: flex;
+    flex-direction: column;
+    background-color: #fffcfb;
+    border: 1px solid #152039;
+    border-radius: 20px;
+    width: 330px;
+    height: 280px;
+    margin-top: 0px;
+    padding: 10px 12px;
+  }
+  .works-list {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    gap: 68px;
+    padding-bottom: 0px;
+    margin-left: 17px;
+  }
+  .works-list .work-title {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #f14902;
+  }
+  .works-list .work-details .work-decription {
+    color: #152039;
+    display: flex;
+    justify-content: flex-center;
+    font-size: 15px;
+  }
+  .works-list .work-details .work-url {
+    font-size: 15px;
+    font-weight: semi-bold;
+    margin-top: -10px;
+  }
+  
+}
