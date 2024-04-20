@@ -205,14 +205,16 @@
     height: 280px;
     margin-top: 0px;
     padding: 10px 12px;
-  }
+    overflow: hidden;
+}
+
   .works-list {
     display: flex;
     flex-direction: row;
     margin: auto;
     text-align: center;
     margin-top: 10px;
-    gap: 68px;
+    gap: 18px;
     padding-bottom: 0px;
     margin-left: 17px;
   }
@@ -227,11 +229,35 @@
     display: flex;
     justify-content: flex-center;
     font-size: 15px;
+    font-weight: 500;
   }
   .works-list .work-details .work-url {
     font-size: 15px;
     font-weight: semi-bold;
     margin-top: -10px;
   }
+
+  
+.ourWorks-section {
+margin-top: -320px;
+margin-bottom: 30px;
+}
+
+
+.ourWorks-content-title h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #152039;
+  line-height: 0.1;
+  text-align: left;
+}
+
+
+.ourWorks-content-sub-title span {
+  font-size: 15px;
+
+}
+
+
   
 }

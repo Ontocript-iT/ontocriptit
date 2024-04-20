@@ -2,6 +2,7 @@
   margin-top: 500px;
   text-align: center;
   height: 560px;
+  margin-bottom: -40px;
 }
 
 body{
@@ -75,4 +76,30 @@ body{
 .our-team-slogan {
   font-size: 20px;
   font-weight: 600;
+}
+
+@media (max-width:768px){
+
+  .team-section .team-title {
+    margin: 0px auto;
+    margin-top: -480px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #152039;
+    text-align: center;
+  }
+  .our-team-slogan {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .team-section {
+    margin-top: 770px;
+    text-align: center;
+    height: 560px;
+    margin-bottom: -40px;
+  }
+  
+  
+
 }
