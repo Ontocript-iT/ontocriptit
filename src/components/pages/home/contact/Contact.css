@@ -173,6 +173,7 @@
   .content-section-homepage .contact-content-title h3{
     font-size: 30px;
     text-align: center ;
+    padding-top: 20px;
   }
   .content-section-homepage .contact-content-sub-title span{
     font-size: 15px;
@@ -183,4 +184,5 @@
 .content-section-homepage .contact-button .contact-phone {
   font-size: 15px;
 }
+
 }
