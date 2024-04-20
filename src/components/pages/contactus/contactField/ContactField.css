@@ -84,10 +84,11 @@
     
   }
   #firstName,#email,#lastName,#companyName {
-    width: 400px;
+    width: 100%;
+    
   }
   #message {
-    width: 400px;
+    width: 100%;
     margin-bottom: -70px;
   }
   .subText {

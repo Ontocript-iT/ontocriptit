@@ -20,15 +20,23 @@
    
     .textContainer .mainText{
         font-size: 30px;
-        margin-top:0px;
+        margin-top:-5px;
 
     }
     .textContainer h3{
         font-size: 15px; 
+        text-align: left;
     }
 
    div .container{
     height: 23vh;
+   }
+
+   .mainText{
+     margin-left: -50px;
+   }
+   .textContainer h3{
+    margin-left: -50px;
    }
 
 }
