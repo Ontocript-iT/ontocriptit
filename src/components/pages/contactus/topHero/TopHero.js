@@ -5,7 +5,7 @@ import "./TopHero.css";
 
 export default function TopHero() {
   return (
-    <div className='container'>
+    <div className='container' >
         <div className='textContainer'>
             
         <h3>We provide great ideas to</h3>

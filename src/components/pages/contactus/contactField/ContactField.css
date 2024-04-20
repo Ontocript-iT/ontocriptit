@@ -61,3 +61,49 @@
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+   
+
+  .contact-content-sub-title span {
+    font-size: 15px;
+    color: #152039;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: justify;
+    word-spacing: 3px;
+    width: 400px;
+    
+  }
+
+  .textFieldSubContainer {
+    display: inline-block;
+  }
+  .textFieldContainer {
+    margin: 20px 0px 20px 30px;
+    
+  }
+  #firstName,#email,#lastName,#companyName {
+    width: 100%;
+    
+  }
+  #message {
+    width: 100%;
+    margin-bottom: -70px;
+  }
+  .subText {
+    color: #152039;
+    text-align: left;
+  }
+
+
+
+  .banner-image {
+    width: 100px;
+    display: none;
+  }
+  .submitBtn{
+    margin-top: 20px;
+    margin-bottom: -5px;
+  }
+}
