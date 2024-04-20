@@ -25,7 +25,12 @@ export default function WhyChoose() {
     <Card sx={{ maxWidth: 345,boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)', transition: 'transform 0.3s',
     '&:hover': {
       transform: 'scale(1.05)', // Increase scale on hover
-    }}}>
+    },
+    '@media (max-width: 768px)': {
+      width: '300px',
+      marginLeft: '-100px',
+      marginBottom: '30px',
+    },}}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -34,7 +39,7 @@ export default function WhyChoose() {
           alt="green iguana"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" fontFamily={"montserrat"} fontWeight={700} color={"#F14902"}>
+          <Typography gutterBottom variant="h5" component="div" fontFamily={"montserrat"} fontWeight={700} color={"#F14902"} sx={{ '@media (max-width: 768px)': { fontSize: '20px',textAlign:'center'} }}>
             Trusted Solutions
           </Typography>
           <Typography variant="body2" fontFamily={"montserrat"}  color={"#152039"}>
@@ -48,7 +53,11 @@ export default function WhyChoose() {
     <Card sx={{ maxWidth: 345,boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)', transition: 'transform 0.3s',
     '&:hover': {
       transform: 'scale(1.05)', // Increase scale on hover
-    } }}>
+    },   '@media (max-width: 768px)': {
+      width: '300px',
+      marginLeft: '-100px',
+      marginBottom: '30px',
+    }, }}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -57,7 +66,7 @@ export default function WhyChoose() {
           alt="green iguana"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" fontFamily={"montserrat"} fontWeight={700} color={"#F14902"}>
+          <Typography gutterBottom variant="h5" component="div" fontFamily={"montserrat"} fontWeight={700} color={"#F14902"} sx={{ '@media (max-width: 768px)': { fontSize: '20px',textAlign:'center'} }}>
             Trusted Results
           </Typography>
           <Typography variant="body2" fontFamily={"montserrat"}  color={"#152039"}>
@@ -71,7 +80,11 @@ export default function WhyChoose() {
     <Card sx={{ maxWidth: 345,boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)', transition: 'transform 0.3s',
     '&:hover': {
       transform: 'scale(1.05)', // Increase scale on hover
-    } }}>
+    },   '@media (max-width: 768px)': {
+      width: '300px',
+      marginLeft: '-100px',
+      marginBottom: '30px',
+    }, }}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -80,7 +93,7 @@ export default function WhyChoose() {
           alt="green iguana"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" fontFamily={"montserrat"} fontWeight={700} color={"#F14902"}>
+        <Typography gutterBottom variant="h5" component="div" fontFamily={"montserrat"} fontWeight={700} color={"#F14902"} sx={{ '@media (max-width: 768px)': { fontSize: '20px',textAlign:'center'} }}>
             Trusted Team
           </Typography>
           <Typography variant="body2" fontFamily={"montserrat"}  color={"#152039"}>

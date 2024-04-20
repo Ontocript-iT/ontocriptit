@@ -40,3 +40,43 @@
 .main-text-in-suite{
     margin-top: 60px;
 }
+
+@media (max-width: 768px) {
+    .suite-main-heading{
+        font-size: 30px;
+    }
+    .suite-container{
+        margin: 0 20px 0 20px;
+    }
+    .suite-sub-heading{
+        font-size: 15px;
+    }
+    .suite-body{
+        display: inline;
+        width: max-content;
+        margin: 0 23px 0 23px;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .suite-content{
+        width: 100%;
+        height: 100px;
+        background-color:#152039 ;
+        margin-right: 40px;
+        margin-bottom: 50px;
+        border-radius: 10px;text-align: center;
+        padding-top: 20px;
+    
+    
+    }
+    .main-text-in-suite{
+       font-size: 25px;
+       margin-top: 10px;
+    
+    }
+    .sub-text-in-suite{
+        font-size: 15px;
+        font-weight: lighter;
+        margin-top: -10px;
+    }
+}

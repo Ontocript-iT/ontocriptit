@@ -16,4 +16,15 @@
     text-align: justify;
     margin-bottom: 40px;
   }
-  
+  @media (max-width: 768px) {
+    .subHeading{
+      font-size: 30px;
+    }
+    .service-head{
+      margin: 0 20px 0 -60px;
+    }
+    .subContent{
+      font-size: 15px;
+      margin-top: -20px;
+    }
+  }
