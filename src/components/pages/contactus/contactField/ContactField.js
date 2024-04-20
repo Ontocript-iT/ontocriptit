@@ -180,7 +180,7 @@ export default function ContactField() {
                             onChange={handleChange}
                             error={!!errors.message}
                             helperText={errors.message}
-                            style={{ minWidth: '460px' }}
+                            style={{ minWidth: '400px' }}
                         />
                     </div>
                 </div>

@@ -2,8 +2,7 @@
     height: 33vh;
     background-color: #152039;
     margin-bottom: 40px;
-  
-    
+      
 }
 .textContainer{
     padding-left: 80px;
@@ -14,4 +13,22 @@
 .mainText{
     margin-top: -25px;
     font-size: 48px;
+}
+
+@media (max-width: 768px) {
+   
+   
+    .textContainer .mainText{
+        font-size: 30px;
+        margin-top:0px;
+
+    }
+    .textContainer h3{
+        font-size: 15px; 
+    }
+
+   div .container{
+    height: 23vh;
+   }
+
 }
