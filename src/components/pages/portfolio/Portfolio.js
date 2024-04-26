@@ -28,6 +28,12 @@ function Portfolio() {
       name: "ABC Pvt Ltd Official Website",
       desc: "Discover the Hype: Why Next.js is the Go-To Choice for Undergraduates in Web Development 💡🚀 #NextJS #WebDev #StudentLife",
     },
+    {
+      id: 5,
+      img: angular,
+      name: "ABC Pvt Ltd Official Website",
+      desc: "Discover the Hype: Why Next.js is the Go-To Choice for Undergraduates in Web Development 💡🚀 #NextJS #WebDev #StudentLife",
+    },
   ];
 
   return (
