@@ -15,6 +15,7 @@ import AboutUs from "./components/pages/aboutUs/AboutUs";
 import Technology from "./components/pages/Technology/Technology";
 import PrivacyPolicy from "./components/pages/Privacy-Policy/PrivacyPolicy";
 import BlogData from "./components/pages/Blog/BlogData";
+import Portfolio from "./components/pages/portfolio/Portfolio";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -28,6 +29,7 @@ const router = createBrowserRouter(
       <Route path="/aboutus" element={<AboutUs />} />
       <Route path="/technology" element={<Technology />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/portfolio" element={<Portfolio />} />
     </Route>
   )
 );
