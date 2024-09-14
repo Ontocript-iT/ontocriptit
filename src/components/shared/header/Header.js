@@ -1,80 +1,99 @@
-import React from "react";
-import { AppBar, Toolbar, Button } from "@mui/material";
-import "./Header.css";
-import logo from "./ontocript.png"; // Assuming NavigationBar.js is in the components directory
-import { Outlet } from "react-router-dom";
-import { Link,useLocation  } from 'react-router-dom'; 
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
+import React, { useState, useEffect } from "react";
+import {Link, Outlet, useLocation} from "react-router-dom";
+import { Menu, X, ChevronDown } from 'lucide-react';
+import logo from "./ontocript.png";
 
-import { useState } from "react";
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
-const styles = {
-  appBar: {
-    backgroundColor: "#FFFFFF", // Change this to the desired color
-  },
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const navItems = [
+    { path: '/', label: 'Home' },
+    { path: '/aboutus', label: 'About Us' },
+    { path: '/services', label: 'Services' },
+    { path: '/blog', label: 'Blog' },
+    { path: '/technology', label: 'Technology' },
+    { path: '/contact', label: 'Contact Us' },
+  ];
+
+  return (
+      <header className={` w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
+        <div className=" mx-auto px-4">
+          <nav className="flex justify-between items-center py-4">
+            <Link to="/" className="flex items-center space-x-2">
+              <img src={logo} alt="Logo" className="h-16 w-auto" />
+            </Link>
+
+            <div className="hidden md:flex items-center space-x-12">
+              {navItems.map((item) => (
+                  <NavItem key={item.path} {...item} currentPath={location.pathname} />
+              ))}
+            </div>
+
+            <button
+                onClick={toggleMenu}
+                className="md:hidden focus:outline-none"
+                aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            >
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </nav>
+        </div>
+
+        {/* Mobile menu */}
+        <div
+            className={`md:hidden fixed inset-0 z-50 bg-white transform ${
+                isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+            } transition-transform duration-300 ease-in-out`}
+        >
+          <div className="flex flex-col h-full">
+            <div className="flex justify-between items-center p-4 border-b">
+              <span className="text-xl font-bold text-gray-800">Menu</span>
+              <button onClick={toggleMenu} className="focus:outline-none">
+                <X className="h-6 w-6" />
+              </button>
+            </div>
+            <nav className="flex-grow overflow-y-auto">
+              <ul className="px-4 py-2">
+                {navItems.map((item) => (
+                    <li key={item.path} className="py-2">
+                      <NavItem {...item} currentPath={location.pathname} onClick={toggleMenu} />
+                    </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div className="">
+          <Outlet />
+        </div>
+      </header>
+  );
 };
 
-function Header() {
-  const location = useLocation();
-  const isActive = location.pathname === '/blog'
-  const [isClick,setIsClick] = useState(false);
-  
-  const toggleClick = () =>{
-    setIsClick(!isClick);
-  }
-  return (
-
-
-    <AppBar position="stastic" style={styles.appBar}>
-      <nav>
-        <div className="logo-and-btn">
-            <div className="logo">
-            <Link to="/">
-              <img src={logo} alt="Logo" />
-              </Link>
-            </div>
-            <div className="btn-menu" onClick={toggleClick}>
-              {!isClick ? 
-                <MenuIcon fontSize="large" />
-                :
-                <CloseIcon fontSize="large"/>
-              }
-            </div>
-        </div>
-        <div className = {isClick ? 'headerLinks': 'headerLinks headerLinks_none' }>
-        <ul>
-          <li>
-            <a  href="/"  className={location.pathname === '/' ? 'activeLink' : ''}>Home</a>
-          </li>
-          <li>
-            <a href="/aboutus" className={location.pathname === '/aboutus' ? 'activeLink' : ''}>About us</a>
-          </li>
-          <li>
-            <a href="/services" className={location.pathname === '/services' ? 'activeLink' : ''}>Services</a>
-          </li>
-          <li>
-            <a href="/blog" className={isActive ? 'activeLink' : ''}>Blogs</a>
-          </li>
-          <li>
-            <a href="/technology" className={location.pathname === '/technology' ? 'activeLink' : ''}>Technology</a>
-          </li>
-          {/* <li>
-            <a href="/process">Process</a>
-          </li> */}
-          <li>
-            <a  id="contactUs" href="/contact" className={location.pathname === '/contact' ? 'activeLink' : ''}>
-              Contact Us
-            </a>
-          </li>
-        </ul>
-        </div>
-      </nav>
-      <div>
-        <Outlet />
-      </div>
-    </AppBar>
-  );
-}
+const NavItem = ({ path, label, currentPath, onClick }) => (
+    <Link
+        to={path}
+        className={`text-base font-medium transition-colors duration-200 ${
+            currentPath === path
+                ? 'text-orange-600'
+                : 'text-gray-600 hover:text-orange-600'
+        }`}
+        onClick={onClick}
+    >
+      {label}
+    </Link>
+);
 
 export default Header;
