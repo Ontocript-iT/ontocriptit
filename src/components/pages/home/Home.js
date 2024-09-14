@@ -30,7 +30,7 @@ function Home() {
       <Contact />
       {/* <OurWorks /> */}
       <OurTeam />
-      <Contact/>
+      {/*<Contact/>*/}
       <Footer />
       </AnimatedPage>
 
