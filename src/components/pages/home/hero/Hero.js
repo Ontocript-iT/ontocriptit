@@ -6,7 +6,7 @@ function Hero() {
         <div className="hero-section">
             <div className="hero-content">
                 <h1 class="fade-in-heading">Why Clients Prefer <br /> Collaborating with Our Team</h1>
-                <div className="description">
+                <div className="description bg-mainColor">
                     "Working with the team at Ontocript empowered us to operate in an agile
                     delivery format, developing early prototypes, testing with our
                     customers, and making iterative changes and improvements. Empowering
