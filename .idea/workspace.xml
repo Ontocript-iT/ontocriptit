@@ -6,22 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="47d1d289-e402-4261-9193-f8850754a5ad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Technology/TopHero/TopHero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Technology/TopHero/TopHero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/aboutUs/heroSectionInAboutUs/HeroInAboutUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/aboutUs/heroSectionInAboutUs/HeroInAboutUs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/aboutUs/leardershipTeam/LeadershipTeam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/aboutUs/leardershipTeam/LeadershipTeam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/aboutUs/subSectionTwo/SubSectionTwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/aboutUs/subSectionTwo/SubSectionTwo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/aboutUs/teamPhotos/TeamPhotos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/aboutUs/teamPhotos/TeamPhotos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/aboutUs/whyChoose/WhyChoose.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/aboutUs/whyChoose/WhyChoose.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/contactus/contactField/ContactField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/contactus/contactField/ContactField.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/contactus/contactInWhite/ContactInWhite.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/contactus/contactInWhite/ContactInWhite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/contactus/topHero/TopHero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/contactus/topHero/TopHero.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/home/contact/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/home/contact/Contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/home/hero/Hero.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/home/hero/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/home/hero/Hero.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/home/ourTeam/OurTeam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/home/ourTeam/OurTeam.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/home/service/ServiceSub.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/home/service/ServiceSub.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/home/techStacks/TechStacks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/home/techStacks/TechStacks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/home/whyUs/WhyUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/home/whyUs/WhyUs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/footer/Footer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/header/Header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/services/Heo/HeroSection.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/services/Heo/HeroSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/services/Heo/HeroSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/services/service-suite/ServiceSuite.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/services/service-suite/ServiceSuite.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +99,7 @@
       <updated>1706796142183</updated>
       <workItem from="1706796143954" duration="11259000" />
       <workItem from="1709130234493" duration="8364000" />
-      <workItem from="1726338933312" duration="9535000" />
+      <workItem from="1726338933312" duration="14193000" />
     </task>
     <servers />
   </component>

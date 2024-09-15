@@ -77,7 +77,7 @@ const OurTeam = () => {
     }, [itemsToShow]);
 
     return (
-        <div className="bg-gray-100 pb-60 pt-10">
+        <div className="bg-gray-100 pb-60 pt-20 ">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl font-bold text-center pt-4 mb-4 text-whiteColor">
                     Our Team
