@@ -17,7 +17,7 @@ export default function Service() {
       <AnimatedPage>
 
        <HeroSection/>
-       <SubSection/>
+       {/*<SubSection/>*/}
        <ServiceSub/>
        <ServiceSuite/>
   

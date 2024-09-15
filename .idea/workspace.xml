@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="47d1d289-e402-4261-9193-f8850754a5ad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/contactus/contactField/ContactField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/contactus/contactField/ContactField.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/aboutUs/AboutUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/aboutUs/AboutUs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/aboutUs/heroSectionInAboutUs/HeroInAboutUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/aboutUs/heroSectionInAboutUs/HeroInAboutUs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/contactus/topHero/TopHero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/contactus/topHero/TopHero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/home/hero/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/home/hero/Hero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/services/Heo/HeroSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/services/Heo/HeroSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/services/Service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/services/Service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
