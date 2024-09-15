@@ -17,19 +17,9 @@ function TeamPhotos() {
             position: "Software Engineer"
         },
         {
-            photo: picOfVishwa,
-            name: "Vishwa Waweliyadda",
-            position: "UI/ UX Engineer"
-        },
-        {
             photo: picOfRavindu,
             name: "Ravindu Jayaweera",
             position: "Project Manager"
-        },
-        {
-            photo: picOfSasindu,
-            name: "Sasindu Weerakkodi",
-            position: "QA Engineer"
         },
         {
             photo: picOfPrageeth,
