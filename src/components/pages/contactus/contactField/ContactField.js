@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
-import { toast, ToastContainer } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Swal from 'sweetalert2';
+import emailjs from '@emailjs/browser';
 import banner from './banner_00.png';
 
-const ContactField = () => {
+export default function ContactField() {
     const [formData, setFormData] = useState({
         firstName: '',
-        lastName: '',
         email: '',
+        lastName: '',
         companyName: '',
         message: '',
         termsAgreed: false,
@@ -36,12 +37,40 @@ const ContactField = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validateForm()) {
-            // Simulating email sending
-            Swal.fire({
-                title: "Success",
-                text: "Message sent successfully",
-                icon: "success"
-            });
+            console.log('Form is valid, submitting data:', formData);
+            const templateParams = {
+                from_name: formData.firstName + ' ' + formData.lastName,
+                to_name: 'Recipient Name',
+                message: formData.message,
+                company: formData.companyName,
+                email: formData.email
+            };
+
+            emailjs
+                .send(
+                    'service_0fkg3eg',
+                    'template_gnw78b7',
+                    templateParams,
+                    'r5pZdnkWmzzUXQ05h'
+                )
+                .then(
+                    (result) => {
+                        Swal.fire({
+                            title: "success",
+                            text: "Message sent successfully",
+                            icon: "success"
+                        });
+                    },
+                    (error) => {
+                        console.error('Error sending message. Please try again.', error);
+                        Swal.fire({
+                            title: "error",
+                            text: "Error sending message. Please try again",
+                            icon: "error"
+                        });
+                    }
+                );
+
             setFormData({
                 firstName: '',
                 lastName: '',
@@ -55,7 +84,8 @@ const ContactField = () => {
 
     const handleChange = (e) => {
         const { name, value, checked, type } = e.target;
-        setFormData(prev => ({ ...prev, [name]: type === 'checkbox' ? checked : value }));
+        const newValue = type === 'checkbox' ? checked : value;
+        setFormData({ ...formData, [name]: newValue });
     };
 
     return (
@@ -84,7 +114,7 @@ const ContactField = () => {
                                         id="firstName"
                                         value={formData.firstName}
                                         onChange={handleChange}
-                                        className={`mt-1 block w-full shadow-sm sm:text-sm rounded-md ${
+                                        className={`mt-1 p-2 block w-full shadow-sm sm:text-sm rounded-md ${
                                             errors.firstName ? 'border-red-300 focus:ring-red-500 focus:border-red-500' : 'border-gray-300 focus:ring-indigo-500 focus:border-indigo-500'
                                         }`}
                                     />
@@ -100,7 +130,7 @@ const ContactField = () => {
                                         id="lastName"
                                         value={formData.lastName}
                                         onChange={handleChange}
-                                        className={`mt-1 block w-full shadow-sm sm:text-sm rounded-md ${
+                                        className={`mt-1 p-2 block w-full shadow-sm sm:text-sm rounded-md ${
                                             errors.lastName ? 'border-red-300 focus:ring-red-500 focus:border-red-500' : 'border-gray-300 focus:ring-indigo-500 focus:border-indigo-500'
                                         }`}
                                     />
@@ -118,7 +148,7 @@ const ContactField = () => {
                                         id="email"
                                         value={formData.email}
                                         onChange={handleChange}
-                                        className={`mt-1 block w-full shadow-sm sm:text-sm rounded-md ${
+                                        className={`mt-1 p-2 block w-full shadow-sm sm:text-sm rounded-md ${
                                             errors.email ? 'border-red-300 focus:ring-red-500 focus:border-red-500' : 'border-gray-300 focus:ring-indigo-500 focus:border-indigo-500'
                                         }`}
                                     />
@@ -134,7 +164,7 @@ const ContactField = () => {
                                         id="companyName"
                                         value={formData.companyName}
                                         onChange={handleChange}
-                                        className="mt-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                                        className="mt-1 p-2 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
                                     />
                                 </div>
                             </div>
@@ -148,7 +178,7 @@ const ContactField = () => {
                                     rows={4}
                                     value={formData.message}
                                     onChange={handleChange}
-                                    className={`mt-1 block w-full shadow-sm sm:text-sm rounded-md ${
+                                    className={`mt-1 p-2 block w-full shadow-sm sm:text-sm rounded-md ${
                                         errors.message ? 'border-red-300 focus:ring-red-500 focus:border-red-500' : 'border-gray-300 focus:ring-indigo-500 focus:border-indigo-500'
                                     }`}
                                 />
@@ -186,6 +216,4 @@ const ContactField = () => {
             </div>
         </div>
     );
-};
-
-export default ContactField;
+}
