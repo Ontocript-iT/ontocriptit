@@ -1,5 +1,4 @@
 import Footer from "../../shared/footer/Footer";
-import "./BlogData.css";
 import { Link, useParams } from "react-router-dom";
 import { createClient } from "contentful";
 import { useEffect, useState } from "react";
@@ -54,13 +53,13 @@ export default function BlogData() {
 
 function BlogPost({ title, imageUrl, postData, publishedDate, authorName }) {
   return (
-    <div className="blog-post">
-      <h2 className="title">{title}</h2>
-      <img src={imageUrl} alt="Blog Post" className="image" />
-      <div className="post-data">{documentToReactComponents(postData)}</div>
-      <div className="meta-data">
-        <p className="published-date">Published on: {publishedDate}</p>
-        <p className="author-name">Author: {authorName}</p>
+    <div className="ax-w-7xl mx-auto my-5 p-5 border border-gray-300 rounded-md bg-white">
+      <h2 className="text-[#152039] text-2xl mb-2 sm:text-2xl sm:mb-1">{title}</h2>
+      <img src={imageUrl} alt="Blog Post" className="w-full h-auto mb-2" />
+      <div className="text-[#152039] leading-6 mb-4 text-base sm:text-md sm:leading-4 sm:mb-2">{documentToReactComponents(postData)}</div>
+      <div className="flex justify-between text-[#152039] text-sm sm:text-md sm:flex-col sm:items-start">
+        <p className="sm:mb-1">Published on: {publishedDate}</p>
+        <p className="sm:mt-1">Author: {authorName}</p>
       </div>
     </div>
   );
