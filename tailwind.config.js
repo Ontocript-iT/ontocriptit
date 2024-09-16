@@ -6,6 +6,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '475px', // Custom screen size
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
       colors: {
         mainColor:'#1DA1F2',
         customOrange: '#ff5733',
