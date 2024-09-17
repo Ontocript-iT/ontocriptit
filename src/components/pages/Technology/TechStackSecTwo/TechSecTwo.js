@@ -11,7 +11,7 @@ import Mysql from "../../../../Assets/mysql_tech.png";
 
 function TechSecTwo(props) {
     return (
-        <div className="teck-stack-sec-two">
+        <div className="teck-stack-sec-two ">
 
             <div className="stack-body-upper">
                 <div className="left-stack-body-bottom">

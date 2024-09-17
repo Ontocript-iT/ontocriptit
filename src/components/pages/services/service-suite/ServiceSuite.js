@@ -31,16 +31,16 @@ export default function ServiceSuite() {
     }, []);
 
     return (
-        <section className="bg-gradient-to-b from-gray-100 to-white py-16 px-4  mb-[400px] sm:mb-[250px]">
+        <section className="bg-gradient-to-b from-gray-100 to-white py-16 px-4  mb-[400px] sm:mb-[100px]">
             <div className="container mx-auto pt-4">
-                <h1 className="text-4xl font-bold text-center text-whiteColor mb-4">
+                <h1 className="text-3xl font-bold text-center text-whiteColor mb-4">
                     Our Technology Services Suite
                 </h1>
-                <h2 className="text-xl text-center text-gray-600 mb-12">
+                <h2 className="text-center text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
                     We provide these digital services to grow your business
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2  sm:ml-10 sm:mr-10  gap-8 ">
                     {services.map((service, index) => (
                         <div
                             key={index}

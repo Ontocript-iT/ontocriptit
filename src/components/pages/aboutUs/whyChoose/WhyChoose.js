@@ -33,7 +33,7 @@ export default function WhyChoose() {
     return (
         <section className="bg-white py-16 px-4 mb-[500px] sm:mb-[250px]">
             <div className="container mx-auto">
-                <h1 className="text-4xl font-bold text-center mb-12  pt-4 text-whiteColor">
+                <h1 className="text-3xl font-bold text-center mb-12  pt-4 text-whiteColor">
                     Why Choose Us?
                 </h1>
                 <div className="flex flex-wrap justify-center gap-8">
