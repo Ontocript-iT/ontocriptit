@@ -61,7 +61,7 @@ function Service({ showLink }) {
   return (
       <div className="bg-gradient-to-br  py-16">
         <div className=" mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4 text-gray-800">
+          <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">
             We Provide the Best Services
           </h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">

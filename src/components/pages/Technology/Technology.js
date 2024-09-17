@@ -16,12 +16,12 @@ export default function Technology() {
     <div>
       <AnimatedPage>
         <TopHero/>
-        <HeadTopText/>
+        {/*<HeadTopText/>*/}
         <TechStack/>
-        <TechSecTwo/>
+        {/*<TechSecTwo/>*/}
         <AwsSection/>
         <BottomSec/>
-        <AdditinalService/>
+        {/*<AdditinalService/>*/}
         <Contact/>
         <Footer/>
        
