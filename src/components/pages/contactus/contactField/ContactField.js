@@ -37,7 +37,6 @@ export default function ContactField() {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validateForm()) {
-            console.log('Form is valid, submitting data:', formData);
             const templateParams = {
                 from_name: formData.firstName + ' ' + formData.lastName,
                 to_name: 'Recipient Name',

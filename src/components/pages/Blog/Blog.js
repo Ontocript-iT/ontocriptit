@@ -11,8 +11,8 @@ export default function Blog() {
   const [blogs, setBlogs] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const client = createClient({
-    space: "u6sprwjlzdet",
-    accessToken: "emWDIx0Wm2tauvjFgvRdd2tS_g231WyWQS_YU-i0pA0",
+    space: "h2gof75jgw6o",
+    accessToken: "PNLiAZq-pM_s1y_sS0-HWX1NVzn7gk_Y16iVxoWOoOE",
   });
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function Blog() {
       setIsLoading(true);
       try {
         await client.getEntries().then((entries) => {
-          console.log(entries);
+          console.log("entries"+JSON.stringify(entries));
           setBlogs(entries);
         });
       } catch (error) {
@@ -41,13 +41,13 @@ export default function Blog() {
         ) : (
           <MainHero blogs={blogs} />
         )}
-        {isLoading ? (
-          <Box style={{ marginLeft: "50%" }}>
-            <CircularProgress color="secondary" />
-          </Box>
-        ) : (
-          <MiddleBlogs blogs={blogs} isLoading={isLoading} />
-        )}
+        {/*{isLoading ? (*/}
+        {/*  <Box style={{ marginLeft: "50%" }}>*/}
+        {/*    <CircularProgress color="secondary" />*/}
+        {/*  </Box>*/}
+        {/*) : (*/}
+        {/*  // <MiddleBlogs blogs={blogs} isLoading={isLoading} />*/}
+        {/*)}*/}
         <Contact />
         <Footer />
       </AnimatedPage>
