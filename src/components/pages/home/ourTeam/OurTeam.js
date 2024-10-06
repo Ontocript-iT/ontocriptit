@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 
-import picOfThilina from '../../../../Assets/thi.jpg'
+import picOfThilina from '../../../../Assets/thili.png'
 import picOfRavindu from "../../../../Assets/Ravindu.jpg"
 import picOfVishwa from "../../../../Assets/Vishwa Waweliyadda.jpg"
 import picOfHirumalshi from "../../../../Assets/hirumalshi.jpg"
@@ -17,7 +17,7 @@ const team = [
     },
     {
         photo: picOfVishwa,
-        name: "Vishwa Waweliyadda",
+        name: "Bhanuka Ekanayake",
         position: "UI/UX Engineer"
     },
     {
@@ -27,7 +27,7 @@ const team = [
     },
     {
         photo: picOfSasindu,
-        name: "Sasindu Weerakkodi",
+        name: "Randima Mallawa",
         position: "QA Engineer"
     },
     {
@@ -35,11 +35,11 @@ const team = [
         name: "Tharakee Hirumalshi",
         position: "Business Analyst"
     },
-    {
-        photo: picOfPrageeth,
-        name: "Prageeth Jayasinghe",
-        position: "Project Manager"
-    },
+    // {
+    //     photo: picOfPrageeth,
+    //     name: "Prageeth Jayasinghe",
+    //     position: "Project Manager"
+    // },
 ];
 
 const OurTeam = () => {

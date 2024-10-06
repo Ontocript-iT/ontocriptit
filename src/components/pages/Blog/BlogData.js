@@ -9,8 +9,8 @@ export default function BlogData() {
   const [blogData, setBlogData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const client = createClient({
-    space: "u6sprwjlzdet",
-    accessToken: "emWDIx0Wm2tauvjFgvRdd2tS_g231WyWQS_YU-i0pA0",
+    space: "h2gof75jgw6o",
+    accessToken: "PNLiAZq-pM_s1y_sS0-HWX1NVzn7gk_Y16iVxoWOoOE",
   });
   const { id } = useParams();
   console.log(id);
@@ -39,11 +39,12 @@ export default function BlogData() {
         </Box>
       ) : (
         <BlogPost
-          title={blogData?.fields?.headline}
-          imageUrl={blogData?.fields?.image?.fields?.file?.url}
-          postData={blogData?.fields?.contentInRichText}
-          publishedDate={blogData?.fields?.publishOn}
-          authorName={blogData?.fields?.authorName}
+          title={blogData?.fields?.blogTitle}
+          imageUrl={blogData?.fields?.blogImage?.fields?.file?.url}
+          postData={blogData?.fields?.postContentDescription}
+          // postData={blogData?.fields?.blogSummary}
+          publishedDate={blogData?.fields?.createdDate}
+          authorName={blogData?.fields?.blogAuthor}
         />
       )}
       <Footer />

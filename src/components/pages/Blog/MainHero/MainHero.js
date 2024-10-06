@@ -67,7 +67,9 @@ export default function MainHero({ blogs }) {
                 animate={{opacity: 1, y: 0}}
                 transition={{duration: 0.6, delay: 0.4}}
             >
-              Explore our blog for insights and trends in software development. From cutting-edge web and mobile solutions to cloud-based innovations, we share expert tips, industry updates, and real-world case studies designed to help your business thrive in the digital age
+              Explore our blog for insights and trends in software development. From cutting-edge web and mobile
+              solutions to cloud-based innovations, we share expert tips, industry updates, and real-world case studies
+              designed to help your business thrive in the digital age
             </motion.p>
             <motion.div
                 initial={{opacity: 0, y: 20}}
@@ -89,9 +91,9 @@ export default function MainHero({ blogs }) {
           <div className="flex flex-col gap-2 flex-1 mr-2 w-full">
             {blogs?.items?.slice(0, 1).map((blog, index) => (
                 <BlogCard
-                    title={blog.fields.headline}
-                    image={blog.fields.image.fields.file.url}
-                    description={blog.fields.content.substring(0, 120)}
+                    title={blog.fields.blogTitle}
+                    image={blog.fields.blogImage?.fields?.file?.url}
+                    description={blog.fields.blogSummary}
                     key={blog.sys.id}
                     id={blog.sys.id}
                     headLineColor={"#152039"}
@@ -101,9 +103,9 @@ export default function MainHero({ blogs }) {
           <div className=" flex-col gap-2 flex-1 mr-2 w-full">
             {blogs?.items?.slice(1, 2).map((blog, index) => (
                 <BlogCard
-                    title={blog.fields.headline}
-                    image={blog.fields.image.fields.file.url}
-                    description={blog.fields.content.substring(0, 120)}
+                    title={blog.fields.blogTitle}
+                    image={blog.fields.blogImage?.fields?.file?.url}
+                    description={blog.fields.blogSummary}
                     key={blog.sys.id}
                     id={blog.sys.id}
                     headLineColor={"#152039"}
@@ -111,6 +113,33 @@ export default function MainHero({ blogs }) {
             ))}
           </div>
         </div>
+        <div className="flex flex-col justify-between mx-auto mt-5 xl:flex-row">
+          {/*<div className="flex flex-col gap-2 flex-1 mr-2 w-full">*/}
+          {/*  {blogs?.items?.slice(0, 1).map((blog, index) => (*/}
+          {/*      <BlogCard*/}
+          {/*          title={blog.fields.blogTitle}*/}
+          {/*          image={blog.fields.blogImage?.fields?.file?.url}*/}
+          {/*          description={blog.fields.blogSummary}*/}
+          {/*          key={blog.sys.id}*/}
+          {/*          id={blog.sys.id}*/}
+          {/*          headLineColor={"#152039"}*/}
+          {/*      />*/}
+          {/*  ))}*/}
+          {/*</div>*/}
+          <div className=" flex-col gap-2 flex-1 mr-2 w-full">
+            {blogs?.items?.slice(2, 3).map((blog, index) => (
+                <BlogCard
+                    title={blog.fields.blogTitle}
+                    image={blog.fields.blogImage?.fields?.file?.url}
+                    description={blog.fields.blogSummary}
+                    key={blog.sys.id}
+                    id={blog.sys.id}
+                    headLineColor={"#152039"}
+                />
+            ))}
+          </div>
+        </div>
+
       </div>
     </div>
   );
