@@ -1,104 +1,47 @@
-import React from 'react'
-import "./WhyChoose.css";
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import React from 'react';
+import { Lightbulb, Target, Users } from 'lucide-react';
 
+const features = [
+    {
+        title: "Trusted Solutions",
+        description: "Let us guide you through tailor-made innovation. Rely on our expertise to ensure every challenge finds resolution in our hands with care.",
+        icon: Lightbulb
+    },
+    {
+        title: "Trusted Results",
+        description: "Count on us to deliver what we promise, surpassing your expectations every time. With a proven history of success, we are dedicated to achieving flawless outcomes.",
+        icon: Target
+    },
+    {
+        title: "Trusted Team",
+        description: "Meet our passionate experts, committed to your success. Working together seamlessly, we earn your trust with every interaction, empowering you to reach greater heights.",
+        icon: Users
+    }
+];
 
-import team from '../../../../Assets/team.png';
-import solution from '../../../../Assets/solution.png';
-import result from '../../../../Assets/result.png';
-
-
+const FeatureCard = ({ title, description, icon: Icon }) => (
+    <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)]">
+        <div className="p-6">
+            <Icon className="w-12 h-12 text-[#F14902] mb-4" />
+            <h2 className="text-xl font-semibold text-[#F14902] mb-2">{title}</h2>
+            <p className="text-gray-600 text-sm">{description}</p>
+        </div>
+    </div>
+);
 
 export default function WhyChoose() {
-
-  return (
-    <div className='why-choose-container'>
-        <h1 className='why-choose-topic'>Why Choose Us?</h1>
-
-   <div className='card'>
-
-    <div className='card-one'>
-    <Card sx={{ maxWidth: 345,boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)', transition: 'transform 0.3s',
-    '&:hover': {
-      transform: 'scale(1.05)', // Increase scale on hover
-    }}}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image={solution}
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div" fontFamily={"montserrat"} fontWeight={700} color={"#F14902"}>
-            Trusted Solutions
-          </Typography>
-          <Typography variant="body2" fontFamily={"montserrat"}  color={"#152039"}>
-          We make software that fits your needs perfectly, so you get exactly what you want.
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-
-    </div>
-    <div className='card-two'>
-    <Card sx={{ maxWidth: 345,boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)', transition: 'transform 0.3s',
-    '&:hover': {
-      transform: 'scale(1.05)', // Increase scale on hover
-    } }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image={result}
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div" fontFamily={"montserrat"} fontWeight={700} color={"#F14902"}>
-            Trusted Results
-          </Typography>
-          <Typography variant="body2" fontFamily={"montserrat"}  color={"#152039"}>
-          We've done this before and our clients are happy. You can count on us to get the job done well."
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-        
-    </div>
-    <div className='card-three'>
-    <Card sx={{ maxWidth: 345,boxShadow: '0 5px 15px rgba(0, 0, 0, 0.5)', transition: 'transform 0.3s',
-    '&:hover': {
-      transform: 'scale(1.05)', // Increase scale on hover
-    } }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image={team}
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div" fontFamily={"montserrat"} fontWeight={700} color={"#F14902"}>
-            Trusted Team
-          </Typography>
-          <Typography variant="body2" fontFamily={"montserrat"}  color={"#152039"}>
-          Our team knows what they're doing, and they'll make sure your project is done right.
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-        
-    </div>
-   
-
-   </div>
-
-        
-      
-    </div>
-  )
+    return (
+        <section className="bg-white py-16 px-4 mb-[500px] sm:mb-[250px]">
+            <div className="container mx-auto">
+                <h1 className="text-3xl font-bold text-center mb-12  pt-4 text-whiteColor">
+                    Why Choose Us?
+                </h1>
+                <div className="flex flex-wrap justify-center gap-8">
+                    {features.map((feature, index) => (
+                        <FeatureCard key={index} {...feature} />
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
 }

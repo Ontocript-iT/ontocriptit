@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47d1d289-e402-4261-9193-f8850754a5ad" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Assets/cpedpstopik.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/thili.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/home/hero/Hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/home/hero/Hero.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/thi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/thi.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Blog/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Blog/Blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Blog/BlogData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Blog/BlogData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Blog/MainHero/MainHero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Blog/MainHero/MainHero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Blog/MiddleBlogs/MiddleBlogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Blog/MiddleBlogs/MiddleBlogs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/contactus/contactField/ContactField.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/contactus/contactField/ContactField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/contactus/contactField/ContactField.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/home/hero/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/home/hero/Hero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/home/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/home/ourTeam/OurTeam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/home/ourTeam/OurTeam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/portfolio/Portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/portfolio/Portfolio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/header/Header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +33,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="thilina-dev" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -46,13 +69,14 @@
     &quot;Node.js.WhyChoose.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;last_opened_file_path&quot;: &quot;J:/ontocript/projectFile/ontocriptit/src/components/shared/footer&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;thilina-dev&quot;,
+    &quot;last_opened_file_path&quot;: &quot;J:/ontocript/projectFile/ontocriptit&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -75,11 +99,28 @@
       <updated>1706796142183</updated>
       <workItem from="1706796143954" duration="11259000" />
       <workItem from="1709130234493" duration="8364000" />
+      <workItem from="1726338933312" duration="14193000" />
+      <workItem from="1726583807236" duration="1625000" />
+      <workItem from="1726745356547" duration="12670000" />
+      <workItem from="1727583503368" duration="14864000" />
+      <workItem from="1727790432241" duration="1693000" />
+      <workItem from="1727840239964" duration="2388000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

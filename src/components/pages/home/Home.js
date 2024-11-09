@@ -28,9 +28,9 @@ function Home() {
       <WhyUs />
       <TechStacks />
       <Contact />
-      <OurWorks />
+      {/* <OurWorks /> */}
       <OurTeam />
-      <Contact/>
+      {/*<Contact/>*/}
       <Footer />
       </AnimatedPage>
 

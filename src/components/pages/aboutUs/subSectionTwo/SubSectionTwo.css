@@ -30,3 +30,19 @@ span{
     cursor: pointer;
     
 }
+
+@media (max-width: 768px) {
+    .sub-container{
+        margin: 0 20px 0 20px;
+    }
+    .sub-head-topic{
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    .main-container{
+        height:58vh; 
+    }
+    .sub-content{
+        margin-bottom: 20px;
+    }
+}

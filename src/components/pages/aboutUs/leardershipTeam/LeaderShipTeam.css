@@ -14,3 +14,20 @@
     margin-bottom: -40px;
 
 }
+
+@media (max-width: 768px) {
+    .leadership-topic{
+        font-size: 30px;
+        margin-top: 40PX;
+        text-align: center;
+    }
+    .team-main-container{
+        
+        margin: 0;
+    }
+    .leadership-sub-text{
+        margin: 0 20px -60px 20px;
+        font-size: 15px;
+
+    }
+}

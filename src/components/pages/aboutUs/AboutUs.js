@@ -18,7 +18,7 @@ export default function AboutUs() {
     <div>
       <AnimatedPage>
         <HeroInAboutUs/>
-        <SubOne/>
+        {/*<SubOne/>*/}
         <WhyChoose/>
         <SubSectionTwo/>
         <LeadershipTeam/>

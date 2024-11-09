@@ -1,6 +1,6 @@
 .stack-container{
     height: 110vh;
-    background-color: #152039;
+    background-color: #ffffff;
     margin-bottom: 50px;
     
     
@@ -82,3 +82,4 @@
       100% {opacity:0;width:355px;}
   }
   
+  @media (max-width: 768px) {}

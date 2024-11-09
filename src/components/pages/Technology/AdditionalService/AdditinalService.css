@@ -1,0 +1,19 @@
+.add-service-container{
+    margin-left: 100px;
+    margin-right: 80px;
+}
+
+.add-img-container{
+    display: flex;
+}
+
+.image-container:hover img {
+    transform: scale(1.2); 
+    filter: grayscale(100%);
+  }
+
+  .image-container img {
+    display: block;
+    width: 100%;
+    transition: transform 0.3s ease; 
+  }

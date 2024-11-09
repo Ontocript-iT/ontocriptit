@@ -8,3 +8,16 @@
 .tech-sub-text{
     color:#152039 ;
 }
+
+@media (max-width: 768px) {
+    .tech-main-container{
+        margin: 0 25px 0 25px;
+    }
+    .tech-heading-text{
+        font-size: 30px;
+    }
+    .tech-sub-text{
+        font-size: 15px;
+        text-align: justify;
+    }
+}

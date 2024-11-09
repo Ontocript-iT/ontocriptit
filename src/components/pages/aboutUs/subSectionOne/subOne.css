@@ -11,3 +11,16 @@
     color: #152039;
     text-align: justify;
 }
+
+@media (max-width: 768px) {
+    .sub-one-container{
+        margin: 0 20px 0 20px;
+    }
+
+    .sub-topic{
+        font-size: 30px;
+    }
+    .sub-content{
+        font-size: 15px;
+    }
+}

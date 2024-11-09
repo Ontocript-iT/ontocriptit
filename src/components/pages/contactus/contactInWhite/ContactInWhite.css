@@ -49,3 +49,43 @@
   align-items: center;
   cursor: pointer;
 }
+
+
+@media (max-width: 768px) {
+   
+
+  .contact-content-sub-title span {
+    font-size: 15px;
+    color: #152039;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: justify;
+    word-spacing: 3px;
+    width: 400px;
+    
+  }
+  .contact-content-title h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #152039;
+    line-height: 0.1;
+    text-align: left;
+    margin-top: -10px;
+  }
+  .contact-section .contact-button .contact-email,
+.contact-section .contact-button .contact-phone {
+  width: 260px;
+  height: 47px;
+  border: 3px solid #f14902;
+  border-radius: 50px;
+  color:#152039;
+  font-weight: bold;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+}
