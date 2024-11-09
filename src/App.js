@@ -32,7 +32,7 @@ const router = createBrowserRouter(
       <Route path="/portfolio" element={<Portfolio />} />
     </Route>
   ),
-  { basename: "/ontocriptit" }
+  // { basename: "/ontocriptit" }
 );
 function App() {
   return <RouterProvider router={router} />;
