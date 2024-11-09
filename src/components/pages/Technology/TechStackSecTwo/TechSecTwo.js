@@ -3,13 +3,12 @@ import './TechSecTwo.css';
 import Card from "@mui/material/Card";
 import {CardActionArea} from "@mui/material";
 import CardMedia from "@mui/material/CardMedia";
-import solution from "../../../../Assets/solution.png";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Mongodb from "../../../../Assets/mongodb_tech.png";
 import Mysql from "../../../../Assets/mysql_tech.png";
 
-function TechSecTwo(props) {
+function TechSecTwo() {
     return (
         <div className="teck-stack-sec-two ">
 

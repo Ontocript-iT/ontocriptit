@@ -7,7 +7,7 @@ import picOfRavindu from "../../../../Assets/Ravindu.jpg"
 import picOfVishwa from "../../../../Assets/Vishwa Waweliyadda.jpg"
 import picOfHirumalshi from "../../../../Assets/hirumalshi.jpg"
 import picOfSasindu from "../../../../Assets/sasindu.jpg"
-import picOfPrageeth from "../../../../Assets/prageeth.jpg"
+
 
 const team = [
     {

@@ -21,17 +21,16 @@ export default function Blog() {
     const getAllEntries = async () => {
       setIsLoading(true);
       try {
-        await client.getEntries().then((entries) => {
-          console.log("entries"+JSON.stringify(entries));
-          setBlogs(entries);
-        });
+        const entries = await client.getEntries();
+        console.log("entries", JSON.stringify(entries));
+        setBlogs(entries);
       } catch (error) {
         console.log(error);
       }
       setIsLoading(false);
     };
     getAllEntries();
-  }, []);
+  }, [client]); // Add client to dependency array
 
   return (
     <div>
