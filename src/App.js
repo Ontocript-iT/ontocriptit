@@ -31,7 +31,8 @@ const router = createBrowserRouter(
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/portfolio" element={<Portfolio />} />
     </Route>
-  )
+  ),
+  { basename: "/ontocriptit" }
 );
 function App() {
   return <RouterProvider router={router} />;

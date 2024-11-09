@@ -1,5 +1,5 @@
 {
-  "homepage": "https://thilinanuwankarunarathne/github.io/deploy-github",
+  "homepage": "https://thilinanuwankarunarathne.github.io/ontocriptit",
   "name": "ontocriptit",
   "version": "0.1.0",
   "private": true,
@@ -40,7 +40,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
