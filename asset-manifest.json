@@ -1,23 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.8b51ab16.css",
-    "main.js": "/static/js/main.09a2dfad.js",
+    "main.css": "/static/css/main.8a731843.css",
+    "main.js": "/static/js/main.3a94d292.js",
     "static/js/453.49b6de0e.chunk.js": "/static/js/453.49b6de0e.chunk.js",
     "static/media/logoMockup.png": "/static/media/logoMockup.11e22a02dfa4f8f93ff9.png",
-    "static/media/people.png": "/static/media/people.1c1914c2399154b0eae5.png",
     "static/media/thili.png": "/static/media/thili.b96faceb5202e9164083.png",
-    "static/media/WebOne.png": "/static/media/WebOne.adf18ff6a95638158127.png",
-    "static/media/WebTwo.png": "/static/media/WebTwo.e6f193acd07bb49c387e.png",
-    "static/media/WebThree.png": "/static/media/WebThree.280f5dafb6f9d226e4c6.png",
     "static/media/ravishadhiMockup.png": "/static/media/ravishadhiMockup.c45616c3ac1f6884906b.png",
     "static/media/cpedpstopik.png": "/static/media/cpedpstopik.87a8bfd70a22028f3ee9.png",
     "static/media/banner_00.png": "/static/media/banner_00.1f3892b50f2f92f47080.png",
-    "static/media/javaimg.png": "/static/media/javaimg.e222e54405a5503405d9.png",
     "static/media/Vishwa Waweliyadda.jpg": "/static/media/Vishwa Waweliyadda.5bab04a3c32407dbc0d5.jpg",
     "static/media/prageeth.jpg": "/static/media/prageeth.5177f8ba17af8b4a96b0.jpg",
-    "static/media/cssimg.png": "/static/media/cssimg.7804db88d6e21266aed5.png",
-    "static/media/htmlimg.png": "/static/media/htmlimg.32fb903ee9349ee3c75f.png",
-    "static/media/jsimg.png": "/static/media/jsimg.fbcf79d97669263592c6.png",
     "static/media/reactjs.png": "/static/media/reactjs.4edc6baaa2edd42f094a.png",
     "static/media/thi.jpg": "/static/media/thi.f76325782279b71be7cb.jpg",
     "static/media/wordPress.png": "/static/media/wordPress.8214f5bb06d0071d3718.png",
@@ -26,19 +18,16 @@
     "static/media/Ravindu.jpg": "/static/media/Ravindu.a80117ff62f45d00b857.jpg",
     "static/media/sasindu.jpg": "/static/media/sasindu.2da487dd5c0488e59b7f.jpg",
     "static/media/mongodb.png": "/static/media/mongodb.134721ad62e2bdda76f5.png",
-    "static/media/solution.png": "/static/media/solution.95125f6ea3bb1ca6418e.png",
     "static/media/mysql.png": "/static/media/mysql.de7d16a9a42ba036a848.png",
-    "static/media/mysql_tech.png": "/static/media/mysql_tech.7e76b4da22ba39d41aaa.png",
     "static/media/postgresql.png": "/static/media/postgresql.95033d8f0975bad12d80.png",
-    "static/media/mongodb_tech.png": "/static/media/mongodb_tech.9257d1a12d326c1ce64f.png",
     "static/media/angular.png": "/static/media/angular.ebf75a9a7acef938029b.png",
     "index.html": "/index.html",
-    "main.8b51ab16.css.map": "/static/css/main.8b51ab16.css.map",
-    "main.09a2dfad.js.map": "/static/js/main.09a2dfad.js.map",
+    "main.8a731843.css.map": "/static/css/main.8a731843.css.map",
+    "main.3a94d292.js.map": "/static/js/main.3a94d292.js.map",
     "453.49b6de0e.chunk.js.map": "/static/js/453.49b6de0e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b51ab16.css",
-    "static/js/main.09a2dfad.js"
+    "static/css/main.8a731843.css",
+    "static/js/main.3a94d292.js"
   ]
 }
