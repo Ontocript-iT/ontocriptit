@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 import angular from '../../../../Assets/angular.png';
@@ -25,9 +25,23 @@ const TechStacks = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [itemsToShow, setItemsToShow] = useState(5);
 
+    // Memoize the nextSlide function
+    const nextSlide = useCallback(() => {
+        setCurrentIndex((prevIndex) =>
+            (prevIndex + 1) % (techStacks.length - itemsToShow + 1)
+        );
+    }, [itemsToShow]);
+
+    const prevSlide = useCallback(() => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex === 0 ? techStacks.length - itemsToShow : prevIndex - 1
+        );
+    }, [itemsToShow]);
+
+    // Handle resize effect
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth < 640) setItemsToShow(1); // Full width on small devices
+            if (window.innerWidth < 640) setItemsToShow(1);
             else if (window.innerWidth < 768) setItemsToShow(2);
             else if (window.innerWidth < 1024) setItemsToShow(3);
             else setItemsToShow(5);
@@ -38,50 +52,33 @@ const TechStacks = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    const nextSlide = () => {
-        setCurrentIndex((prevIndex) =>
-            (prevIndex + 1) % (techStacks.length - itemsToShow + 1)
-        );
-    };
-
-    const prevSlide = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? techStacks.length - itemsToShow : prevIndex - 1
-        );
-    };
-
+    // Auto-slide effect
     useEffect(() => {
         const interval = setInterval(nextSlide, 3000);
         return () => clearInterval(interval);
-    }, [itemsToShow]);
+    }, [nextSlide]); // Add nextSlide to dependency array
 
     return (
-        <div className="bg-gray-100 py-32 -mt-24">
-            <div className="mx-auto px-4 pt-3 ">
-                {/*<h2 className="text-4xl font-bold text-center pt-4 mb-4 text-whiteColor">*/}
-                {/*    Tech Stack We Work With*/}
-                {/*</h2>*/}
-                {/*<p className="text-center text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">*/}
-                {/*    We always look for new technologies to ensure our international clients get the best and newest digital products.*/}
-                {/*</p>*/}
+        <div className="py-32 -mt-24 bg-gray-100">
+            <div className="px-4 pt-3 mx-auto ">
                 <div className="relative mb">
                     <div className="flex items-center justify-center mb-6">
-                        <div className="h-px bg-gray-300 flex-grow"></div>
-                        <span className="px-4 text-gray-500 font-semibold">Tech Stack</span>
-                        <div className="h-px bg-gray-300 flex-grow"></div>
+                        <div className="flex-grow h-px bg-gray-300"></div>
+                        <span className="px-4 font-semibold text-gray-500">Tech Stack</span>
+                        <div className="flex-grow h-px bg-gray-300"></div>
                     </div>
                     <div className="flex items-center justify-center">
                         <button
                             onClick={prevSlide}
-                            className="p-2 rounded-full bg-white shadow-md hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                            className="p-2 transition-colors duration-200 bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                         >
                             <ChevronLeft className="w-6 h-6 text-gray-600" />
                         </button>
-                        <div className="flex overflow-hidden mx-2">
+                        <div className="flex mx-2 overflow-hidden">
                             {techStacks.slice(currentIndex, currentIndex + itemsToShow).map((tech, index) => (
                                 <div key={index} className="w-[200px] sm:w-1/2 md:w-1/3 lg:w-[200px] px-2">
-                                    <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-all duration-200 hover:shadow-lg hover:-translate-y-1">
-                                        <img src={tech.icon} alt={tech.name} className="w-28 h-16 mb-2 object-contain" />
+                                    <div className="flex flex-col items-center justify-center p-4 transition-all duration-200 bg-white rounded-lg shadow-md hover:shadow-lg hover:-translate-y-1">
+                                        <img src={tech.icon} alt={tech.name} className="object-contain h-16 mb-2 w-28" />
                                         <p className="text-[15px] font-medium text-gray-700">{tech.name}</p>
                                     </div>
                                 </div>
@@ -89,7 +86,7 @@ const TechStacks = () => {
                         </div>
                         <button
                             onClick={nextSlide}
-                            className="p-2 rounded-full bg-white shadow-md hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                            className="p-2 transition-colors duration-200 bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                         >
                             <ChevronRight className="w-6 h-6 text-gray-600" />
                         </button>
