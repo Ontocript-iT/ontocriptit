@@ -78,15 +78,9 @@ const OurTeam = () => {
     }, [itemsToShow]);
 
     return (
-<<<<<<< Updated upstream
         <div className="bg-gray-100 pb-60 pt-20 ">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl font-bold text-center pt-4 mb-4 text-whiteColor">
-=======
-        <div className="pt-20 bg-gray-100 pb-10 mb-40">
-            <div className="container px-4 mx-auto">
-                <h2 className="pt-4 mb-4 text-3xl font-bold text-center text-whiteColor">
->>>>>>> Stashed changes
                     Our Team
                 </h2>
                 <p className="text-center text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
@@ -100,29 +94,17 @@ const OurTeam = () => {
                         >
                             <ChevronLeft className="w-6 h-6 text-gray-600" />
                         </button>
-                        <div className="flex overflow-hidden xl:overflow-visible">
+                        <div className="flex overflow-visible">
                             {team.slice(currentIndex, currentIndex + itemsToShow).map((member, index) => (
-<<<<<<< Updated upstream
                                 <div key={member.name} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4">
                                     <div className="bg-white rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
                                         <img
                                             src={member.photo}
                                             alt={member.name}
-                                            className="w-full h-64 object-cover filter grayscale hover:grayscale-0 transition-all duration-300"
+                                            className="w-64 h-64 object-cover filter grayscale hover:grayscale-0 transition-all duration-300"
                                         />
-                                        <div className="p-4">
+                                        <div className="p-3">
                                             <h3 className="text-xl font-semibold text-gray-800 mb-1">{member.name}</h3>
-=======
-                                <div key={member.name} className="w-full px-4 sm:w-1/2 md:w-1/3 lg:w-1/4">
-                                    <div className="overflow-hidden transition-all duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105 hover:shadow-xl object-cover">
-                                        <img
-                                            src={member.photo}
-                                            alt={member.name}
-                                            className="object-cover w-full h-64 w-64 transition-all duration-300 filter grayscale hover:grayscale-0"
-                                        />
-                                        <div className="p-5">
-                                            <h3 className="mb-1 text-lg font-semibold text-gray-800">{member.name}</h3>
->>>>>>> Stashed changes
                                             <p className="text-gray-600">{member.position}</p>
                                         </div>
                                     </div>
