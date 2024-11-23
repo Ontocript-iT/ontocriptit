@@ -104,7 +104,7 @@ const OurTeam = () => {
                                             className="w-64 h-64 object-cover filter grayscale hover:grayscale-0 transition-all duration-300"
                                         />
                                         <div className="p-3">
-                                            <h3 className="text-xl font-semibold text-gray-800 mb-1">{member.name}</h3>
+                                            <h3 className="text-lg font-semibold text-gray-800 mb-1">{member.name}</h3>
                                             <p className="text-gray-600">{member.position}</p>
                                         </div>
                                     </div>
