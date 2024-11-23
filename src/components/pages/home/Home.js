@@ -13,13 +13,14 @@ import Header from "../../shared/header/Header";
 import Process from "../process/Process";
 import Footer from '../../shared/footer/Footer'
 import AnimatedPage from '../../AnimatedPage'
+import ClientSays from './clientSays/ClientSays'
 
 
 
 function Home() {
   const shouldShowLink = true; 
   return (
-    <div>
+    <div className='h-auto'>
 
       <AnimatedPage>
 
@@ -31,6 +32,7 @@ function Home() {
       {/* <OurWorks /> */}
       <OurTeam />
       {/*<Contact/>*/}
+      <ClientSays/>
       <Footer />
       </AnimatedPage>
 
