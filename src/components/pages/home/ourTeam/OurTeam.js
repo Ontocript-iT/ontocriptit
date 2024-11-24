@@ -51,7 +51,8 @@ const OurTeam = () => {
             if (window.innerWidth < 640) setItemsToShow(1);
             else if (window.innerWidth < 768) setItemsToShow(2);
             else if (window.innerWidth < 1024) setItemsToShow(3);
-            else setItemsToShow(4);
+            else if (window.innerWidth < 1524) setItemsToShow(4);
+            else setItemsToShow(5);
         };
 
         handleResize();
@@ -93,17 +94,18 @@ const OurTeam = () => {
                         >
                             <ChevronLeft className="w-6 h-6 text-gray-600" />
                         </button>
-                        <div className="flex overflow-hidden">
+                        <div className="flex overflow-visible">
                             {team.slice(currentIndex, currentIndex + itemsToShow).map((member, index) => (
                                 <div key={member.name} className="w-full px-4 sm:w-1/2 md:w-1/3 lg:w-1/4">
                                     <div className="overflow-hidden transition-all duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105 hover:shadow-xl">
                                         <img
                                             src={member.photo}
                                             alt={member.name}
+
                                             className="object-cover w-full h-64 transition-all duration-300 filter grayscale hover:grayscale-0"
                                         />
-                                        <div className="p-4">
-                                            <h3 className="mb-1 text-xl font-semibold text-gray-800">{member.name}</h3>
+                                        <div className="p-3">
+                                            <h3 className="text-lg font-semibold text-gray-800 mb-1">{member.name}</h3>
                                             <p className="text-gray-600">{member.position}</p>
                                         </div>
                                     </div>

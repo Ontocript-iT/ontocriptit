@@ -79,7 +79,7 @@ const TechStacks = () => {
               </button>
               <div className="flex overflow-hidden mx-2">
                 {techStacks.slice(currentIndex, currentIndex + itemsToShow).map((tech, index) => (
-                    <div key={index} className="w-[200px] sm:w-1/2 md:w-1/3 lg:w-[200px] px-2">
+                    <div key={index} className="w-[200px] sm:w-1/2 md:w-1/3 lg:w-[300px] px-2">
                       <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-all duration-200 hover:shadow-lg hover:-translate-y-1">
                         <img src={tech.icon} alt={tech.name} className="w-28 h-16 mb-2 object-contain" />
                         <p className="text-[15px] font-medium text-gray-700">{tech.name}</p>
