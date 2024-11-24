@@ -1,11 +1,8 @@
 import React from 'react'
 import './TeamPhotos.css'
-import people from '../../../../Assets/people.png'
 import logoMockup from '../../../../Assets/logoMockup.png'
 import picOfThilina from '../../../../Assets/thi.jpg'
 import picOfRavindu from "../../../../Assets/Ravindu.jpg"
-import picOfVishwa from "../../../../Assets/Vishwa Waweliyadda.jpg"
-import picOfSasindu from "../../../../Assets/sasindu.jpg"
 import picOfPrageeth from "../../../../Assets/prageeth.jpg"
 
 function TeamPhotos() {

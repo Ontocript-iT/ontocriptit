@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Swal from 'sweetalert2';
 import emailjs from '@emailjs/browser';
@@ -17,7 +17,7 @@ export default function ContactField() {
     const [errors, setErrors] = useState({});
 
     const validateForm = () => {
-        let isValid = true;
+   
         const newErrors = {};
 
         if (!formData.firstName.trim()) newErrors.firstName = 'First name is required';
@@ -88,13 +88,13 @@ export default function ContactField() {
     };
 
     return (
-        <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="px-4 py-12 bg-gray-100 sm:px-6 lg:px-8">
             <ToastContainer />
-            <div className="max-w-7xl mx-auto">
+            <div className="mx-auto max-w-7xl">
                 <div className="md:grid md:grid-cols-2 md:gap-6">
                     <div className="md:col-span-1">
-                        <h2 className="text-2xl font-bold text-gray-900 mb-4">Contact Us</h2>
-                        <p className="text-gray-600 mb-4">
+                        <h2 className="mb-4 text-2xl font-bold text-gray-900">Contact Us</h2>
+                        <p className="mb-4 text-gray-600">
                             Our team is just a message or call away, ready to engage, understand
                             your unique requirements, and transform challenges into opportunities.
                         </p>
@@ -163,7 +163,7 @@ export default function ContactField() {
                                         id="companyName"
                                         value={formData.companyName}
                                         onChange={handleChange}
-                                        className="mt-1 p-2 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                                        className="block w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500"
                                     />
                                 </div>
                             </div>
@@ -191,7 +191,7 @@ export default function ContactField() {
                                         type="checkbox"
                                         checked={formData.termsAgreed}
                                         onChange={handleChange}
-                                        className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                        className="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
                                     />
                                 </div>
                                 <div className="ml-3 text-sm">
@@ -204,7 +204,7 @@ export default function ContactField() {
                             <div>
                                 <button
                                     type="submit"
-                                    className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blueColor hover:bg-blue-950 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                    className="flex justify-center w-full px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-blueColor hover:bg-blue-950 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 >
                                     Submit
                                 </button>
