@@ -62,8 +62,8 @@ const ServiceBadge = ({ icon: Icon, title, description }) => (
 
 const Service = () => {
   return (
-      <div className="bg-gray-50 pb-56 py-16 mb-[250px] mr-10 ml-10">
-        <div className="container mx-auto px-4 lg:px-8">
+      <div className="bg-gray-50 pb-20 pt-16 mr-10 ml-10">
+        <div className="mx-auto px-4 lg:px-8">
           {/* About Section */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Images */}
@@ -72,7 +72,7 @@ const Service = () => {
                 <img
                     src={image1}
                     alt="Team collaboration"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full md:h-[475px] lg:h-full xl:h-[600px] object-cover"
                 />
               </div>
               <div className="absolute top-16 right-0 w-[65%] z-20 shadow-1xl rounded-lg overflow-hidden transform rotate-2 hover:rotate-0 transition-transform duration-300">
@@ -107,7 +107,7 @@ const Service = () => {
           </div>
 
           {/* Badge Section */}
-          <div className="mt-16">
+          <div className="lg:mt-20 md:mt-8 mt-4">
             <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">
               Our Core Capabilities
             </h3>
