@@ -72,7 +72,7 @@ const ClientSays = () => {
             {
                 breakpoint: 748,  // Small screen (mobile)
                 settings: {
-                    slidesToShow: 1,  // Show 1 slide on mobile
+                    slidesToShow: 1,  // Show 1 slide on small screens
                     slidesToScroll: 1,
                 }
             }
@@ -81,12 +81,17 @@ const ClientSays = () => {
 
     return (
         <div className="py-12 bg-gray-100 mt-20 mb-10">
-            <div className="mx-auto px-20 max-w-8xl h-auto">
+            <div className="mx-auto px-4 sm:px-8 max-w-8xl h-auto">
                 <h2 className="text-3xl font-bold text-center mb-8">What Our Clients Say</h2>
                 <Slider {...settings}>
                     {feedbacks.map((feedback, index) => (
-                        <div key={index} className="bg-white rounded-lg shadow-md text-center p-6 mx-auto mb-6">
-                            <img src={feedback.image} alt={feedback.name} className="w-35 h-40 rounded-full mx-auto mb-4 object-cover" />
+                        <div key={index} className="bg-white rounded-lg shadow-md text-center p-6 mx-auto mb-6 hover:shadow-lg transition-all duration-300">
+                            {/* Set a larger size for the image to simulate "passport size" */}
+                            <img 
+                                src={feedback.image} 
+                                alt={feedback.name} 
+                                className="w-32 h-32 sm:w-32 sm:h-32 rounded-full mx-auto mb-4 object-cover shadow-md transition-transform transform hover:scale-110"
+                            />
                             <h3 className="text-xl font-bold mb-2">{feedback.name}</h3>
                             <p className="text-gray-600">{feedback.address}</p>
                             <p className="text-gray-600 italic">{feedback.comment}</p>

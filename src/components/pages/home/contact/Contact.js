@@ -9,8 +9,8 @@ function Contact() {
     };
 
     return (
-        <div className=" py-16   mb-[150px] sm:mb-[20px]">
-            <div className="container mx-auto px-4">
+        <div className=" py-20 sm:mb-[20px]">
+            <div className="mx-auto px-4">
                 <div className="bg-white rounded-lg shadow-xl overflow-hidden">
                     <div className="md:flex">
                         <div className="md:w-1/2 p-8">
