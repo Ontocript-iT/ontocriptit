@@ -1,7 +1,12 @@
+
 import React from 'react';
 import { CheckCircle, Shield, TrendingUp, Layers } from 'lucide-react';
 import image1 from "../../../../Assets/1234.png"
 import image2 from "../../../../Assets/12345.png"
+
+import React, { useState, useEffect,useCallback } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+
 
 // Separate data into a constants file or separate module
 const SERVICES_DATA = [
@@ -27,6 +32,7 @@ const SERVICES_DATA = [
   },
 ];
 
+
 const BADGE_DATA = [
   {
     icon: TrendingUp,
@@ -50,6 +56,36 @@ const BADGE_DATA = [
   },
 ];
 
+function Service({ showLink }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [itemsToShow, setItemsToShow] = useState(4);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) setItemsToShow(1);
+      else if (window.innerWidth < 768) setItemsToShow(2);
+      else if (window.innerWidth < 1024) setItemsToShow(3);
+      else setItemsToShow(4);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const nextSlide = useCallback(() => {
+    setCurrentIndex((prevIndex) =>
+        (prevIndex + 1) % (cardsData.length - itemsToShow + 1)
+    );
+}, [itemsToShow]);
+
+const prevSlide = useCallback(() => {
+  setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? cardsData.length - itemsToShow : prevIndex - 1
+  );
+}, [itemsToShow]);
+
+
 const ServiceBadge = ({ icon: Icon, title, description }) => (
     <div className="flex flex-col items-center text-center p-4 hover:bg-blue-50 transition-colors rounded-lg">
       <div className="bg-blue-100 text-blue-500 w-12 h-12 flex items-center justify-center rounded-full mb-3">
@@ -62,6 +98,7 @@ const ServiceBadge = ({ icon: Icon, title, description }) => (
 
 const Service = () => {
   return (
+
       <div className="bg-gray-50 pb-20 pt-16 mr-10 ml-10">
         <div className="mx-auto px-4 lg:px-8">
           {/* About Section */}
@@ -117,6 +154,55 @@ const Service = () => {
               ))}
             </div>
           </div>
+
+      <div className="py-16 bg-gradient-to-br">
+        <div className="px-4 mx-auto ">
+          <h2 className="mb-4 text-3xl font-bold text-center text-gray-800">
+            We Provide the Best Services
+          </h2>
+          <p className="max-w-2xl mx-auto mb-12 text-center text-gray-600">
+            We offer top-notch software services for your needs
+          </p>
+          <div className="relative">
+            <div className="flex items-center justify-center">
+              <button
+                  onClick={prevSlide}
+                  className="absolute left-0 z-10 p-2 transition-colors duration-200 bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              >
+                <ChevronLeft className="w-6 h-6 text-gray-600" />
+              </button>
+              <div className="flex overflow-hidden">
+                {cardsData.slice(currentIndex, currentIndex + itemsToShow).map((service, index) => (
+                    <div key={service.title} className="w-full px-4 sm:w-1/2 md:w-1/3 lg:w-1/4">
+                      <div className="p-6 overflow-hidden transition-all duration-300 bg-white rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1">
+                        <svg className="w-12 h-12 mx-auto mb-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={service.icon} />
+                        </svg>
+                        <h3 className="mb-2 text-xl font-semibold text-center text-gray-800">{service.title}</h3>
+                        <p className="text-center text-gray-600">{service.description}</p>
+                      </div>
+                    </div>
+                ))}
+              </div>
+              <button
+                  onClick={nextSlide}
+                  className="absolute right-0 z-10 p-2 transition-colors duration-200 bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              >
+                <ChevronRight className="w-6 h-6 text-gray-600" />
+              </button>
+            </div>
+          </div>
+          {showLink && (
+              <div className="mt-12 text-center">
+                <a
+                    href="/services"
+                    className="inline-block px-6 py-2 font-semibold text-white transition-colors duration-300 rounded-full bg-orangeColor hover:bg-orange-500"
+                >
+                  See All Services
+                </a>
+              </div>
+          )}
+
         </div>
       </div>
   );

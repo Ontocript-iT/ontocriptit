@@ -1,11 +1,20 @@
 import React, { useState, useEffect, useCallback } from 'react';
+
 import { ChevronLeft, ChevronRight, Linkedin, Facebook } from 'lucide-react';
+
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+
 
 import picOfThilina from '../../../../Assets/nuwan.png'
 import picOfImasha from "../../../../Assets/imashaaaa.png"
 import picOfVishwa from "../../../../Assets/Vishwa Waweliyadda.jpg"
 import picOfHirumalshi from "../../../../Assets/hirumalshi.jpg"
+
 import picOfRandima from "../../../../Assets/rand.png"
+
+import picOfSasindu from "../../../../Assets/sasindu.jpg"
+
+
 
 const team = [
     {
@@ -82,6 +91,7 @@ const OurTeam = () => {
     }, [itemsToShow]);
 
     return (
+
         <div className="pt-20 bg-gray-50 pb-60 mb-36">
             <div className="container px-4 mx-auto">
                 <h2 className="pt-4 mb-4 text-3xl font-bold text-center text-blueColor">
@@ -89,15 +99,29 @@ const OurTeam = () => {
                 </h2>
                 <p className="max-w-2xl mx-auto mb-12 text-center text-gray-600 text-lg">
                     Innovative minds driving our success forward
+
+        <div className="pt-20 bg-gray-100 pb-60 ">
+            <div className="container px-4 mx-auto">
+                <h2 className="pt-4 mb-4 text-3xl font-bold text-center text-whiteColor">
+                    Our Team
+                </h2>
+                <p className="max-w-2xl mx-auto mb-6 text-center text-gray-600 sm:mb-8">
+                    Meet the talented individuals behind our success
+
                 </p>
                 <div className="relative">
                     <div className="flex items-center justify-center">
                         <button
                             onClick={prevSlide}
+
                             className="absolute left-0 z-10 p-3 transition-all duration-300 bg-white rounded-full shadow-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
+
+                            className="absolute left-0 z-10 p-2 transition-colors duration-200 bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+
                         >
                             <ChevronLeft className="w-7 h-7 text-blue-600" />
                         </button>
+
                         <div className="flex overflow-visible space-x-6">
                             {team.slice(currentIndex, currentIndex + itemsToShow).map((member) => (
                                 <div
@@ -141,6 +165,20 @@ const OurTeam = () => {
                                                     </div>
                                                 </div>
                                             )}
+
+                        <div className="flex overflow-hidden">
+                            {team.slice(currentIndex, currentIndex + itemsToShow).map((member, index) => (
+                                <div key={member.name} className="w-full px-4 sm:w-1/2 md:w-1/3 lg:w-1/4">
+                                    <div className="overflow-hidden transition-all duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105 hover:shadow-xl">
+                                        <img
+                                            src={member.photo}
+                                            alt={member.name}
+                                            className="object-cover w-full h-64 transition-all duration-300 filter grayscale hover:grayscale-0"
+                                        />
+                                        <div className="p-4">
+                                            <h3 className="mb-1 text-xl font-semibold text-gray-800">{member.name}</h3>
+                                            <p className="text-gray-600">{member.position}</p>
+
                                         </div>
                                         {hoveredMember !== member.name && (
                                             <div className="p-4 bg-white">
@@ -154,7 +192,11 @@ const OurTeam = () => {
                         </div>
                         <button
                             onClick={nextSlide}
+
                             className="absolute right-0 z-10 p-3 transition-all duration-300 bg-white rounded-full shadow-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
+
+                            className="absolute right-0 z-10 p-2 transition-colors duration-200 bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+
                         >
                             <ChevronRight className="w-7 h-7 text-blue-600" />
                         </button>
