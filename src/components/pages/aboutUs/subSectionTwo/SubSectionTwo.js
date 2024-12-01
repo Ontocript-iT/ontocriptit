@@ -15,12 +15,12 @@ const sections = [
         link: "/technology",
         icon: Cpu
     },
-    {
-        title: "Read Our Blogs",
-        content: "Our insightful blogs delve into industry trends, best practices, and innovative solutions. Explore our diverse topics covering software development, technology insights, and business strategies to stay informed and inspired.",
-        link: "/blog",
-        icon: BookOpen
-    }
+    // {
+    //     title: "Read Our Blogs",
+    //     content: "Our insightful blogs delve into industry trends, best practices, and innovative solutions. Explore our diverse topics covering software development, technology insights, and business strategies to stay informed and inspired.",
+    //     link: "/blog",
+    //     icon: BookOpen
+    // }
 ];
 
 const Section = ({ title, content, link, icon: Icon }) => (

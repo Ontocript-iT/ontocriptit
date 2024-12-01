@@ -7,7 +7,7 @@ export default function LeadershipTeam() {
                 <h1 className="text-4xl font-bold text-[#152039] mb-6">
                     Our Leadership
                 </h1>
-                <p className="text-gray-600 text-lg leading-relaxed">
+                <p className="text-gray-600 text-md leading-relaxed">
                     Under our leadership, we make new things, do them really well, and help businesses move forward confidently and successfully.
                 </p>
             </div>

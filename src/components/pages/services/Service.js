@@ -6,6 +6,7 @@ import Footer from '../../shared/footer/Footer'
 import ServiceSuite from './service-suite/ServiceSuite'
 import AnimatedPage from '../../AnimatedPage'
 import Contact from '../home/contact/Contact'
+import ProfessionalAchievements from "../../shared/Professional Achievements/ProfessionalAchievements";
 
 
 
@@ -19,7 +20,11 @@ export default function Service() {
        <HeroSection/>
        {/*<SubSection/>*/}
        <ServiceSub/>
+
+
        <ServiceSuite/>
+
+          <ProfessionalAchievements/>
   
       <Contact/>
        <Footer/>

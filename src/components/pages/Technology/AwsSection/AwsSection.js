@@ -19,7 +19,7 @@ const CloudComputingSection = () => {
 
     return (
         <div className="container mx-auto px-4 py-16 ">
-            <h1 className="text-3xl font-bold text-center mb-12 text-whiteColor">
+            <h1 className="text-3xl font-bold text-center mb-12 text-blueColor">
                 Cloud Computing Solutions
             </h1>
             <div className="grid md:grid-cols-2 gap-8">

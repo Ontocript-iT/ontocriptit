@@ -58,7 +58,7 @@ const TechStacks = () => {
   return (
       <div className="bg-gray-100 py-32 -mt-24">
         <div className="container mx-auto px-4 pt-3 ">
-          <h2 className="text-3xl font-bold text-center pt-4 mb-4 text-whiteColor">
+          <h2 className="text-3xl font-bold text-center pt-4 mb-4 text-blueColor">
             Tech Stack We Work With
           </h2>
           <p className="text-center text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
@@ -79,7 +79,7 @@ const TechStacks = () => {
               </button>
               <div className="flex overflow-hidden mx-2">
                 {techStacks.slice(currentIndex, currentIndex + itemsToShow).map((tech, index) => (
-                    <div key={index} className="w-[200px] sm:w-1/2 md:w-1/3 lg:w-[200px] px-2">
+                    <div key={index} className="w-[200px] sm:w-1/2 md:w-1/3 lg:w-[300px] px-2">
                       <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-all duration-200 hover:shadow-lg hover:-translate-y-1">
                         <img src={tech.icon} alt={tech.name} className="w-28 h-16 mb-2 object-contain" />
                         <p className="text-[15px] font-medium text-gray-700">{tech.name}</p>

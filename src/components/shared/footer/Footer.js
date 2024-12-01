@@ -15,11 +15,11 @@ const Footer = () => {
         { title: 'Company', items: [
                 { name: 'About us', link: '/aboutus' },
                 { name: 'Services', link: '/services' },
-                { name: 'Technology', link: '#' },
+                { name: 'Technology', link: '/technology' },
                 { name: 'Contact Us', link: '/contact' },
             ]},
         { title: 'Updates', items: [
-                { name: 'Blogs', link: '/blog' },
+                // { name: 'Blogs', link: '/blog' },
             ]},
     ];
 

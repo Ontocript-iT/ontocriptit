@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const HeroSection = () => {
     return (
-        <div className="relative overflow-hidden bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 h-[60vh] md:h-[70vh] flex items-center">
+        <div className="relative overflow-hidden bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 h-[50vh] md:h-[60vh] flex items-center">
             {/* Abstract tech background */}
             <div className="absolute inset-0 opacity-20">
                 <div className="absolute inset-0 bg-black">
@@ -20,7 +20,7 @@ const HeroSection = () => {
 
             {/* Animated code snippet */}
             <motion.div
-                className="absolute right-0 top-1/4 w-1/3 h-1/2 bg-opacity-10 bg-white rounded-l-lg overflow-hidden"
+                className="absolute right-0 top-1/4 w-1/3 h-1/2 bg-opacity-10 bg-white rounded-l-lg overflow-hidden hidden md:block"
                 initial={{ x: "100%" }}
                 animate={{ x: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
@@ -43,7 +43,7 @@ const HeroSection = () => {
             {/* Content */}
             <div className="relative z-10 text-left px-8 md:px-16 max-w-4xl">
                 <motion.h3
-                    className="text-lg sm:text-xl text-blue-300 font-light mb-4"
+                    className="text-lg sm:text-xl text-blue-300 font-light mb-1"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
@@ -59,7 +59,7 @@ const HeroSection = () => {
                     Turning Ideas into Impactful Software
                 </motion.h1>
                 <motion.p
-                    className="text-gray-300 text-lg mb-8 max-w-2xl"
+                    className="text-gray-300 text-md mb-8 max-w-2xl"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.4 }}

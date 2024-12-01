@@ -22,7 +22,7 @@ const Header = () => {
         { path: '/', label: 'Home' },
         { path: '/aboutus', label: 'About Us' },
         { path: '/services', label: 'Services' },
-        { path: '/blog', label: 'Blog' },
+        // { path: '/blog', label: 'Blog' },
         { path: '/technology', label: 'Technology' },
         { path: '/contact', label: 'Contact Us', highlight: true },
     ];
@@ -32,7 +32,7 @@ const Header = () => {
             <div className="mx-auto px-4">
                 <nav className="flex justify-between items-center py-4">
                     <Link to="/" className="flex items-center space-x-2">
-                        <img src={logo} alt="Logo" className="h-16 w-auto" />
+                        <img src={logo} alt="Logo" className="h-16 w-auto -ml-2 sm:ml-6" />
                     </Link>
 
                     <div className="hidden md:flex items-center space-x-12">
