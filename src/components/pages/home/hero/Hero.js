@@ -1,13 +1,56 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
+    const [displayText, setDisplayText] = useState('');
+    const [isDeleting, setIsDeleting] = useState(false);
+    const fullText = "Ontocript iT Software Solutions";
+    const [typingSpeed, setTypingSpeed] = useState(100);
+
+    useEffect(() => {
+        let isMounted = true;
+        let index = 0;
+
+        const handleTyping = () => {
+            if (!isMounted) return;
+
+            if (!isDeleting && displayText.length < fullText.length) {
+                // Typing forward
+                setDisplayText(fullText.slice(0, displayText.length + 1));
+                setTypingSpeed(100);
+            }
+            else if (isDeleting && displayText.length > 0) {
+                // Deleting backward
+                setDisplayText(fullText.slice(0, displayText.length - 1));
+                setTypingSpeed(50);
+            }
+            else if (displayText.length === fullText.length && !isDeleting) {
+                // Pause at full text
+                setTimeout(() => setIsDeleting(true), 2000);
+                return;
+            }
+            else if (isDeleting && displayText.length === 0) {
+                // Reset to start typing again
+                setIsDeleting(false);
+            }
+
+            setTimeout(handleTyping, typingSpeed);
+        };
+
+        const typingTimeout = setTimeout(handleTyping, typingSpeed);
+
+        return () => {
+            isMounted = false;
+            clearTimeout(typingTimeout);
+        };
+    }, [displayText, isDeleting, typingSpeed]);
+
     const colors = {
         blueColor: '#152039',
         whiteColor: '#ffffff',
-        orangeColor: '#FFA500', // Added orangeColor
+        orangeColor: '#FFA500',
     };
 
     const backgroundGradients = {
@@ -17,7 +60,7 @@ const Hero = () => {
     };
 
     return (
-        <div className="relative pt-16 overflow-hidden bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 min-h-[70vh] sm:pt-20 md:min-h-[80vh] flex items-center">
+        <div className="relative pt-2 overflow-hidden bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 min-h-[60vh] sm:pt-10 md:min-h-[70vh] flex items-center">
             {/* Abstract tech background */}
             <div className="absolute inset-0 opacity-20">
                 <div className="absolute inset-0" style={{ backgroundColor: colors.blueColor }}>
@@ -56,7 +99,7 @@ const Hero = () => {
             {/* Content */}
             <div className="relative z-10 text-left px-8 md:px-16 max-w-4xl">
                 <motion.h3
-                    className="text-lg sm:text-xl font-light mb-4"
+                    className="text-lg sm:text-xl font-light mb-1"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
@@ -71,14 +114,23 @@ const Hero = () => {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     style={{ color: colors.whiteColor }}
                 >
-                    Ontocript iT Software Solutions
+                    {displayText}
+                    <motion.span
+                        animate={{ opacity: [1, 0] }}
+                        transition={{
+                            duration: 0.7,
+                            repeat: Infinity,
+                            ease: "easeInOut"
+                        }}
+                        className="inline-block w-1 h-full bg-white ml-1"
+                    />
                 </motion.h1>
                 <motion.p
-                    className="text-lg mb-8 max-w-2xl"
+                    className="text-md mb-8 max-w-2xl"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.4 }}
-                    style={{ color: colors.whiteColor, opacity: 0.8 }}
+                    style={{ color: "white", opacity: 0.6 }} // Reduced opacity
                 >
                     At OntocriptiT, we craft cutting-edge software that drives business success. With expertise in web development, mobile apps, and cloud computing, we provide customized, scalable solutions that prioritize innovation, efficiency, and client satisfaction. Let us transform your vision into a digital reality.
                 </motion.p>
@@ -108,7 +160,6 @@ const Hero = () => {
                         <Link
                             to="/portfolio"
                             className="px-8 py-3 sm:w-[44] w-[300px] bg-orangeColor text-whiteColor mb-10 rounded-md font-semibold text-[15px] transition duration-300 ease-in-out flex items-center justify-center"
-
                         >
                             See our works
                             <motion.div

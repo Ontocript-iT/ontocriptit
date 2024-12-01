@@ -67,7 +67,7 @@ const Service = () => {
           {/* About Section */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Images */}
-            <div className="relative grid grid-cols-2 gap-4 order-1 lg:order-first h-[450px]">
+            <div className="relative grid grid-cols-2 gap-4 order-1 lg:order-first h-[450px] sm:ml-32">
               <div className="absolute top-0 left-0 w-[65%] z-10 shadow-2xl rounded-lg overflow-hidden transform -rotate-6 hover:rotate-0 transition-transform duration-300">
                 <img
                     src={image1}
@@ -90,13 +90,13 @@ const Service = () => {
                 We Provide the Best <span className="text-blue-600">IT Solutions</span>
               </h2>
               <p className="text-gray-700 text-base md:text-lg mb-6">
-                At Enigma IT, we specialize in delivering cutting-edge technology solutions tailored to meet the unique needs of businesses. Our experienced team offers reliable, scalable, and cost-effective services, including cloud computing, cybersecurity, software development, and IT consulting.
+                At Ontocript IT, we specialize in delivering cutting-edge technology solutions tailored to meet the unique needs of businesses. Our experienced team offers reliable, scalable, and cost-effective services, including cloud computing, cybersecurity, software development, and IT consulting.
               </p>
               <ul className="space-y-4 text-gray-700">
                 {SERVICES_DATA.map((service, index) => (
                     <li key={index} className="flex items-start">
-                      <service.icon className="text-blue-500 w-6 h-6 mr-3 mt-1 flex-shrink-0" />
-                      <p>
+                      <service.icon className="text-blue-500 w-6 h-6 mr-3 mt-6 flex-shrink-0" />
+                      <p className="mt-6">
                         <span className="font-medium">{service.title}: </span>
                         {service.description}
                       </p>
@@ -107,8 +107,8 @@ const Service = () => {
           </div>
 
           {/* Badge Section */}
-          <div className="lg:mt-20 md:mt-8 mt-4">
-            <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">
+          <div className="lg:mt-32 md:mt-8">
+            <h3 className="text-3xl font-bold text-center text-blueColor mb-8">
               Our Core Capabilities
             </h3>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

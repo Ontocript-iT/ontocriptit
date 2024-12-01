@@ -7,7 +7,7 @@ export default function MainHero({ blogs }) {
     <div className=" bg-gray-200 mb-5">
       <div>
         <div
-            className="relative overflow-hidden bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 h-[60vh] md:h-[70vh] flex items-center">
+            className="relative overflow-hidden bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 h-[50vh] md:h-[60vh] flex items-center">
           {/* Abstract tech background */}
           <div className="absolute inset-0 opacity-20">
             <div className="absolute inset-0 bg-black">
@@ -24,7 +24,7 @@ export default function MainHero({ blogs }) {
 
           {/* Animated code snippet */}
           <motion.div
-              className="absolute right-0 top-1/4 w-1/3 h-1/2 bg-opacity-10 bg-white rounded-l-lg overflow-hidden"
+              className="absolute right-0 top-1/4 w-1/3 h-1/2 bg-opacity-10 bg-white rounded-l-lg overflow-hidden hidden md:block"
               initial={{x: "100%"}}
               animate={{x: 0}}
               transition={{duration: 1, ease: "easeOut"}}
@@ -62,7 +62,7 @@ export default function MainHero({ blogs }) {
               Read Our Featured Blogs
             </motion.h1>
             <motion.p
-                className="text-gray-300 text-lg mb-8 max-w-2xl"
+                className="text-gray-300 text-md mb-8 max-w-2xl"
                 initial={{opacity: 0, y: 20}}
                 animate={{opacity: 1, y: 0}}
                 transition={{duration: 0.6, delay: 0.4}}

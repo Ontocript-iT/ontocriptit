@@ -58,7 +58,7 @@ const TechStacks = () => {
   return (
       <div className="bg-gray-100 py-32 -mt-24">
         <div className="container mx-auto px-4 pt-3 ">
-          <h2 className="text-3xl font-bold text-center pt-4 mb-4 text-whiteColor">
+          <h2 className="text-3xl font-bold text-center pt-4 mb-4 text-blueColor">
             Tech Stack We Work With
           </h2>
           <p className="text-center text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">

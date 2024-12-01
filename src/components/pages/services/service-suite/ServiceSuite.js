@@ -4,13 +4,19 @@ import image2 from './Assets/p2.jpg';
 import image3 from './Assets/p3.jpg';
 import image4 from './Assets/p4.jpg';
 import image5 from './Assets/p5.jpg';
-import image6 from './Assets/p6.png';
+import image6 from './Assets/image7.png';
+import image8 from './Assets/image8.png';
+import image9 from './Assets/image9.png';
+import image10 from './Assets/image10.png';
 import icon1 from './Assets/i1.png';
 import icon2 from './Assets/i2.png';
 import icon3 from './Assets/i3.png';
 import icon4 from './Assets/i4.png';
 import icon5 from './Assets/i5.png';
 import icon6 from './Assets/i6.png';
+import icon7 from './Assets/icon7.png';
+import icon8 from './Assets/icon8.png';
+import icon9 from './Assets/icon9.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -19,42 +25,56 @@ const services = [
         image: image1,
         icon: icon1,
         title: "Design & Development",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        description: "We deliver exceptional designs and cutting-edge development solutions, transforming your ideas into functional, innovative digital products that drive business success.",
         aosEffect: "fade-up"
     },
     {
         image: image2,
         icon: icon2,
         title: "UI/UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        description: "Our expert team creates visually appealing, user-focused designs to ensure seamless navigation and exceptional user experiences across digital platforms",
         aosEffect: "fade-up"
     },
     {
         image: image3,
         icon: icon3,
         title: "Software Development",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        description: "We specialize in building tailored, scalable software solutions to meet specific business needs, ensuring reliability and efficiency in operations.",
         aosEffect: "fade-up"
     },
     {
-        image: image4,
+        image: image10,
         icon: icon4,
         title: "Digital Marketing",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        description: "Boost your online visibility with our result-oriented digital marketing strategies, including SEO, content creation, social media, and targeted campaigns.",
         aosEffect: "fade-up"
     },
     {
         image: image5,
         icon: icon5,
         title: "App Development",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        description: "We develop high-performing, feature-rich mobile applications for Android and iOS, tailored to enhance user engagement and business growth.",
         aosEffect: "fade-up"
     },
     {
         image: image6,
-        icon: icon6,
-        title: "Cyber Security",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        icon: icon7,
+        title: "E-Commerce Solutions",
+        description: "Empower your online store with secure, user-friendly e-commerce platforms designed to optimize sales and streamline business processes.",
+        aosEffect: "fade-up"
+    },
+    {
+        image: image8,
+        icon: icon8,
+        title: "E-Learning Solutions",
+        description: "Revolutionize education with our engaging, interactive e-learning platforms, offering innovative solutions for diverse learning needs.",
+        aosEffect: "fade-up"
+    },
+    {
+        image: image9,
+        icon: icon9,
+        title: "IT Consultancy",
+        description: "Gain strategic IT advice and solutions from our experts to enhance your technology infrastructure and achieve operational excellence.",
         aosEffect: "fade-up"
     }
 ];
@@ -68,7 +88,7 @@ export default function ServiceSuite() {
         <section className="bg-gradient-to-b from-gray-100 to-white py-16 px-4 mb-24 sm:mb-12">
             <div className="mx-auto pt-4">
                 <h1 className="text-3xl font-bold text-center text-gray-800 mb-4">
-                    Our Technology Services Suite
+                    Our Services Suite
                 </h1>
                 <h2 className="text-center text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
                     We provide these digital services to grow your business
@@ -88,7 +108,7 @@ export default function ServiceSuite() {
                             />
 
                             {/* The new div that appears when hovered */}
-                            <div className="absolute inset-0 bg-black bg-opacity-70 p-6 flex flex-col justify-center items-center space-y-4 transform scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-700 ease-out">
+                            <div className="absolute inset-0 bg-black bg-opacity-90 p-6 flex flex-col justify-center items-center space-y-4 transform scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-700 ease-out">
                                 <img
                                     src={service.icon}
                                     alt={service.title}
@@ -97,13 +117,13 @@ export default function ServiceSuite() {
                                 <h3 className="text-2xl font-semibold text-white text-center transition-transform duration-500 ease-in-out transform scale-100">
                                     {service.title}
                                 </h3>
-                                <p className="text-sm font-light text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-out transform scale-100">
+                                <p className="text-md font-light text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-out transform scale-100">
                                     {service.description}
                                 </p>
                             </div>
 
                             {/* Original div with icon and title */}
-                            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 p-4 flex justify-between items-center transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 p-4 flex justify-between items-center transition-opacity duration-500 ease-in-out group-hover:opacity-0">
                                 <img
                                     src={service.icon}
                                     alt={service.title}

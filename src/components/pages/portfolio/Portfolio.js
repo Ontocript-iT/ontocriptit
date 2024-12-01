@@ -76,7 +76,7 @@ const PortfolioPage = () => {
 
           {/* Animated code snippet */}
           <motion.div
-              className="absolute right-0 top-1/4 w-1/3 h-1/2 bg-opacity-10 bg-white rounded-l-lg overflow-hidden"
+              className="absolute right-0 top-1/4 w-1/3 h-1/2 bg-opacity-10 bg-white rounded-l-lg overflow-hidden hidden md:block"
               initial={{x: "100%"}}
               animate={{x: 0}}
               transition={{duration: 1, ease: "easeOut"}}
@@ -115,7 +115,7 @@ const PortfolioPage = () => {
               Browse Our Portfolio
             </motion.h1>
             <motion.p
-                className="text-gray-300 text-lg mb-8 max-w-2xl"
+                className="text-gray-300 text-md mb-8 max-w-2xl"
                 initial={{opacity: 0, y: 20}}
                 animate={{opacity: 1, y: 0}}
                 transition={{duration: 0.6, delay: 0.4}}
