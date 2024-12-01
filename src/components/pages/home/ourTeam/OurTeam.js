@@ -84,7 +84,7 @@ const OurTeam = () => {
     return (
         <div className="pt-20 bg-gray-50 pb-60 mb-36">
             <div className="container px-4 mx-auto">
-                <h2 className="pt-4 mb-4 text-4xl font-bold text-center text-blueColor">
+                <h2 className="pt-4 mb-4 text-3xl font-bold text-center text-blueColor">
                     Our Team
                 </h2>
                 <p className="max-w-2xl mx-auto mb-12 text-center text-gray-600 text-lg">

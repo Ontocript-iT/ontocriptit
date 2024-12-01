@@ -33,7 +33,7 @@ const CompanyAboutSection = () => {
                     {/* Navigation Section */}
                     <div className="space-y-8">
                         <div className="text-left">
-                            <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+                            <h1 className="text-3xl md:text-3xl font-extrabold text-gray-900 leading-tight">
                                 Transforming
                                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blueColor to-blue-600">
                   Digital Futures
@@ -88,7 +88,7 @@ const CompanyAboutSection = () => {
                             <h2 className="text-3xl font-bold text-gray-900 mb-6">
                                 {sections[activeSection].title}
                             </h2>
-                            <p className="text-lg text-gray-600 leading-relaxed">
+                            <p className="text-md text-gray-600 leading-relaxed">
                                 {sections[activeSection].description}
                             </p>
 
