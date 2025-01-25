@@ -16,7 +16,7 @@ const ContactInWhite = () => {
                             href="mailto:hello@ontocriptit.com"
                             className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orangeColor hover:bg-indigo-700"
                         >
-                            hello@ontocriptit.com
+                            ontocriptit@gmail.com
                         </a>
                     </div>
                     <div className="mt-3 inline-flex rounded-md shadow">
