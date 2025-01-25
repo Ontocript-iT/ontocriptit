@@ -63,7 +63,7 @@ const FeatureCard = ({ title, description, icon: Icon, bgPattern, iconBg }) => (
 
 export default function WhyChoose() {
     return (
-        <section className="bg-gray-50 py-16 px-4 overflow-hidden sm:pb-[480px] pb-[800px]">
+        <section className="bg-gray-50 py-16 px-4 overflow-hidden sm:pb-[60px] pb-[800px]">
             <div className="container mx-auto">
                 <div className="text-center mb-16">
                     <h1 className="text-3xl font-extrabold text-blueColor mb-4 tracking-tight">

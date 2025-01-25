@@ -85,7 +85,7 @@ const OurTeam = () => {
 
     return (
         <>
-            <div className="pt-20 bg-gray-50 pb-60 mb-36">
+            <div className="pt-20 bg-gray-50 pb-60 mb-36 sm:mb-2">
                 <div className="container px-4 mx-auto">
                     <h2 className="pt-4 mb-4 text-3xl font-bold text-center text-blueColor">
                         Our Team

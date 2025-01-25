@@ -27,7 +27,7 @@ const CompanyAboutSection = () => {
     ];
 
     return (
-        <div className=" flex items-center justify-center  px-4 py-16 mb-[600px] sm:mb-52">
+        <div className=" flex items-center justify-center  px-4 py-16 mb-[600px] sm:mb-4">
             <div className="container mx-auto max-w-5xl">
                 <div className="grid md:grid-cols-2 gap-16 items-center">
                     {/* Navigation Section */}
