@@ -26,7 +26,7 @@ const CloudComputingSection = () => {
                 {cloudSolutions.map((solution, index) => (
                     <div
                         key={index}
-                        className={`bg-white rounded-lg shadow-lg overflow-hidden ml-10 mr-10 transform transition duration-300 ease-in-out ${
+                        className={`bg-white rounded-lg shadow-lg overflow-hidden lg:mx-10 transform transition duration-300 ease-in-out ${
                             hoveredCard === index ? 'scale-105' : ''
                         }`}
                         onMouseEnter={() => setHoveredCard(index)}

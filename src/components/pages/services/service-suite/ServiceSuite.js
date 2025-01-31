@@ -85,7 +85,7 @@ export default function ServiceSuite() {
     }, []);
 
     return (
-        <section className="bg-gradient-to-b from-gray-100 to-white py-16 px-4 mb-24 sm:mb-12">
+        <section className="bg-gradient-to-b from-gray-100 to-white py-16 px-4">
             <div className="mx-auto pt-4">
                 <h1 className="text-3xl font-bold text-center text-gray-800 mb-4">
                     Our Services Suite

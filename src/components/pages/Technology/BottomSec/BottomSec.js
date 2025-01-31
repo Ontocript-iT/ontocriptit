@@ -20,7 +20,7 @@ const FeatureCard = ({ title, icon: Icon, description }) => (
 
 const WhyUseTechnologies = () => {
   return (
-      <div className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8 mt-[800px] sm:mt-80">
+      <div className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8 ">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-extrabold text-blueColor text-center mb-8">
             Why Use These Technologies
