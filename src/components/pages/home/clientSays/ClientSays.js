@@ -92,7 +92,7 @@ const ClientSays = () => {
                 <Slider {...settings}>
                     {feedbacks.map((feedback, index) => (
                         <div key={index}
-                             className="bg-white rounded-lg shadow-md text-center p-6 mx-auto mb-6 hover:shadow-lg transition-all duration-300 h-[550px] sm:h-[450px]">
+                             className="bg-white rounded-lg shadow-md text-center p-6 mx-auto mb-6 hover:shadow-lg transition-all duration-300 h-[550px] sm:h-[500px]">
                             {/* Set a larger size for the image to simulate "passport size" */}
                             <img
                                 src={feedback.image}
