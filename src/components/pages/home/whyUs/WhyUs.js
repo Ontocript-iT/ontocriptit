@@ -41,7 +41,7 @@ function WhyUs() {
     }, []);
 
     return (
-        <div className="bg-gray-100 pb-[720px] sm:-mb-[600px] pt-10 ">
+        <div className="bg-gray-50 lg:pt-10 ">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl font-bold text-center pt-4 mb-4 text-blueColor">
                     Why Choose Us?

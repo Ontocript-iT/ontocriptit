@@ -18,26 +18,23 @@ import ProfessionalAchievements from "../../shared/Professional Achievements/Pro
 
 
 function Home() {
-  const shouldShowLink = true; 
+  const shouldShowLink = true;
   return (
     <div className='h-auto'>
-
       <AnimatedPage>
-
-      <Hero />
-      <ServiceSub  showLink={shouldShowLink} />
-      <WhyUs />
-          <ServiceSuite/>
-      <TechStacks />
-      <Contact />
-      {/* <OurWorks /> */}
-      <OurTeam />
-      {/*<Contact/>*/}
-      <ClientSays/>
-          <ProfessionalAchievements/>
-      <Footer />
+        <Hero />
+        <ServiceSub showLink={shouldShowLink} />
+        <WhyUs />
+        <ServiceSuite />
+        <TechStacks />
+        <Contact />
+        {/* <OurWorks /> */}
+        <OurTeam />
+        {/*<Contact/>*/}
+        <ClientSays />
+        <ProfessionalAchievements />
+        <Footer />
       </AnimatedPage>
-
     </div>
 
   );

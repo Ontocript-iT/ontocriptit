@@ -80,7 +80,7 @@ const ProfessionalAchievements = () => {
     ];
 
     return (
-        <div className=" bg-gray-50 p-10 flex items-center justify-center mb-12 sm:-mt-32">
+        <div className=" bg-gray-50 p-10 flex items-center justify-center mb-12 ">
             <div className="max-w-6xl w-full">
                 <h1 className="text-3xl font-bold text-center mb-2 text-gray-800">
                     Professional Achievements

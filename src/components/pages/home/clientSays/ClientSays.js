@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';  // Import the react-slick package
 import Image1 from './assets/navod.jpg';
 import Image2 from './assets/imash.jpg';
-import Image3 from './assets/p3.jpg';
+import Image3 from './assets/hiranya.jpeg';
 import Image4 from './assets/p4.jpg';
 import Image5 from './assets/p5.jpg';
 
@@ -20,16 +20,17 @@ const feedbacks = [
     {
         image: Image2,
         name: "Imash Eshan Wijesooriya",
-        address: "Associate software engineer",
+        address: "Associate Software Engineer",
         comment: "\n" +
             "I had the pleasure of working with Ontocript IT on a UI project for a well-known educational institute. They developed the entire interface with exceptional expertise and speed, meeting tight deadlines without compromising quality. Their technical skills, dedication, and attention to detail were impressive. I highly recommend Ontocript IT for anyone looking for a skilled WordPress developer. They are a reliable choice for delivering high-quality results on time."
     },
     {
         image: Image3,
-        name: "Ravindu Jayaweera",
-        address: "University of Moratuwa",
-        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        name: "Hiranaya Kodithuwakku",
+        address: "Teacher/Tutor",
+        comment: "Ontocript IT delivered a highly efficient and user-friendly online learning platform for our classes. Their expertise, attention to detail, and commitment to quality ensured a seamless experience. The platform is well-designed and fully functional. I highly recommend Ontocript IT for any e-learning development projects requiring reliability and innovation."
     },
+    /*
     {
         image: Image5,
         name: "Randima Mallawa",
@@ -42,6 +43,7 @@ const feedbacks = [
         address: "University of Moratuwa",
         comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
+    */
 ];
 
 const ClientSays = () => {
@@ -82,7 +84,7 @@ const ClientSays = () => {
 
     return (
         <div className="py-12 bg-gray-100 mt-20 mb-10">
-            <div className="mx-auto px-4 sm:px-8 max-w-8xl h-auto">
+            <div className="mx-auto px-4 sm:px-8 max-w-8xl h-auto sm:mx-20">
                 <h2 className="text-3xl font-bold text-center mb-8 text-blueColor">What Our Clients Say</h2>
                 <p className="text-center text-gray-600 mb-6 max-w-2xl mx-auto -mt-6">
                     Trusted Voices, Proven Results – Hear What Our Clients Say About Us!
