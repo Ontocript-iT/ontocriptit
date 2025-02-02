@@ -14,7 +14,7 @@ const feedbacks = [
     {
         image: Image1,
         name: "Nawod Vimalasooriya",
-        address: "Network Engineer at DMS Electronics Pvt Ltd.",
+        address: "Network Engineer",
         comment: "Ontocript IT demonstrated exceptional performance on our project. Their technical expertise and problem-solving abilities were outstanding. Throughout the project, they maintained clear communication channels and consistently met deadlines. I was particularly impressed by their professionalism and adaptability when facing challenges. Based on their proven track record, I strongly recommend Ontocript IT for any software development projects."
     },
     {
