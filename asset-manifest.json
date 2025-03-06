@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.87dc7774.css",
-    "main.js": "/static/js/main.da8816a1.js",
+    "main.js": "/static/js/main.5b26ac65.js",
     "static/js/453.49b6de0e.chunk.js": "/static/js/453.49b6de0e.chunk.js",
     "static/media/logoMockup.png": "/static/media/logoMockup.11e22a02dfa4f8f93ff9.png",
     "static/media/12345.png": "/static/media/12345.3ea4c1ec3d18fafee518.png",
@@ -43,8 +43,11 @@
     "static/media/i1.png": "/static/media/i1.efc5ede3aef3510ee944.png",
     "static/media/p5.jpg": "/static/media/p5.533b6e8943467ef99ed0.jpg",
     "static/media/i3.png": "/static/media/i3.e94dab69c0e7e93ade91.png",
+    "static/media/react-native.png": "/static/media/react-native.90fb0021be64f2b1ce7e.png",
+    "static/media/flutter-logo.png": "/static/media/flutter-logo.99b29fec644b23b41fb1.png",
     "static/media/mysql.png": "/static/media/mysql.de7d16a9a42ba036a848.png",
     "static/media/postgresql.png": "/static/media/postgresql.95033d8f0975bad12d80.png",
+    "static/media/remi.png": "/static/media/remi.4cc838ed9b53a09b8ffe.png",
     "static/media/angular.png": "/static/media/angular.ebf75a9a7acef938029b.png",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -52,11 +55,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.87dc7774.css.map": "/static/css/main.87dc7774.css.map",
-    "main.da8816a1.js.map": "/static/js/main.da8816a1.js.map",
+    "main.5b26ac65.js.map": "/static/js/main.5b26ac65.js.map",
     "453.49b6de0e.chunk.js.map": "/static/js/453.49b6de0e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.87dc7774.css",
-    "static/js/main.da8816a1.js"
+    "static/js/main.5b26ac65.js"
   ]
 }
