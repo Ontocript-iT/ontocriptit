@@ -9,6 +9,10 @@ import mysql from '../../../../Assets/mysql.png';
 import postman from '../../../../Assets/postman.png';
 import react from '../../../../Assets/reactjs.png';
 import wordPress from '../../../../Assets/wordPress.png';
+import flutter from '../../../../Assets/flutter-logo.png';
+import rNative from '../../../../Assets/react-native.png';
+import remix from '../../../../Assets/remi.png';
+
 
 const techStacks = [
   { name: 'React', icon: react },
@@ -19,7 +23,12 @@ const techStacks = [
   { name: 'MySQL', icon: mysql },
   { name: 'Postman', icon: postman },
   { name: 'WordPress', icon: wordPress },
+  { name: 'Flutter', icon: flutter },
+  { name: 'React Native', icon: rNative },
+  { name: 'Remix', icon: remix },
 ];
+  
+
 
 const TechStacks = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -56,32 +65,32 @@ const TechStacks = () => {
   }, [itemsToShow]);
 
   return (
-      <div className="bg-gray-100 pb-10">
-        <div className="container mx-auto px-4 pt-3 ">
-          <h2 className="text-3xl font-bold text-center pt-4 mb-4 text-blueColor">
+      <div className="pb-10 bg-gray-100">
+        <div className="container px-4 pt-3 mx-auto ">
+          <h2 className="pt-4 mb-4 text-3xl font-bold text-center text-blueColor">
             Tech Stack We Work With
           </h2>
-          <p className="text-center text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
+          <p className="max-w-2xl mx-auto mb-6 text-center text-gray-600 sm:mb-8">
             We always look for new technologies to ensure our international clients get the best and newest digital products.
           </p>
           <div className="relative mb">
             <div className="flex items-center justify-center mb-6">
-              <div className="h-px bg-gray-300 flex-grow"></div>
-              <span className="px-4 text-gray-500 font-semibold">Tech Stack</span>
-              <div className="h-px bg-gray-300 flex-grow"></div>
+              <div className="flex-grow h-px bg-gray-300"></div>
+              <span className="px-4 font-semibold text-gray-500">Tech Stack</span>
+              <div className="flex-grow h-px bg-gray-300"></div>
             </div>
             <div className="flex items-center justify-center">
               <button
                   onClick={prevSlide}
-                  className="p-2 rounded-full bg-white shadow-md hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                  className="p-2 transition-colors duration-200 bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               >
                 <ChevronLeft className="w-6 h-6 text-gray-600" />
               </button>
-              <div className="flex overflow-hidden mx-2">
+              <div className="flex mx-2 overflow-hidden">
                 {techStacks.slice(currentIndex, currentIndex + itemsToShow).map((tech, index) => (
                     <div key={index} className="w-[200px] sm:w-1/2 md:w-1/3 lg:w-[300px] px-2">
-                      <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-all duration-200 hover:shadow-lg hover:-translate-y-1">
-                        <img src={tech.icon} alt={tech.name} className="w-28 h-16 mb-2 object-contain" />
+                      <div className="flex flex-col items-center justify-center p-4 transition-all duration-200 bg-white rounded-lg shadow-md hover:shadow-lg hover:-translate-y-1">
+                        <img src={tech.icon} alt={tech.name} className="object-contain h-16 mb-2 w-28" />
                         <p className="text-[15px] font-medium text-gray-700">{tech.name}</p>
                       </div>
                     </div>
@@ -89,7 +98,7 @@ const TechStacks = () => {
               </div>
               <button
                   onClick={nextSlide}
-                  className="p-2 rounded-full bg-white shadow-md hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                  className="p-2 transition-colors duration-200 bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               >
                 <ChevronRight className="w-6 h-6 text-gray-600" />
               </button>

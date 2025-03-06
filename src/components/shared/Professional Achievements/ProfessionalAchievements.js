@@ -21,9 +21,9 @@ const ProfessionalAchievements = () => {
         const animateCounters = () => {
             const targets = {
                 experience: 2,
-                projects: 6,
+                projects: 7,
                 expertise: 5,
-                clients: 5
+                clients: 6
             };
 
             const animationDuration = 5000; // 2 seconds
@@ -80,18 +80,18 @@ const ProfessionalAchievements = () => {
     ];
 
     return (
-        <div className=" bg-gray-50 p-10 flex items-center justify-center mb-12 ">
-            <div className="max-w-6xl w-full">
-                <h1 className="text-3xl font-bold text-center mb-2 text-gray-800">
+        <div className="flex items-center justify-center p-10 mb-12 bg-gray-50">
+            <div className="w-full max-w-6xl">
+                <h1 className="mb-2 text-3xl font-bold text-center text-gray-800">
                     Professional Achievements
                 </h1>
 
-                <p className="max-w-2xl mx-auto mb-12 text-center text-gray-600 text-lg">
+                <p className="max-w-2xl mx-auto mb-12 text-lg text-center text-gray-600">
                     Discover the milestones we've reached and the impact we've made through dedication and innovation
                 </p>
 
                 {/* Achievements Grid */}
-                <div className="grid md:grid-cols-4 gap-6">
+                <div className="grid gap-6 md:grid-cols-4">
                     {achievementsData.map((achievement, index) => (
                         <div
                             key={index}
@@ -111,10 +111,10 @@ const ProfessionalAchievements = () => {
                                 <div className="flex justify-center mb-4">
                                     {achievement.icon}
                                 </div>
-                                <h2 className="text-4xl font-bold text-white mb-2">
+                                <h2 className="mb-2 text-4xl font-bold text-white">
                                     {achievement.value}+
                                 </h2>
-                                <p className="text-white/80 text-sm uppercase tracking-wider">
+                                <p className="text-sm tracking-wider uppercase text-white/80">
                                     {achievement.label}
                                 </p>
                             </div>

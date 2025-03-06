@@ -29,7 +29,7 @@ function Home() {
         <TechStacks />
         <Contact />
         {/* <OurWorks /> */}
-        <OurTeam />
+        {/* <OurTeam /> */}
         {/*<Contact/>*/}
         <ClientSays />
         <ProfessionalAchievements />
