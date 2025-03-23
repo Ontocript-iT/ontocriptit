@@ -26,7 +26,7 @@ export default function AboutUs() {
         <WhyChoose/>
         <SubSectionTwo/>
 
-        <OurTeam />
+        {/* <OurTeam /> */}
         {/*<LeadershipTeam/>*/}
 
         <ProfessionalAchievements/>

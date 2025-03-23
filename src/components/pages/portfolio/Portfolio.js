@@ -11,46 +11,46 @@ import {motion} from "framer-motion";
 const projects = [
   {
     id: 1,
-    title: 'Company portfolio',
-    description: 'A fully responsive e-commerce website with user authentication, product catalog, and payment integration.',
+    title: 'Company Website',
+    description: 'Developed a portfolio website for a garment company to showcase their designs, production expertise, and brand identity. Ensured a modern, user-friendly interface for seamless navigation and enhanced online presence',
     image: Ravishadi,
     category: 'Web Development'
   },
   {
     id: 2,
     title: 'Korean Class E Learning platform',
-    description: 'An iOS and Android app for secure mobile banking with features like account management and fund transfers.',
+    description: 'Developed a Korean Class E-Learning Platform for interactive language learning, featuring video lessons, quizzes, and progress tracking. Designed for seamless user experience and effective online education.',
     image: Cpepstopik,
-    category: 'Mobile App'
+    category: 'Web Development'
   },
-  {
-    id: 3,
-    title: 'AI-Powered Chatbot',
-    description: 'An intelligent chatbot using natural language processing to provide customer support for a large telecom company.',
-    image: '/api/placeholder/600/400',
-    category: 'AI & Machine Learning'
-  },
-  {
-    id: 4,
-    title: 'Data Visualization Dashboard',
-    description: 'An interactive dashboard for visualizing complex datasets, built with React and D3.js.',
-    image: '/api/placeholder/600/400',
-    category: 'Data Visualization'
-  },
-  {
-    id: 5,
-    title: 'Smart Home IoT System',
-    description: 'An IoT system for home automation, including mobile app control and integration with popular smart home devices.',
-    image: '/api/placeholder/600/400',
-    category: 'IoT'
-  },
-  {
-    id: 6,
-    title: 'Blockchain-based Supply Chain',
-    description: 'A blockchain solution for tracking and verifying the supply chain of luxury goods.',
-    image: '/api/placeholder/600/400',
-    category: 'Blockchain'
-  },
+  // {
+  //   id: 3,
+  //   title: 'AI-Powered Chatbot',
+  //   description: 'An intelligent chatbot using natural language processing to provide customer support for a large telecom company.',
+  //   image: '/api/placeholder/600/400',
+  //   category: 'AI & Machine Learning'
+  // },
+  // {
+  //   id: 4,
+  //   title: 'Data Visualization Dashboard',
+  //   description: 'An interactive dashboard for visualizing complex datasets, built with React and D3.js.',
+  //   image: '/api/placeholder/600/400',
+  //   category: 'Data Visualization'
+  // },
+  // {
+  //   id: 5,
+  //   title: 'Smart Home IoT System',
+  //   description: 'An IoT system for home automation, including mobile app control and integration with popular smart home devices.',
+  //   image: '/api/placeholder/600/400',
+  //   category: 'IoT'
+  // },
+  // {
+  //   id: 6,
+  //   title: 'Blockchain-based Supply Chain',
+  //   description: 'A blockchain solution for tracking and verifying the supply chain of luxury goods.',
+  //   image: '/api/placeholder/600/400',
+  //   category: 'Blockchain'
+  // },
 ];
 
 const PortfolioPage = () => {
@@ -76,12 +76,12 @@ const PortfolioPage = () => {
 
           {/* Animated code snippet */}
           <motion.div
-              className="absolute right-0 top-1/4 w-1/3 h-1/2 bg-opacity-10 bg-white rounded-l-lg overflow-hidden hidden md:block"
+              className="absolute right-0 hidden w-1/3 overflow-hidden bg-white rounded-l-lg top-1/4 h-1/2 bg-opacity-10 md:block"
               initial={{x: "100%"}}
               animate={{x: 0}}
               transition={{duration: 1, ease: "easeOut"}}
           >
-        <pre className="text-green-400 text-xs md:text-sm p-4">
+        <pre className="p-4 text-xs text-green-400 md:text-sm">
           <code>
             {`function transform(idea) {
   const solution = analyze(idea);
@@ -97,9 +97,9 @@ const PortfolioPage = () => {
           </motion.div>
 
           {/* Content */}
-          <div className="relative z-10 text-left px-8 md:px-16 max-w-4xl">
+          <div className="relative z-10 max-w-4xl px-8 text-left md:px-16">
             <motion.h3
-                className="text-lg sm:text-xl text-blue-300 font-light mb-4"
+                className="mb-4 text-lg font-light text-blue-300 sm:text-xl"
                 initial={{opacity: 0, y: 20}}
                 animate={{opacity: 1, y: 0}}
                 transition={{duration: 0.6}}
@@ -107,7 +107,7 @@ const PortfolioPage = () => {
               Hello, Explorer
             </motion.h3>
             <motion.h1
-                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-bold leading-tight mb-6"
+                className="mb-6 text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl lg:text-6xl"
                 initial={{opacity: 0, y: 20}}
                 animate={{opacity: 1, y: 0}}
                 transition={{duration: 0.6, delay: 0.2}}
@@ -115,7 +115,7 @@ const PortfolioPage = () => {
               Browse Our Portfolio
             </motion.h1>
             <motion.p
-                className="text-gray-300 text-md mb-8 max-w-2xl"
+                className="max-w-2xl mb-8 text-gray-300 text-md"
                 initial={{opacity: 0, y: 20}}
                 animate={{opacity: 1, y: 0}}
                 transition={{duration: 0.6, delay: 0.4}}
@@ -130,13 +130,13 @@ const PortfolioPage = () => {
             >
               {/*<a*/}
               {/*    href="#our-services"*/}
-              {/*    className="bg-blue-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-blue-700 transition duration-300 ease-in-out transform hover:-translate-y-1"*/}
+              {/*    className="px-6 py-3 font-semibold text-white transition duration-300 ease-in-out transform bg-blue-600 rounded-md hover:bg-blue-700 hover:-translate-y-1"*/}
               {/*>*/}
               {/*    Our Services*/}
               {/*</a>*/}
               {/*<a*/}
               {/*    href="#contact-us"*/}
-              {/*    className="bg-transparent border border-white text-white font-semibold py-3 px-6 rounded-md hover:bg-white hover:text-blue-900 transition duration-300 ease-in-out transform hover:-translate-y-1"*/}
+              {/*    className="px-6 py-3 font-semibold text-white transition duration-300 ease-in-out transform bg-transparent border border-white rounded-md hover:bg-white hover:text-blue-900 hover:-translate-y-1"*/}
               {/*>*/}
               {/*    Contact Us*/}
               {/*</a>*/}
@@ -150,38 +150,38 @@ const PortfolioPage = () => {
           <div
               className="absolute bottom-0 right-0 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
         </div>
-        <div className="bg-gray-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
+        <div className="min-h-screen px-4 py-12 bg-gray-100 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl">
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
               {projects.map((project) => (
                   <div
                       key={project.id}
-                      className="bg-white rounded-lg overflow-hidden shadow-lg transition-all duration-300 transform hover:scale-105"
+                      className="overflow-hidden transition-all duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105"
                       onMouseEnter={() => setHoveredProject(project.id)}
                       onMouseLeave={() => setHoveredProject(null)}
                   >
                     <img
                         src={project.image}
                         alt={project.title}
-                        className="w-full h-48 mt-10 object-cover"
+                        className="object-cover w-full h-48 mt-10"
                     />
                     <div className="p-6">
-                      <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                      <h3 className="mb-2 text-xl font-semibold text-gray-800">
                         {project.title}
                       </h3>
-                      <p className="text-gray-600 mb-4">{project.description}</p>
-                      <div className="flex justify-between items-center">
+                      <p className="mb-4 text-gray-600">{project.description}</p>
+                      <div className="flex items-center justify-between">
                   <span className="text-sm font-medium text-blue-500">
                     {project.category}
                   </span>
-                        {hoveredProject === project.id && (
+                        {/* {hoveredProject === project.id && (
                             <button
-                                className="flex items-center text-blue-500 hover:text-blue-600 transition-colors duration-300">
+                                className="flex items-center text-blue-500 transition-colors duration-300 hover:text-blue-600">
                               Learn More
-                              <ArrowRight className="ml-1 w-4 h-4"/>
+                              <ArrowRight className="w-4 h-4 ml-1"/>
                             </button>
-                        )}
+                        )} */}
                       </div>
                     </div>
                   </div>

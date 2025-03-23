@@ -24,8 +24,8 @@ const services = [
     {
         image: image1,
         icon: icon1,
-        title: "Design & Development",
-        description: "We deliver exceptional designs and cutting-edge development solutions, transforming your ideas into functional, innovative digital products that drive business success.",
+        title: "Web Development",
+        description: "We deliver exceptional designs and cutting-edge web development solutions, transforming your ideas into functional, innovative digital products that drive business success.",
         aosEffect: "fade-up"
     },
     {
@@ -52,7 +52,7 @@ const services = [
     {
         image: image5,
         icon: icon5,
-        title: "App Development",
+        title: "Mobile App Development",
         description: "We develop high-performing, feature-rich mobile applications for Android and iOS, tailored to enhance user engagement and business growth.",
         aosEffect: "fade-up"
     },
@@ -85,51 +85,51 @@ export default function ServiceSuite() {
     }, []);
 
     return (
-        <section className="bg-gradient-to-b from-gray-100 to-white py-16 px-4">
-            <div className="mx-auto pt-4">
-                <h1 className="text-3xl font-bold text-center text-gray-800 mb-4">
+        <section className="px-4 py-16 bg-gradient-to-b from-gray-100 to-white">
+            <div className="pt-4 mx-auto">
+                <h1 className="mb-4 text-3xl font-bold text-center text-gray-800">
                     Our Services Suite
                 </h1>
-                <h2 className="text-center text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
+                <h2 className="max-w-2xl mx-auto mb-6 text-center text-gray-600 sm:mb-8">
                     We provide these digital services to grow your business
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:mx-10">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 sm:mx-10">
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="group relative bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:scale-105"
+                            className="relative overflow-hidden transition-transform duration-300 bg-white rounded-lg shadow-lg group hover:shadow-xl hover:scale-105"
                             data-aos={service.aosEffect}
                         >
                             <img
                                 src={service.image}
                                 alt={service.title}
-                                className="w-full h-64 object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-105"
+                                className="object-cover w-full h-64 transition-transform duration-500 ease-in-out transform group-hover:scale-105"
                             />
 
                             {/* The new div that appears when hovered */}
-                            <div className="absolute inset-0 bg-black bg-opacity-90 p-6 flex flex-col justify-center items-center space-y-4 transform scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-700 ease-out">
+                            <div className="absolute inset-0 flex flex-col items-center justify-center p-6 space-y-4 transition-all duration-700 ease-out transform scale-0 bg-black opacity-0 bg-opacity-90 group-hover:scale-100 group-hover:opacity-100">
                                 <img
                                     src={service.icon}
                                     alt={service.title}
-                                    className="w-16 h-16 object-cover transition-transform duration-500 ease-in-out transform scale-100"
+                                    className="object-cover w-16 h-16 transition-transform duration-500 ease-in-out transform scale-100"
                                 />
-                                <h3 className="text-2xl font-semibold text-white text-center transition-transform duration-500 ease-in-out transform scale-100">
+                                <h3 className="text-2xl font-semibold text-center text-white transition-transform duration-500 ease-in-out transform scale-100">
                                     {service.title}
                                 </h3>
-                                <p className="text-md font-light text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-out transform scale-100">
+                                <p className="font-light text-center text-white transition-opacity duration-700 ease-out transform scale-100 opacity-0 text-md group-hover:opacity-100">
                                     {service.description}
                                 </p>
                             </div>
 
                             {/* Original div with icon and title */}
-                            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 p-4 flex justify-between items-center transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                            <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between p-4 transition-opacity duration-500 ease-in-out bg-black bg-opacity-60 group-hover:opacity-0">
                                 <img
                                     src={service.icon}
                                     alt={service.title}
-                                    className="w-1/6 h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-125"
+                                    className="object-cover w-1/6 h-auto transition-transform duration-500 ease-in-out transform hover:scale-125"
                                 />
-                                <h3 className="text-xl font-semibold text-white text-center flex-grow px-4">
+                                <h3 className="flex-grow px-4 text-xl font-semibold text-center text-white">
                                     {service.title}
                                 </h3>
                             </div>
