@@ -8,6 +8,7 @@ import image6 from './Assets/image7.png';
 import image8 from './Assets/image8.png';
 import image9 from './Assets/image9.png';
 import image10 from './Assets/image10.png';
+import image11 from './Assets/image11.png';
 import icon1 from './Assets/i1.png';
 import icon2 from './Assets/i2.png';
 import icon3 from './Assets/i3.png';
@@ -17,6 +18,7 @@ import icon6 from './Assets/i6.png';
 import icon7 from './Assets/icon7.png';
 import icon8 from './Assets/icon8.png';
 import icon9 from './Assets/icon9.png';
+import icon11 from './Assets/i11.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -75,6 +77,13 @@ const services = [
         icon: icon9,
         title: "IT Consultancy",
         description: "Gain strategic IT advice and solutions from our experts to enhance your technology infrastructure and achieve operational excellence.",
+        aosEffect: "fade-up"
+    },
+    {
+        image: image11,
+        icon: icon11,
+        title: "Shopify App Development",
+        description: "Build secure, scalable Shopify apps tailored to your needs. Expert in custom and private app development for seemless integration.",
         aosEffect: "fade-up"
     }
 ];
