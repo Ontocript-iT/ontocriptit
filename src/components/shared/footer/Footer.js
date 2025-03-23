@@ -24,11 +24,11 @@ const Footer = () => {
     ];
 
     const socialIcons = [
-        { icon: faFacebook, link: '#' },
+        { icon: faFacebook, link: 'https://www.facebook.com/share/1AD6GRzCmD/' },
         { icon: faInstagram, link: '#' },
-        { icon: faLinkedin, link: '#' },
+        { icon: faLinkedin, link: 'https://www.linkedin.com/company/ontocript-it/' },
         { icon: faYoutube, link: '#' },
-        { icon: faTiktok, link: '#' },
+        { icon: faTiktok, link: 'https://www.tiktok.com/@ontocript.it?_t=ZS-8uvi5QzgTjk&_r=1' },
         { icon: faMedium, link: '#' },
     ];
 
