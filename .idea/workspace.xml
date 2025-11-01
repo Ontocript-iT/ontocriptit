@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47d1d289-e402-4261-9193-f8850754a5ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Assets/cpedpstopik.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/thili.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/thi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/thi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Blog/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Blog/Blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Blog/BlogData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Blog/BlogData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Blog/MainHero/MainHero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Blog/MainHero/MainHero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Blog/MiddleBlogs/MiddleBlogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Blog/MiddleBlogs/MiddleBlogs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/contactus/contactField/ContactField.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/contactus/contactField/ContactField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/contactus/contactField/ContactField.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/home/hero/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/home/hero/Hero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/home/ourTeam/OurTeam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/home/ourTeam/OurTeam.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/portfolio/Portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/portfolio/Portfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +57,7 @@
     &quot;Node.js.WhyChoose.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;thilina-dev&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;J:/ontocript/projectFile/ontocriptit&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -105,6 +93,11 @@
       <workItem from="1727583503368" duration="14864000" />
       <workItem from="1727790432241" duration="1693000" />
       <workItem from="1727840239964" duration="2388000" />
+      <workItem from="1738346413702" duration="818000" />
+      <workItem from="1738486338200" duration="647000" />
+      <workItem from="1738509012501" duration="25000" />
+      <workItem from="1739727624954" duration="625000" />
+      <workItem from="1744731590039" duration="25000" />
     </task>
     <servers />
   </component>

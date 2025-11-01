@@ -2,12 +2,12 @@ import React from 'react';
 import { Shield, FileText, Lock, Globe, Database, UserCog } from "lucide-react";
 
 const PrivacyPolicySection = ({ icon: Icon, title, children }) => (
-    <div className="bg-white rounded-lg border border-gray-200 mb-6 shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
-        <div className="flex items-center p-4 bg-gray-50 border-b border-gray-200">
-            <Icon className="w-8 h-8 text-blue-600 mr-4" />
+    <div className="mb-6 overflow-hidden transition-shadow duration-300 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md">
+        <div className="flex items-center p-4 border-b border-gray-200 bg-gray-50">
+            <Icon className="w-8 h-8 mr-4 text-blue-600" />
             <h2 className="text-xl font-semibold text-gray-800">{title}</h2>
         </div>
-        <div className="p-4 text-gray-700 leading-relaxed">
+        <div className="p-4 leading-relaxed text-gray-700">
             {children}
         </div>
     </div>
@@ -15,14 +15,14 @@ const PrivacyPolicySection = ({ icon: Icon, title, children }) => (
 
 export default function PrivacyAndPolicies() {
     return (
-        <div className="container mx-auto px-4 py-8 max-w-4xl">
-            <div className="text-center mb-12">
-                <h1 className="text-4xl font-bold text-gray-900 flex items-center justify-center gap-4">
+        <div className="container max-w-4xl px-4 py-8 mx-auto">
+            <div className="mb-12 text-center">
+                <h1 className="flex items-center justify-center gap-4 text-4xl font-bold text-gray-900">
                     <Shield className="w-12 h-12 text-blue-700" />
                     PRIVACY POLICY
                     <Shield className="w-12 h-12 text-blue-700" />
                 </h1>
-                <p className="text-gray-600 mt-4">Last Updated: January 2025</p>
+                <p className="mt-4 text-gray-600">Last Updated: January 2025</p>
             </div>
 
             <PrivacyPolicySection icon={FileText} title="Introduction">
@@ -57,16 +57,16 @@ export default function PrivacyAndPolicies() {
                 As a valued user of Ontocript IT services, you have the right to access, rectify, or delete any personal data held by us. Furthermore, you retain the authority to withdraw your consent for the processing of your data or object to specific uses of your information.
             </PrivacyPolicySection>
 
-            <div className="mt-12 text-center bg-gray-100 p-6 rounded-lg">
-                <h2 className="text-2xl font-bold mb-4 text-gray-800">Contact Us</h2>
-                <p className="text-gray-700 mb-4">
+            <div className="p-6 mt-12 text-center bg-gray-100 rounded-lg">
+                <h2 className="mb-4 text-2xl font-bold text-gray-800">Contact Us</h2>
+                <p className="mb-4 text-gray-700">
                     For inquiries about our privacy policy or to exercise your rights regarding your personal data, please contact us at:
                 </p>
                 <a
                     href="mailto:contact@ontocriptit.com"
-                    className="text-blue-600 hover:text-blue-800 font-semibold text-lg transition-colors"
+                    className="text-lg font-semibold text-blue-600 transition-colors hover:text-blue-800"
                 >
-                    ontocriptit@gmail.com
+                      contact@ontocriptit.com
                 </a>
             </div>
         </div>

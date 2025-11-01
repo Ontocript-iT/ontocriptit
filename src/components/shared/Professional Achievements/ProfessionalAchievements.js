@@ -21,9 +21,9 @@ const ProfessionalAchievements = () => {
         const animateCounters = () => {
             const targets = {
                 experience: 2,
-                projects: 7,
+                projects: 9,
                 expertise: 5,
-                clients: 6
+                clients: 8
             };
 
             const animationDuration = 5000; // 2 seconds
