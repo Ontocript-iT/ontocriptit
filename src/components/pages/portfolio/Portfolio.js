@@ -8,6 +8,7 @@ import Ruuma from "../../../Assets/Ruuma.png";
 import SocialMedia from "../../../Assets/SocialMedia.jpeg";
 import Footer from "../../shared/footer/Footer";
 import {motion} from "framer-motion";
+import OurPartners from '../home/partners/Partners';
 
 
 
@@ -227,6 +228,7 @@ const PortfolioPage = () => {
         </div>
       </div>
 
+      <OurPartners />
       <Footer />
     </div>
   );
