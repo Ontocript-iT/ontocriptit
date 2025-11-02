@@ -121,7 +121,7 @@ const ClientSays = () => {
               fontWeight: 700,
               mb: 2,
               color: "#151f38",
-              fontSize: { xs: "1.8rem", md: "2.5rem" },
+              fontSize: { xs: "1.7rem", md: "2.3rem" },
             }}
           >
             What Our Clients Say

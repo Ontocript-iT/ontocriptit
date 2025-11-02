@@ -77,12 +77,12 @@ const cardsData = [
 ];
 
 const ServiceBadge = ({ icon: Icon, title, description }) => (
-    <div className="flex flex-col items-center text-center p-4 hover:bg-blue-50 transition-colors rounded-lg">
-      <div className="bg-blue-100 text-blue-500 w-12 h-12 flex items-center justify-center rounded-full mb-3">
+    <div className="flex flex-col items-center p-4 text-center transition-colors rounded-lg hover:bg-blue-50">
+      <div className="flex items-center justify-center w-12 h-12 mb-3 text-blue-500 bg-blue-100 rounded-full">
         <Icon className="w-6 h-6" />
       </div>
-      <h3 className="text-gray-800 font-semibold mb-2">{title}</h3>
-      <p className="text-gray-600 text-sm">{description}</p>
+      <h3 className="mb-2 font-semibold text-gray-800">{title}</h3>
+      <p className="text-sm text-gray-600">{description}</p>
     </div>
 );
 
@@ -117,10 +117,10 @@ const Service = ({ showLink = false }) => {
 
   return (
       <>
-        <div className="bg-gray-50 pb-20 pt-16">
-          <div className="mx-auto px-4 lg:px-8">
+        <div className="pt-16 pb-20 bg-gray-50">
+          <div className="px-4 mx-auto lg:px-8">
             {/* About Section */}
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid items-center gap-12 lg:grid-cols-2">
               {/* Images */}
               <div className="relative grid grid-cols-2 gap-4 order-1 lg:order-first h-[450px] sm:ml-32">
                 <div className="absolute top-0 left-0 w-[65%] z-10 shadow-2xl rounded-lg overflow-hidden transform -rotate-6 hover:rotate-0 transition-transform duration-300">
@@ -141,16 +141,16 @@ const Service = ({ showLink = false }) => {
 
               {/* Text Content */}
               <div>
-                <h2 className="text-2xl md:text-4xl font-bold text-blueColor mb-4 leading-tight">
+                <h2 className="mb-4 text-2xl font-bold leading-tight md:text-4xl text-blueColor">
                   We Provide the Best <span className="text-blue-600">IT Solutions</span>
                 </h2>
-                <p className="text-gray-700 text-base md:text-lg mb-6">
+                <p className="mb-6 text-base text-gray-700 md:text-lg">
                   At Ontocript IT, we specialize in delivering cutting-edge technology solutions tailored to meet the unique needs of businesses. Our experienced team offers reliable, scalable, and cost-effective services, including cloud computing, cybersecurity, software development, and IT consulting.
                 </p>
                 <ul className="space-y-4 text-gray-700">
                   {SERVICES_DATA.map((service, index) => (
                       <li key={index} className="flex items-start">
-                        <service.icon className="text-blue-500 w-6 h-6 mr-3 mt-6 flex-shrink-0" />
+                        <service.icon className="flex-shrink-0 w-6 h-6 mt-6 mr-3 text-blue-500" />
                         <p className="mt-6">
                           <span className="font-medium">{service.title}: </span>
                           {service.description}
@@ -163,10 +163,10 @@ const Service = ({ showLink = false }) => {
 
             {/* Badge Section */}
             <div className="lg:mt-32 md:mt-8">
-              <h3 className="text-3xl font-bold text-center text-blueColor mb-8">
+              <h3 className="mb-8 text-2xl font-bold text-center text-blueColor md:text-3xl">
                 Our Core Capabilities
               </h3>
-              <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 {BADGE_DATA.map((badge, index) => (
                     <ServiceBadge key={index} {...badge} />
                 ))}

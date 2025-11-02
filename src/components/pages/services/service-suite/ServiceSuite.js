@@ -94,56 +94,60 @@ export default function ServiceSuite() {
     }, []);
 
     return (
-        <section className="px-4 py-16 bg-gradient-to-b from-gray-100 to-white">
-            <div className="pt-4 mx-auto">
-                <h1 className="mb-4 text-3xl font-bold text-center text-gray-800">
-                    Our Services Suite
-                </h1>
-                <h2 className="max-w-2xl mx-auto mb-6 text-center text-gray-600 sm:mb-8">
-                    We provide these digital services to grow your business
-                </h2>
+        <section className="w-full px-4 mb-8 sm:mb-12 sm:px-6 md:px-8 bg-gradient-to-b from-gray-100 to-white">
+            {/* Container with responsive padding */}
+            <div className="px-4 py-8 sm:px-6 md:px-10 lg:px-20">
+                <div className="mx-auto">
+                    <h1 className="mb-4 text-2xl font-bold text-center text-gray-800 md:text-3xl">
+                        Our Services Suite
+                    </h1>
+                    <h2 className="max-w-2xl mx-auto mb-12 text-base text-center text-gray-600 md:text-md">
+                        We provide these digital services to grow your business
+                    </h2>
 
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 sm:mx-10">
-                    {services.map((service, index) => (
-                        <div
-                            key={index}
-                            className="relative overflow-hidden transition-transform duration-300 bg-white rounded-lg shadow-lg group hover:shadow-xl hover:scale-105"
-                            data-aos={service.aosEffect}
-                        >
-                            <img
-                                src={service.image}
-                                alt={service.title}
-                                className="object-cover w-full h-64 transition-transform duration-500 ease-in-out transform group-hover:scale-105"
-                            />
-
-                            {/* The new div that appears when hovered */}
-                            <div className="absolute inset-0 flex flex-col items-center justify-center p-6 space-y-4 transition-all duration-700 ease-out transform scale-0 bg-black opacity-0 bg-opacity-90 group-hover:scale-100 group-hover:opacity-100">
+                    {/* Grid with responsive spacing */}
+                    <div className="grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3">
+                        {services.map((service, index) => (
+                            <div
+                                key={index}
+                                className="relative overflow-hidden transition-transform duration-300 bg-white rounded-lg shadow-lg group hover:shadow-xl hover:scale-105"
+                                data-aos={service.aosEffect}
+                            >
                                 <img
-                                    src={service.icon}
+                                    src={service.image}
                                     alt={service.title}
-                                    className="object-cover w-16 h-16 transition-transform duration-500 ease-in-out transform scale-100"
+                                    className="object-cover w-full h-64 transition-transform duration-500 ease-in-out transform group-hover:scale-105"
                                 />
-                                <h3 className="text-2xl font-semibold text-center text-white transition-transform duration-500 ease-in-out transform scale-100">
-                                    {service.title}
-                                </h3>
-                                <p className="font-light text-center text-white transition-opacity duration-700 ease-out transform scale-100 opacity-0 text-md group-hover:opacity-100">
-                                    {service.description}
-                                </p>
-                            </div>
 
-                            {/* Original div with icon and title */}
-                            <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between p-4 transition-opacity duration-500 ease-in-out bg-black bg-opacity-60 group-hover:opacity-0">
-                                <img
-                                    src={service.icon}
-                                    alt={service.title}
-                                    className="object-cover w-1/6 h-auto transition-transform duration-500 ease-in-out transform hover:scale-125"
-                                />
-                                <h3 className="flex-grow px-4 text-xl font-semibold text-center text-white">
-                                    {service.title}
-                                </h3>
+                                {/* Hover overlay */}
+                                <div className="absolute inset-0 flex flex-col items-center justify-center p-6 space-y-4 transition-all duration-700 ease-out transform scale-0 bg-black opacity-0 bg-opacity-90 group-hover:scale-100 group-hover:opacity-100">
+                                    <img
+                                        src={service.icon}
+                                        alt={service.title}
+                                        className="object-cover w-16 h-16 transition-transform duration-500 ease-in-out transform scale-100"
+                                    />
+                                    <h3 className="text-2xl font-semibold text-center text-white transition-transform duration-500 ease-in-out transform scale-100">
+                                        {service.title}
+                                    </h3>
+                                    <p className="text-sm font-light text-center text-white transition-opacity duration-700 ease-out transform scale-100 opacity-0 md:text-base group-hover:opacity-100">
+                                        {service.description}
+                                    </p>
+                                </div>
+
+                                {/* Bottom info */}
+                                <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between p-4 transition-opacity duration-500 ease-in-out bg-black bg-opacity-60 group-hover:opacity-0">
+                                    <img
+                                        src={service.icon}
+                                        alt={service.title}
+                                        className="object-cover w-1/6 h-auto transition-transform duration-500 ease-in-out transform hover:scale-125"
+                                    />
+                                    <h3 className="flex-grow px-4 text-lg font-semibold text-center text-white md:text-xl">
+                                        {service.title}
+                                    </h3>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

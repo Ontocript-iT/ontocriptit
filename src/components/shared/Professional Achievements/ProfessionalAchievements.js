@@ -80,13 +80,13 @@ const ProfessionalAchievements = () => {
     ];
 
     return (
-        <div className="flex items-center justify-center p-10 mb-12 bg-gray-50">
+        <div className="flex items-center justify-center p-10 mb-2 bg-gray-50">
             <div className="w-full max-w-6xl">
-                <h1 className="mb-2 text-3xl font-bold text-center text-gray-800">
+                <h1 className="mb-2 text-2xl font-bold text-center text-gray-800 md:text-3xl">
                     Professional Achievements
                 </h1>
 
-                <p className="max-w-2xl mx-auto mb-12 text-lg text-center text-gray-600">
+                <p className="max-w-2xl mx-auto mb-12 text-center text-gray-600 text-md">
                     Discover the milestones we've reached and the impact we've made through dedication and innovation
                 </p>
 

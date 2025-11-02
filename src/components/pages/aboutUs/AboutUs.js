@@ -11,7 +11,7 @@ import ClientSays from "../home/clientSays/ClientSays";
 import OurTeam from "../home/ourTeam/OurTeam";
 import ProfessionalAchievements from "../../shared/Professional Achievements/ProfessionalAchievements";
 import Company from "./Company/Company";
-
+import OurPartners from '../home/partners/Partners'
 
 
 
@@ -36,7 +36,7 @@ export default function AboutUs() {
 
         <ClientSays/>
 
-
+        <OurPartners/>
         
         <Contact/>
         <Footer/>

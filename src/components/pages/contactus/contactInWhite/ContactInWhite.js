@@ -7,14 +7,14 @@ const ContactInWhite = () => {
                 <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
                     Let's talk
                 </h2>
-                <p className="mt-4 text-lg leading-6 text-gray-500">
+                <p className="mt-4 leading-6 text-gray-500 text-md">
                     Cultivating Connections, Resolving Questions, and Delivering Solutions. Reach out to us for expert assistance. Your feedback fuels our growth and shapes our commitment to serving you.
                 </p>
                 <div className="mt-10">
                     <div className="inline-flex rounded-md shadow">
                         <a
                             href="mailto:hello@ontocriptit.com"
-                            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white border border-transparent rounded-md bg-orangeColor hover:bg-indigo-700"
+                            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white border border-transparent rounded-md bg-orangeColor hover:bg-[#162345]"
                         >
                             contact@ontocriptit.com
                         </a>

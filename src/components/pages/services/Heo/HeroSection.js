@@ -20,12 +20,12 @@ const HeroSection = () => {
 
             {/* Animated code snippet */}
             <motion.div
-                className="absolute right-0 top-1/4 w-1/3 h-1/2 bg-opacity-10 bg-white rounded-l-lg overflow-hidden hidden md:block"
+                className="absolute right-0 hidden w-1/3 overflow-hidden bg-white rounded-l-lg top-1/4 h-1/2 bg-opacity-10 md:block"
                 initial={{ x: "100%" }}
                 animate={{ x: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
             >
-        <pre className="text-green-400 text-xs md:text-sm p-4">
+        <pre className="p-4 text-xs text-green-400 md:text-sm">
           <code>
             {`function deliverSolution(clientNeed) {
   const solution = develop(clientNeed);
@@ -41,9 +41,9 @@ const HeroSection = () => {
             </motion.div>
 
             {/* Content */}
-            <div className="relative z-10 text-left px-8 md:px-16 max-w-4xl">
+            <div className="relative z-10 max-w-4xl px-8 text-left md:px-16">
                 <motion.h3
-                    className="text-lg sm:text-xl text-blue-300 font-light mb-1"
+                    className="mb-1 text-lg font-light text-blue-300 sm:text-xl"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
@@ -51,7 +51,7 @@ const HeroSection = () => {
                     OntocriptiT Software Solutions
                 </motion.h3>
                 <motion.h1
-                    className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-bold leading-tight mb-6"
+                    className="mb-6 text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl lg:text-4xl"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
@@ -59,7 +59,7 @@ const HeroSection = () => {
                     Turning Ideas into Impactful Software
                 </motion.h1>
                 <motion.p
-                    className="text-gray-300 text-md mb-8 max-w-2xl"
+                    className="max-w-2xl mb-8 text-gray-300 text-md"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.4 }}
@@ -73,13 +73,13 @@ const HeroSection = () => {
                 >
                     {/*<a*/}
                     {/*    href="#our-services"*/}
-                    {/*    className="bg-blue-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-blue-700 transition duration-300 ease-in-out transform hover:-translate-y-1"*/}
+                    {/*    className="px-6 py-3 font-semibold text-white transition duration-300 ease-in-out transform bg-blue-600 rounded-md hover:bg-blue-700 hover:-translate-y-1"*/}
                     {/*>*/}
                     {/*    Our Services*/}
                     {/*</a>*/}
                     {/*<a*/}
                     {/*    href="#contact-us"*/}
-                    {/*    className="bg-transparent border border-white text-white font-semibold py-3 px-6 rounded-md hover:bg-white hover:text-blue-900 transition duration-300 ease-in-out transform hover:-translate-y-1"*/}
+                    {/*    className="px-6 py-3 font-semibold text-white transition duration-300 ease-in-out transform bg-transparent border border-white rounded-md hover:bg-white hover:text-blue-900 hover:-translate-y-1"*/}
                     {/*>*/}
                     {/*    Contact Us*/}
                     {/*</a>*/}

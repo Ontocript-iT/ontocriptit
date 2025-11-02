@@ -5,9 +5,7 @@ import {
     faFacebook,
     faInstagram,
     faLinkedin,
-    faYoutube,
     faTiktok,
-    faMedium,
 } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
@@ -27,9 +25,7 @@ const Footer = () => {
         { icon: faFacebook, link: 'https://www.facebook.com/share/1AD6GRzCmD/' },
         { icon: faInstagram, link: '#' },
         { icon: faLinkedin, link: 'https://www.linkedin.com/company/ontocript-it/' },
-        { icon: faYoutube, link: '#' },
-        { icon: faTiktok, link: 'https://www.tiktok.com/@ontocript.it?_t=ZS-8uvi5QzgTjk&_r=1' },
-        { icon: faMedium, link: '#' },
+        { icon: faTiktok, link: 'https://www.tiktok.com/@ontocript.it?_r=1&_t=ZS-913Zzx07oLE' }
     ];
 
     return (

@@ -47,14 +47,14 @@ const FeatureCard = ({ title, description, icon: Icon, bgPattern, iconBg }) => (
             </svg>
         </div>
 
-        <div className="relative p-6 z-10">
+        <div className="relative z-10 p-6">
             <div className={`w-16 h-16 rounded-full mb-4 flex items-center justify-center ${iconBg}`}>
                 <Icon className="w-8 h-8 text-[#F14902]" />
             </div>
-            <h2 className="text-2xl font-bold text-gray-800 mb-3">{title}</h2>
-            <p className="text-gray-600 text-base">{description}</p>
+            <h2 className="mb-3 text-2xl font-bold text-gray-800">{title}</h2>
+            <p className="text-base text-gray-600">{description}</p>
 
-            <div className="mt-4 flex justify-end">
+            <div className="flex justify-end mt-4">
                 <div className="w-12 h-1 bg-[#F14902] rounded-full"></div>
             </div>
         </div>
@@ -65,11 +65,11 @@ export default function WhyChoose() {
     return (
         <section className="bg-gray-50 py-16 px-4 overflow-hidden sm:pb-[60px] ">
             <div className="container mx-auto">
-                <div className="text-center mb-16">
-                    <h1 className="text-3xl font-extrabold text-blueColor mb-4 tracking-tight">
+                <div className="mb-16 text-center">
+                    <h1 className="mb-4 text-2xl font-bold tracking-tight text-blueColor md:text-3xl">
                         Why Choose Us?
                     </h1>
-                    <p className="text-md text-gray-600 max-w-2xl mx-auto">
+                    <p className="max-w-2xl mx-auto text-gray-600 text-md">
                         Discover the unique ways we deliver exceptional value
                     </p>
                 </div>

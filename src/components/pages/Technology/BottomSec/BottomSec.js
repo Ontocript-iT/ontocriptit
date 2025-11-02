@@ -9,9 +9,9 @@ const features = [
 ];
 
 const FeatureCard = ({ title, icon: Icon, description }) => (
-    <div className="bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg">
+    <div className="p-6 transition-all duration-300 bg-white rounded-lg shadow-md hover:shadow-lg">
       <div className="flex items-center mb-4">
-        <Icon className="w-6 h-6 text-blue-500 mr-2" />
+        <Icon className="w-6 h-6 mr-2 text-blue-500" />
         <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
       </div>
       <p className="text-gray-600">{description}</p>
@@ -20,18 +20,18 @@ const FeatureCard = ({ title, icon: Icon, description }) => (
 
 const WhyUseTechnologies = () => {
   return (
-      <div className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8 ">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-extrabold text-blueColor text-center mb-8">
+      <div className="px-4 py-16 bg-gray-100 sm:px-6 lg:px-8 ">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="mb-8 text-3xl font-bold text-center text-blueColor">
             Why Use These Technologies
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 gap-8 mb-12 md:grid-cols-2">
             <div>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="leading-relaxed text-gray-700 text-md">
                 Our company chooses these technologies for their unmatched benefits, including enhanced scalability, lightning-fast performance, robust security measures, and unmatched flexibility. Each technology is carefully selected to ensure optimal development outcomes, empowering our projects with seamless scalability, fortified security protocols, and the agility to adapt to evolving requirements, driving innovation and success in every endeavor.
               </p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               {features.map((feature, index) => (
                   <FeatureCard key={index} {...feature} />
               ))}

@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 import Ravishadi from "../../../Assets/ravishadhiMockup.png"
 import Cpepstopik from "../../../Assets/cpedpstopik.png"
 import BarAssociation from "../../../Assets/BarAssociation.jpeg";
-import FadaExpress from "../../../Assets/FadaExpress.jpeg";
+import FadaExpress from "../../../Assets/fdetask.png";
 import Ruuma from "../../../Assets/Ruuma.png";
 import SocialMedia from "../../../Assets/SocialMedia.jpeg";
 import Footer from "../../shared/footer/Footer";
@@ -191,7 +191,7 @@ const PortfolioPage = () => {
                   onMouseLeave={() => setHoveredProject(null)}
                 >
                   {/* Fixed height image container with object-cover */}
-                  <div className="relative w-full h-48 overflow-hidden rounded-t-lg">
+                  <div className="relative w-full h-48 mt-3 overflow-hidden rounded-t-lg">
                     <img
                       src={project.image}
                       alt={project.title}
@@ -199,10 +199,10 @@ const PortfolioPage = () => {
                     />
                   </div>
 
-                  <div className="p-6 flex flex-col">
+                  <div className="flex flex-col p-6">
                     <h3 className="mb-2 text-xl font-semibold text-gray-800">{project.title}</h3>
 
-                    <p className="mb-2 text-gray-600 flex-grow text-justify">
+                    <p className="flex-grow mb-2 text-justify text-gray-600">
                       {displayedDescription}
                     </p>
 

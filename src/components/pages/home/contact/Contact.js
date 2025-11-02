@@ -9,7 +9,7 @@ function Contact() {
     };
 
     return (
-        <div className=" py-20 sm:mb-[20px]">
+        <div className=" py-10 sm:mb-[20px]">
             <div className="px-4 mx-auto">
                 <div className="overflow-hidden bg-white rounded-lg shadow-xl">
                     <div className="md:flex">
