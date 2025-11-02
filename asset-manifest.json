@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.04a9dfe5.css",
-    "main.js": "/static/js/main.33ccccfb.js",
+    "main.css": "/static/css/main.eee6e02f.css",
+    "main.js": "/static/js/main.4b779d1d.js",
     "static/js/453.49b6de0e.chunk.js": "/static/js/453.49b6de0e.chunk.js",
     "static/media/logoMockup.png": "/static/media/logoMockup.11e22a02dfa4f8f93ff9.png",
     "static/media/Ruuma.png": "/static/media/Ruuma.8f2d1ad7ea56a4483492.png",
@@ -16,8 +16,12 @@
     "static/media/banner_00.png": "/static/media/banner_00.1f3892b50f2f92f47080.png",
     "static/media/image7.png": "/static/media/image7.32f64f9f8531631eac8c.png",
     "static/media/image10.png": "/static/media/image10.87307e0a6cb54c14e1f6.png",
+    "static/media/rg.png": "/static/media/rg.822ba4f7e709a42e98e4.png",
+    "static/media/gsc.png": "/static/media/gsc.3e67d08b677e3ecc2d4a.png",
+    "static/media/bsc.png": "/static/media/bsc.93e3b39bdc0b90abee98.png",
     "static/media/navod.jpg": "/static/media/navod.82c8a4b82ad036817cfe.jpg",
     "static/media/Vishwa Waweliyadda.jpg": "/static/media/Vishwa Waweliyadda.5bab04a3c32407dbc0d5.jpg",
+    "static/media/kba.png": "/static/media/kba.a41824336737ebc728c4.png",
     "static/media/image9.png": "/static/media/image9.9c86b635ed434421024e.png",
     "static/media/prageeth.jpg": "/static/media/prageeth.5177f8ba17af8b4a96b0.jpg",
     "static/media/i6.png": "/static/media/i6.c7d2e52156fb71d17c8e.png",
@@ -30,7 +34,6 @@
     "static/media/wordPress.png": "/static/media/wordPress.8214f5bb06d0071d3718.png",
     "static/media/BarAssociation.jpeg": "/static/media/BarAssociation.f8b2bafc797c94f131dc.jpeg",
     "static/media/imash.jpg": "/static/media/imash.ccc82e2756f6c952283e.jpg",
-    "static/media/FadaExpress.jpeg": "/static/media/FadaExpress.2d598c25deea7e2f9bdb.jpeg",
     "static/media/i2.png": "/static/media/i2.f9658ffe8f4e3d36da3b.png",
     "static/media/SocialMedia.jpeg": "/static/media/SocialMedia.dd60c2513c607f142971.jpeg",
     "static/media/hirumalshi.jpg": "/static/media/hirumalshi.88509435edee783277d1.jpg",
@@ -43,8 +46,10 @@
     "static/media/icon7.png": "/static/media/icon7.28f88d2a319588004b29.png",
     "static/media/Ravindu.jpg": "/static/media/Ravindu.a80117ff62f45d00b857.jpg",
     "static/media/sasindu.jpg": "/static/media/sasindu.2da487dd5c0488e59b7f.jpg",
+    "static/media/fde.png": "/static/media/fde.15be8a504ebc77eec9c3.png",
     "static/media/mongodb.png": "/static/media/mongodb.134721ad62e2bdda76f5.png",
     "static/media/p2.jpg": "/static/media/p2.cbb4573749d7d4c8c7ea.jpg",
+    "static/media/fdetask.png": "/static/media/fdetask.7590094d6880379b4df0.png",
     "static/media/i1.png": "/static/media/i1.efc5ede3aef3510ee944.png",
     "static/media/p5.jpg": "/static/media/p5.533b6e8943467ef99ed0.jpg",
     "static/media/i3.png": "/static/media/i3.e94dab69c0e7e93ade91.png",
@@ -60,12 +65,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/index.html",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "main.04a9dfe5.css.map": "/static/css/main.04a9dfe5.css.map",
-    "main.33ccccfb.js.map": "/static/js/main.33ccccfb.js.map",
+    "main.eee6e02f.css.map": "/static/css/main.eee6e02f.css.map",
+    "main.4b779d1d.js.map": "/static/js/main.4b779d1d.js.map",
     "453.49b6de0e.chunk.js.map": "/static/js/453.49b6de0e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.04a9dfe5.css",
-    "static/js/main.33ccccfb.js"
+    "static/css/main.eee6e02f.css",
+    "static/js/main.4b779d1d.js"
   ]
 }
