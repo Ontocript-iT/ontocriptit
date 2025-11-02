@@ -17,12 +17,12 @@ export default function PrivacyAndPolicies() {
     return (
         <div className="container max-w-4xl px-4 py-8 mx-auto">
             <div className="mb-12 text-center">
-                <h1 className="flex items-center justify-center gap-4 text-4xl font-bold text-gray-900">
+                <h1 className="flex items-center justify-center gap-4 text-2xl font-bold text-gray-900 sm:text-3xl">
                     <Shield className="w-12 h-12 text-blue-700" />
                     PRIVACY POLICY
                     <Shield className="w-12 h-12 text-blue-700" />
                 </h1>
-                <p className="mt-4 text-gray-600">Last Updated: January 2025</p>
+                <p className="mt-4 text-gray-600">Last Updated: September 2025</p>
             </div>
 
             <PrivacyPolicySection icon={FileText} title="Introduction">
