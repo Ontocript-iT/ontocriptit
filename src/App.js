@@ -70,7 +70,7 @@ const router = createBrowserRouter(
       <Route path="/portfolio" element={<Portfolio />} />
     </Route>
   ),
-  { basename: window.location.hostname === "localhost" ? "/" : "/#" }
+  { basename: window.location.hostname === "ontocriptit" ? "/" : "/#" }
 );
 
 function App() {
