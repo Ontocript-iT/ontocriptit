@@ -1,60 +1,73 @@
-import React, { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
-import Ravishadi from "../../../Assets/ravishadhiMockup.png"
-import Cpepstopik from "../../../Assets/cpedpstopik.png"
-import BarAssociation from "../../../Assets/BarAssociation.jpeg";
+import React, { useState } from "react";
+import { ArrowRight } from "lucide-react";
+import Ravishadi from "../../../Assets/ravishadhiMockup.png";
+import Cpepstopik from "../../../Assets/cpedpstopik.png";
+import BarAssociation from "../../../Assets/kbbba.png";
 import FadaExpress from "../../../Assets/fdetask.png";
-import Ruuma from "../../../Assets/Ruuma.png";
-import SocialMedia from "../../../Assets/SocialMedia.jpeg";
+import Ruuma from "../../../Assets/rma.png";
+import SocialMedia from "../../../Assets/np.png";
+import GSC from "../../../Assets/gscc.png";
 import Footer from "../../shared/footer/Footer";
-import {motion} from "framer-motion";
-import OurPartners from '../home/partners/Partners';
-
-
-
+import { motion } from "framer-motion";
+import OurPartners from "../home/partners/Partners";
 
 const projects = [
   {
     id: 1,
-    title: 'Company Website',
-    description: 'Developed a portfolio website for a garment company to showcase their designs, production expertise, and brand identity. Ensured a modern, user-friendly interface for seamless navigation and enhanced online presence.',
+    title: "Company Website",
+    description:
+      "Developed a portfolio website for a garment company to showcase their designs, production expertise, and brand identity. Ensured a modern, user-friendly interface for seamless navigation and enhanced online presence.",
     image: Ravishadi,
-    category: 'Web Development'
+    category: "Web Development",
   },
   {
     id: 2,
-    title: 'Korean Class E Learning platform',
-    description: 'Developed a Korean Class E-Learning Platform for interactive language learning, featuring video lessons, quizzes, and progress tracking. Designed for seamless user experience and effective online education.',
+    title: "Korean Class E Learning platform",
+    description:
+      "Developed a Korean Class E-Learning Platform for interactive language learning, featuring video lessons, quizzes, and progress tracking. Designed for seamless user experience and effective online education.",
     image: Cpepstopik,
-    category: 'Web Development'
+    category: "Web Development",
   },
   {
     id: 3,
-    title: 'Kalutara Bar Association Website',
-    description: 'We had the privilege of designing and developing the official website for the Kalutara Bar Association. The site was built with a clean, user-friendly interface to provide easy access to important information.',
+    title: "Kalutara Bar Association Website",
+    description:
+      "We had the privilege of designing and developing the official website for the Kalutara Bar Association. The site was built with a clean, user-friendly interface to provide easy access to important information.",
     image: BarAssociation,
-    category: 'Web Development'
+
+    category: "Web Development",
   },
   {
     id: 4,
-    title: 'Fadar Express App for Shopify',
-    description: "We developed the Fadar Express app for Shopify, integrating one of Sri Lanka's leading delivery services directly into the Shopify platform. This app allows online store owners to easily manage deliveries, track shipments, and streamline order fulfillment with FadaExpress. With a smooth user experience and reliable integration, the app helps merchants enhance their logistics operations and provide fast, efficient delivery to customers across Sri Lanka.",
+    title: "Fadar Express App for Shopify",
+    description:
+      "We developed the Fadar Express app for Shopify, integrating one of Sri Lanka's leading delivery services directly into the Shopify platform. This app allows online store owners to easily manage deliveries, track shipments, and streamline order fulfillment with Fadar Express. With a smooth user experience and reliable integration, the app helps merchants enhance their logistics operations and provide fast, efficient delivery to customers across Sri Lanka.",
     image: FadaExpress,
-    category: 'Shopify App Development'
+    category: "Shopify App Development",
   },
   {
     id: 5,
-    title: 'Ruuma Mobile App',
-    description: 'We are in the process of developing a mobile app designed to help users discover boarding places nearby. Featuring an integrated map and advanced filtering options, the app will make it easier to find suitable accommodations based on individual preferences. Our development team is dedicated to refining the app continuously to deliver a smooth and reliable user experience.',
+    title: "Ruuma Mobile App",
+    description:
+      "We are in the process of developing a mobile app designed to help users discover boarding places nearby. Featuring an integrated map and advanced filtering options, the app will make it easier to find suitable accommodations based on individual preferences. Our development team is dedicated to refining the app continuously to deliver a smooth and reliable user experience.",
     image: Ruuma,
-    category: 'Mobile App Development'
+    category: "Mobile App Development",
   },
   {
     id: 6,
-    title: 'Social Media App',
-    description: 'We are developing a social media app designed to connect users and foster meaningful interactions. Our team is not only focused on building the backend functionality but also crafting intuitive and engaging user interfaces to ensure a seamless experience. The platform will offer features that enhance communication, sharing, and community engagement. Currently in active development, we are dedicated to continuously improving the app to meet users’ evolving needs.',
+    title: "Social Media App",
+    description:
+      "We are developing a social media app designed to connect users and foster meaningful interactions. Our team is not only focused on building the backend functionality but also crafting intuitive and engaging user interfaces to ensure a seamless experience. The platform will offer features that enhance communication, sharing, and community engagement. Currently in active development, we are dedicated to continuously improving the app to meet users’ evolving needs.",
     image: SocialMedia,
-    category: 'Mobile App Development'
+    category: "Mobile App Development",
+  },
+    {
+    id: 7,
+    title: "Good Samaritan Club",
+    description:
+      "We designed and developed the official website for Good Samaritan Club Sri Lanka to strengthen their mission of serving communities with kindness and compassion. The website features a clean, modern design with user-friendly navigation, providing easy access to information about their charity projects, events, volunteer opportunities, and donation programs, helping them connect and engage effectively with supporters nationwide.",
+    image: GSC,
+    category: "Web Development",
   },
 ];
 
@@ -73,15 +86,21 @@ const PortfolioPage = () => {
   return (
     <div>
       {/* Header Section */}
-      <div
-        className="relative overflow-hidden bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 h-[60vh] md:h-[70vh] flex items-center"
-      >
+      <div className="relative overflow-hidden bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 h-[60vh] md:h-[70vh] flex items-center">
         {/* Abstract tech background */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0 bg-black">
-            <svg className="absolute w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              className="absolute w-full h-full"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <defs>
-                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                <pattern
+                  id="grid"
+                  width="40"
+                  height="40"
+                  patternUnits="userSpaceOnUse"
+                >
                   <path
                     d="M 40 0 L 0 0 0 40"
                     fill="none"
@@ -98,9 +117,9 @@ const PortfolioPage = () => {
         {/* Animated code snippet */}
         <motion.div
           className="absolute right-0 hidden w-1/3 overflow-hidden bg-white rounded-l-lg top-1/4 h-1/2 bg-opacity-10 md:block"
-          initial={{ x: '100%' }}
+          initial={{ x: "100%" }}
           animate={{ x: 0 }}
-          transition={{ duration: 1, ease: 'easeOut' }}
+          transition={{ duration: 1, ease: "easeOut" }}
         >
           <pre className="p-4 text-xs text-green-400 md:text-sm">
             <code>
@@ -141,9 +160,10 @@ const PortfolioPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            Explore our portfolio to see how we deliver innovative, scalable software
-            solutions. Our expert team creates high-performance applications and
-            websites, ensuring seamless user experiences and business success
+            Explore our portfolio to see how we deliver innovative, scalable
+            software solutions. Our expert team creates high-performance
+            applications and websites, ensuring seamless user experiences and
+            business success
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -174,15 +194,32 @@ const PortfolioPage = () => {
       </div>
 
       {/* Portfolio Grid */}
+
       <div className="min-h-screen px-4 py-12 bg-gray-100 sm:px-6 lg:px-8">
+        <h2
+          className="mt-6 mb-4 text-2xl font-bold text-center text-gray-800 md:text-3xl"
+          data-aos="fade-up"
+        >
+          Our Successful Client Projects
+        </h2>
+        <p
+          className="max-w-2xl mx-auto mb-12 text-base text-center text-gray-600 md:text-md"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Showcasing our innovative work and trusted partnerships that drive
+          business growth through creative digital solutions
+        </p>
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project) => {
               const isExpanded = expandedIds.includes(project.id);
-              const shouldShowToggle = project.description.length > DESCRIPTION_LIMIT;
+              const shouldShowToggle =
+                project.description.length > DESCRIPTION_LIMIT;
               const displayedDescription = isExpanded
                 ? project.description
-                : project.description.slice(0, DESCRIPTION_LIMIT) + (shouldShowToggle ? '...' : '');
+                : project.description.slice(0, DESCRIPTION_LIMIT) +
+                  (shouldShowToggle ? "..." : "");
 
               return (
                 <div
@@ -192,16 +229,22 @@ const PortfolioPage = () => {
                   onMouseLeave={() => setHoveredProject(null)}
                 >
                   {/* Fixed height image container with object-cover */}
-                  <div className="relative w-full h-48 mt-3 overflow-hidden rounded-t-lg">
+                  <div
+                    className={`relative mt-3 overflow-hidden rounded-t-lg items-center ${
+                      project.imageWidth || "w-full"
+                    } ${project.imageHeight || "h-48"}`}
+                  >
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="object-cover w-full h-full"
+                      className="items-center object-cover w-full h-full"
                     />
                   </div>
 
                   <div className="flex flex-col p-6">
-                    <h3 className="mb-2 text-xl font-semibold text-gray-800">{project.title}</h3>
+                    <h3 className="mb-2 text-xl font-semibold text-gray-800">
+                      {project.title}
+                    </h3>
 
                     <p className="flex-grow mb-2 text-justify text-gray-600">
                       {displayedDescription}
@@ -211,14 +254,20 @@ const PortfolioPage = () => {
                       <button
                         onClick={() => toggleDescription(project.id)}
                         className="self-start text-blue-500 hover:text-blue-700 focus:outline-none"
-                        aria-label={isExpanded ? 'See less description' : 'See more description'}
+                        aria-label={
+                          isExpanded
+                            ? "See less description"
+                            : "See more description"
+                        }
                       >
-                        {isExpanded ? 'See Less' : 'See More'}
+                        {isExpanded ? "See Less" : "See More"}
                       </button>
                     )}
 
                     <div className="mt-4">
-                      <span className="text-sm font-medium text-blue-500">{project.category}</span>
+                      <span className="text-sm font-medium text-blue-500">
+                        {project.category}
+                      </span>
                     </div>
                   </div>
                 </div>
