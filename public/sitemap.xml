@@ -8,13 +8,13 @@
   
   <!-- About page -->
   <url>
-    <loc>https://ontocriptit.com/aboutus</loc>
+    <loc>https://ontocriptit.com/#/aboutus</loc>
     <priority>0.8</priority>
   </url>
   
   <!-- Contact page -->
   <url>
-    <loc>https://ontocriptit.com/contact</loc>
+    <loc>https://ontocriptit.com/#/contact</loc>
     <priority>0.7</priority>
   </url>
 </urlset>
