@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -46,7 +47,7 @@ function WhyUs() {
   }, []);
 
   return (
-    <div className="pb-10 bg-gray-50 lg:pt-10">
+    <div className="pb-10 overflow-x-hidden bg-gray-50 lg:pt-2">
       <div className="container px-4 mx-auto">
         <h2 className="pt-4 mb-4 text-2xl font-bold text-center text-blueColor md:text-3xl">
           Why Choose Us?
@@ -55,7 +56,7 @@ function WhyUs() {
           Choose us as your digital partner for unmatched innovation,
           reliability, and transformative solutions
         </p>
-        <div className="w-full px-4 sm:px-6 md:px-8">
+        <div className="w-full">
           <div className="mx-auto max-w-7xl">
             <div className="grid grid-cols-1 gap-4 sm:gap-5 md:gap-6 md:grid-cols-2 lg:grid-cols-3">
               {reasons.map((reason, index) => (

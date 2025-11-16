@@ -59,7 +59,7 @@ const Hero = () => {
   return (
     <div className="relative pt-2 overflow-hidden bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 min-h-[60vh] sm:pt-10 md:min-h-[70vh] flex items-center min-w-0">
       {/* Abstract tech background */}
-      <div className="absolute inset-0 opacity-20 min-w-0">
+      <div className="absolute inset-0 min-w-0 opacity-20">
         <div
           className="absolute inset-0"
           style={{ backgroundColor: colors.blueColor }}
@@ -91,7 +91,7 @@ const Hero = () => {
 
       {/* Animated code snippet */}
       <motion.div
-        className="absolute min-w-0 right-0 hidden w-1/3 overflow-hidden rounded-l-lg top-1/4 h-1/2 bg-opacity-10 md:block"
+        className="absolute right-0 hidden w-1/3 min-w-0 overflow-hidden rounded-l-lg top-1/4 h-1/2 bg-opacity-10 md:block"
         initial={{ x: "100%" }}
         animate={{ x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
@@ -111,7 +111,7 @@ const Hero = () => {
       </motion.div>
 
       {/* Content */}
-      <div className="relative min-w-0 z-10 max-w-4xl px-8 text-left md:px-16">
+      <div className="relative z-10 max-w-4xl min-w-0 px-8 text-left md:px-16">
         <motion.h3
           className="mb-1 text-lg font-light text-blue-300 sm:text-xl"
           initial={{ opacity: 0, y: 20 }}
@@ -198,7 +198,7 @@ const Hero = () => {
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute min-w-0 bottom-0 left-0 w-full h-16 bg-gradient-to-t from-gray-900 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 w-full h-16 min-w-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
       <motion.div
         className="absolute top-0 left-0 w-64 h-64 rounded-full mix-blend-multiply filter blur-3xl opacity-20"
         style={{ backgroundColor: colors.whiteColor }}

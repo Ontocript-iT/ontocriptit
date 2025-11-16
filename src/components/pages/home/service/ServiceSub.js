@@ -117,7 +117,7 @@ const Service = ({ showLink = false }) => {
 
   return (
       <>
-        <div className="pt-16 pb-20 bg-gray-50">
+        <div className="pt-16 pb-20 bg-gray-100">
           <div className="px-4 mx-auto lg:px-8">
             {/* About Section */}
             <div className="grid items-center gap-12 lg:grid-cols-2">
